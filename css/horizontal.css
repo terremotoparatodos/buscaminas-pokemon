@@ -1,0 +1,55 @@
+/* ═══════════════════════════════════════════════════════════════
+   LAYOUT HORIZONTAL · reel 1920 × 1080 (idéntico a PokeDuelo horizontal)
+   CÁMARAS 1920×482 arriba · JUEGO 1920×598 abajo
+   Columnas laterales = marcador de cada jugador, bajo su cámara.
+   Centro = tablero. Cartas apaisadas (sprite a la izquierda, nombre a la derecha).
+   ═══════════════════════════════════════════════════════════════ */
+:root{
+  --h-banner-top: 0px;
+  --h-cams: 482px;
+  --h-game: 598px;
+  --h-banner-bottom: 0px;
+  --reel-w: 1920px;
+}
+#v-top, #v-bottom{display:none}
+#v-cams{background:#181a20; color:rgba(255,255,255,.35)}
+
+#game{padding:14px 16px;
+  grid-template-columns:290px 1fr 290px;
+  grid-template-rows:50px 12px 76px 52px 1fr;
+  grid-template-areas:"p0 head p1" "p0 prog p1" "p0 q p1" "p0 st p1" "p0 grid p1";
+  column-gap:16px; row-gap:10px}
+
+.player[data-p="0"]{--area:p0} .player[data-p="1"]{--area:p1}
+.player{gap:12px; padding:18px 14px}
+.player .turn{font-size:16px}
+.player .pname{font-size:46px}
+.player .pscore{font-size:112px}
+.player .phist{margin-top:8px; max-width:250px; gap:7px}
+.player .phist i{width:36px; height:36px; line-height:36px; font-size:15px}
+
+.head{justify-content:space-between; padding:0 6px}
+.head .title{font-size:34px}
+.head .title span{margin-left:.3em}
+.head .round-no{font-size:22px}
+
+.question .q-text{font-size:31px; white-space:nowrap}
+.question .q-rule{font-size:13px; margin-top:6px}
+
+.status .hits{font-size:26px}
+.status .turnlbl{font-size:22px}
+.status .result{font-size:26px}
+.status .actions .btn{font-size:15px; padding:8px 16px 7px}
+.pips i{width:18px; height:18px}
+
+.grid{gap:10px 12px}
+.card{flex-direction:row; justify-content:flex-start; gap:12px; padding:0 12px 0 8px}
+.card .art{width:90px; height:90px}
+.card .art img{width:96px; height:96px}
+.card .name{font-size:22px; text-align:left; flex:1}
+.card .name.long{font-size:18px}
+.card .badge{top:7px; right:7px; font-size:12px}
+.card .detail{bottom:7px; right:8px; font-size:12px}
+
+.stamp{font-size:58px}
+.stamp.final{font-size:46px}

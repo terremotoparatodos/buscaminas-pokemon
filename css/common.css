@@ -1,0 +1,225 @@
+/* ═══════════════════════════════════════════════════════════════
+   BUSCAMINAS POKÉMON · ESTILOS COMUNES
+   Mismo ADN que PokeDuelo (tinta, verde/rojo/dorado, Bungee, contornos, foto de fondo).
+   Las medidas del reel y la disposición viven en vertical.css / horizontal.css.
+   ═══════════════════════════════════════════════════════════════ */
+@font-face{font-family:'Bungee'; src:url('../assets/fonts/bungee-latin.woff2') format('woff2'); font-display:block}
+@font-face{font-family:'Press Start 2P'; src:url('../assets/fonts/press-start-2p-latin.woff2') format('woff2'); font-display:block}
+
+:root{
+  --ink:#16161f;
+  --ok:#3fbf4f;
+  --ok-hi:#58e36a;
+  --no:#e0413b;
+  --no-hi:#ff5a4f;
+  --gold:#ffd84a;
+  --panel:rgba(10,14,24,.84);
+  --card:#1d2233;
+  --card-2:#141828;
+  --pixel:'Bungee','Press Start 2P',system-ui,sans-serif;
+}
+
+html,body{margin:0;height:100%;background:#0d0d10;overflow:hidden}
+body.rec{overflow:auto}
+
+/* ── REEL (igual que PokeDuelo) ── */
+#reel{position:absolute; left:50%; top:50%; width:var(--reel-w); transform-origin:center center; display:flex; flex-direction:column}
+body.rec #reel{position:relative; left:0; top:0; transform:none !important}
+
+.virtual{flex:none; position:relative; width:100%; pointer-events:none; user-select:none;
+  display:flex; align-items:center; justify-content:center;
+  font:600 22px/1 system-ui,sans-serif; letter-spacing:.25em; color:rgba(255,255,255,.28)}
+.virtual::after{content:''; position:absolute; inset:8px; border:3px dashed rgba(255,255,255,.2); border-radius:4px}
+#v-top{height:var(--h-banner-top); background:#8e1622}
+#v-cams{height:var(--h-cams); background:#2a2a2a}
+#v-bottom{height:var(--h-banner-bottom); background:#8e1622}
+body.clean .virtual span, body.clean .virtual::after{display:none}
+
+/* ── ZONA JUEGO ── */
+#game{flex:none; position:relative; width:var(--reel-w); height:var(--h-game); overflow:hidden; box-sizing:border-box;
+  font-family:var(--pixel); color:#fff; user-select:none;
+  background:url('../assets/img/nature-1768605061922-3261.jpg') center center / cover no-repeat;
+  display:grid; contain:layout paint}
+#game::before{content:''; position:absolute; inset:0; z-index:0; pointer-events:none;
+  background:linear-gradient(180deg,rgba(9,24,34,.42),rgba(8,20,18,.58))}
+#game > *{position:relative; z-index:1; min-width:0; min-height:0}
+
+.outline{text-shadow:
+  -3px -3px 0 var(--ink), 3px -3px 0 var(--ink), -3px 3px 0 var(--ink), 3px 3px 0 var(--ink),
+   0 -4px 0 var(--ink), 0 4px 0 var(--ink), -4px 0 0 var(--ink), 4px 0 0 var(--ink),
+   0 7px 0 rgba(0,0,0,.42), 4px 10px 8px rgba(0,0,0,.4)}
+.outline-s{text-shadow:-2px -2px 0 var(--ink), 2px -2px 0 var(--ink), -2px 2px 0 var(--ink), 2px 2px 0 var(--ink), 0 4px 0 rgba(0,0,0,.4)}
+
+/* Paneles oscuros con el borde de tinta de PokeDuelo */
+.slab{background:var(--panel); border:4px solid var(--ink); border-radius:12px;
+  box-shadow:inset 0 0 0 2px rgba(255,255,255,.12), 6px 6px 0 rgba(0,0,0,.35)}
+
+/* ── JUGADORES ── */
+.player{grid-area:var(--area); display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center;
+  box-sizing:border-box; transition:opacity .25s}
+.player .pname{letter-spacing:.04em; line-height:1}
+.player .pscore{line-height:1; font-variant-numeric:tabular-nums}
+.player .plabel{font-size:14px; letter-spacing:.2em; color:rgba(255,255,255,.7)}
+.player .turn{font-size:15px; letter-spacing:.12em; padding:6px 12px 5px; border-radius:999px; background:var(--gold); color:var(--ink);
+  border:3px solid var(--ink); opacity:0; transform:translateY(6px); transition:opacity .25s, transform .25s}
+.player.active{box-shadow:inset 0 0 0 2px rgba(255,255,255,.12), 0 0 0 5px var(--gold), 6px 6px 0 5px rgba(0,0,0,.35)}
+.player.active .turn{opacity:1; transform:none}
+.player:not(.active){opacity:.62}
+.player .phist{display:flex; gap:5px; flex-wrap:wrap; justify-content:center}
+.player .phist i{display:block; width:26px; height:26px; line-height:26px; font-style:normal; font-size:12px; border-radius:5px;
+  border:2px solid var(--ink); background:var(--ok); color:#fff}
+.player .phist i.bomb{background:var(--no)}
+.player .phist i.perfect{background:var(--gold); color:var(--ink)}
+.pscore.bump{animation:bump .42s}
+@keyframes bump{40%{transform:scale(1.25)}100%{transform:none}}
+
+/* ── CABECERA ── */
+.head{grid-area:head; display:flex; align-items:center; justify-content:center; gap:18px}
+.head .title{letter-spacing:.02em; line-height:.95; white-space:nowrap}
+.head .title span{color:var(--gold)}
+.head .meta{display:flex; align-items:center; gap:12px}
+.head .round-no{white-space:nowrap}
+.chip{display:inline-block; padding:7px 14px 6px; border-radius:8px; border:3px solid var(--ink); font-size:16px; letter-spacing:.08em;
+  box-shadow:0 3px 0 rgba(0,0,0,.4); color:var(--ink); white-space:nowrap}
+.chip.easy{background:#7ee07f}
+.chip.normal{background:var(--gold)}
+.chip.hard{background:#ff7a59}
+
+/* ── PROGRESO DE RONDAS ── */
+.progress{grid-area:prog; display:flex; gap:5px; align-items:stretch}
+.progress i{flex:1; border-radius:4px; background:rgba(255,255,255,.18); border:2px solid rgba(0,0,0,.45)}
+.progress i.perfect{background:var(--gold)}
+.progress i.ok{background:var(--ok)}
+.progress i.bomb{background:var(--no)}
+.progress i.current{background:#fff; animation:blink 1.2s ease-in-out infinite}
+@keyframes blink{50%{opacity:.45}}
+
+/* ── CONSIGNA ── */
+.question{grid-area:q; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:0 18px}
+.question .q-text{line-height:1.08; letter-spacing:.01em; max-width:100%; overflow:hidden}
+.question .q-rule{font:700 15px/1 system-ui,sans-serif; letter-spacing:.12em; text-transform:uppercase; color:rgba(255,255,255,.7); margin-top:8px}
+
+/* ── ESTADO (aciertos / resultado + botones). Altura fija: nunca empuja la grilla. ── */
+.status{grid-area:st; display:flex; align-items:center; justify-content:center; gap:22px; overflow:hidden}
+.status .hits{white-space:nowrap}
+.status .turnlbl{white-space:nowrap; padding:4px 14px 2px; border-radius:10px; background:rgba(0,0,0,.35); border:3px solid var(--gold)}
+.status .turnlbl b{color:var(--gold)}
+.player .turn.flip{animation:turnFlip .35s cubic-bezier(.3,1.6,.5,1)}
+@keyframes turnFlip{0%{transform:scale(.6)}100%{transform:none}}
+.status .hits b{color:var(--ok-hi)}
+.pips{display:flex; gap:6px}
+.pips i{width:20px; height:20px; border-radius:50%; border:3px solid var(--ink); background:rgba(255,255,255,.2); transition:background .2s}
+.pips i.on{background:var(--ok-hi)}
+.status .result{white-space:nowrap}
+.status .result.perfect{color:var(--gold)}
+.status .result.bomb{color:var(--no-hi)}
+.status .result{text-align:center; line-height:1}
+.status .result small{display:block; font-size:.5em; letter-spacing:.08em; color:#fff; margin-top:4px}
+.status .actions{display:flex; gap:12px}
+.btn{font-family:var(--pixel); font-size:17px; letter-spacing:.05em; color:#fff; cursor:pointer; white-space:nowrap;
+  padding:11px 18px 10px; border-radius:10px; border:4px solid var(--ink); background:#2f6fe4;
+  box-shadow:inset 0 -5px 0 rgba(0,0,0,.25), 0 5px 0 rgba(0,0,0,.45); transition:transform .08s}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(2px)}
+.btn.go{background:var(--ok)}
+.btn.retry{background:#5a5f78}
+.status .enter{animation:fadeUp .35s both}
+@keyframes fadeUp{from{opacity:0; transform:translateY(10px)}to{opacity:1; transform:none}}
+
+/* ── GRILLA 4×3 ── */
+.grid{grid-area:grid; display:grid; grid-template-columns:repeat(4,1fr); grid-template-rows:repeat(3,1fr)}
+.card{all:unset; box-sizing:border-box; position:relative; overflow:hidden; cursor:pointer; min-width:0; min-height:0;
+  border-radius:12px; border:4px solid var(--ink); background:linear-gradient(180deg,var(--card),var(--card-2));
+  box-shadow:inset 0 0 0 2px rgba(255,255,255,.12), 0 5px 0 rgba(0,0,0,.45);
+  display:flex; align-items:center; justify-content:center; transition:transform .12s; will-change:transform}
+.card:hover{transform:translateY(-3px)}
+.grid.done .card, .card.picked{cursor:default}
+.grid.done .card:hover, .card.picked:hover{transform:none}
+.card:focus-visible{outline:4px solid #5b8cff; outline-offset:2px}
+/* Capa de color: sólo se anima su opacidad. */
+.card .tint{position:absolute; inset:0; opacity:0; pointer-events:none; transition:opacity .22s}
+.card .art{position:relative; display:flex; align-items:center; justify-content:center; flex:none; border-radius:50%;
+  background:radial-gradient(circle at 50% 42%,rgba(255,255,255,.22),rgba(255,255,255,.06) 62%,transparent 64%)}
+.card .art img{image-rendering:pixelated; display:block}
+.card .name{position:relative; line-height:1.05; letter-spacing:.02em; min-width:0; overflow:hidden}
+.card .badge{position:absolute; display:flex; align-items:center; gap:6px; padding:5px 9px 4px; border-radius:7px; border:3px solid var(--ink);
+  font-size:13px; letter-spacing:.06em; opacity:0; transform:scale(.6); pointer-events:none}
+.card .badge svg{width:16px; height:16px; flex:none}
+.card .detail{position:absolute; padding:3px 7px 2px; border-radius:6px; background:rgba(0,0,0,.55); border:2px solid rgba(255,255,255,.35);
+  font-size:13px; letter-spacing:.04em; opacity:0}
+
+.card.ok .tint{background:linear-gradient(180deg,var(--ok-hi),#1f9d35); opacity:1}
+.card.ok{border-color:#0f3d17}
+.card.bad .tint{background:linear-gradient(180deg,var(--no-hi),#a8201b); opacity:1}
+.card.ok .badge.b-ok, .card.bad .badge.b-bomb{opacity:1; transform:none}
+.badge.b-ok{background:#fff; color:#1b7f2c}
+.badge.b-bomb{background:var(--ink); color:#fff}
+/* Revelado sin haberlas tocado: color más suave, para distinguirlas de las elegidas */
+.card.rev .tint{opacity:.5}
+.card.rev .badge{transform:scale(.85)}
+.grid.done .card .detail{opacity:1}
+/* La bomba elegida: sólida, anillo blanco y cartel propio */
+.card.boom{box-shadow:0 0 0 5px #fff, 0 0 0 9px var(--ink), 0 5px 0 9px rgba(0,0,0,.45); z-index:2}
+.card.boom .badge.b-bomb{background:#fff; color:var(--no)}
+
+/* Animaciones (sólo transform/opacity) */
+.card.a-pop{animation:cardPop .34s cubic-bezier(.3,1.6,.5,1)}
+@keyframes cardPop{0%{transform:scale(.92)}60%{transform:scale(1.07)}100%{transform:none}}
+.card.a-pop .tint{animation:tintIn .22s both}
+.card.a-shake{animation:shake .46s}
+@keyframes shake{0%,100%{transform:none}15%{transform:translateX(-10px) rotate(-2deg)}30%{transform:translateX(9px) rotate(2deg)}45%{transform:translateX(-7px)}60%{transform:translateX(6px)}75%{transform:translateX(-3px)}}
+.card.a-shake .tint{animation:flash .46s both}
+@keyframes flash{0%{opacity:0}20%{opacity:1}35%{opacity:.55}55%{opacity:1}}
+.card.a-rev .tint{animation:tintIn .3s both; animation-delay:var(--d,0ms)}
+.card.a-rev .badge{transition:opacity .25s, transform .25s; transition-delay:var(--d,0ms)}
+@keyframes tintIn{from{opacity:0}}
+.card.a-deal{animation:deal .38s both; animation-delay:var(--d,0ms)}
+@keyframes deal{from{opacity:0; transform:translateY(14px) scale(.96)}}
+.grid.celebrate .card.ok{animation:glow 1.1s ease-in-out 2; animation-delay:var(--d,0ms)}
+@keyframes glow{50%{transform:scale(1.04)}}
+.noanim, .noanim *{animation:none !important; transition:none !important}
+
+/* ── CARTEL CENTRAL (encima de la grilla, nunca de las cámaras) ── */
+.stamp{grid-area:grid; align-self:center; justify-self:center; z-index:5 !important; pointer-events:none; text-align:center;
+  padding:18px 34px 14px; border-radius:16px; border:5px solid var(--ink); opacity:0; transform:scale(.4)}
+.stamp.perfect{background:var(--gold); color:var(--ink)}
+.stamp.bomb{background:var(--no); color:#fff}
+.stamp.final{background:var(--panel); color:var(--gold)}
+.stamp small{display:block; font-size:.42em; letter-spacing:.1em; margin-top:6px}
+.stamp.show{animation:stampIn 1.9s both}
+.stamp.show.big{animation:stampBig 2.4s both}
+.stamp.stay{animation:stampStay .6s both}
+@keyframes stampIn{0%{opacity:0; transform:scale(.4) rotate(-6deg)}14%{opacity:1; transform:scale(1.08) rotate(1deg)}22%{transform:scale(1)}78%{opacity:1; transform:scale(1)}100%{opacity:0; transform:scale(.9)}}
+@keyframes stampBig{0%{opacity:0; transform:scale(.3) rotate(-10deg)}12%{opacity:1; transform:scale(1.18) rotate(2deg)}20%{transform:scale(1)}30%{transform:scale(1.05)}40%{transform:scale(1)}82%{opacity:1; transform:scale(1)}100%{opacity:0; transform:scale(.92)}}
+@keyframes stampStay{from{opacity:0; transform:scale(.5)}to{opacity:1; transform:none}}
+
+/* ── PANEL DE CONTROL (fuera del reel, no se graba) · mismo estilo que PokeDuelo ── */
+#panel{position:fixed; top:12px; right:12px; width:380px; max-height:calc(100vh - 24px); overflow:auto; z-index:50;
+  background:#1c1d24; color:#e9e9ef; border:1px solid #3a3b46; border-radius:12px;
+  font:14px/1.4 system-ui,sans-serif; box-shadow:0 12px 40px rgba(0,0,0,.5); padding:14px; box-sizing:border-box}
+body.nopanel #panel{display:none}
+body.panel-only{overflow:auto; background:#121318}
+body.panel-only #reel{display:none}
+body.panel-only #panel{position:static; margin:24px auto; width:min(760px,calc(100% - 32px)); max-height:none}
+#panel h2{margin:0; font-size:15px; letter-spacing:.04em}
+#panel header{display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:10px}
+#panel section{background:#25262f; border-radius:10px; padding:12px; margin-bottom:12px}
+#panel h3{margin:0 0 8px; font-size:13px; text-transform:uppercase; letter-spacing:.08em; color:#ffd84a}
+#panel label{display:block; font-size:12px; color:#a9aab8; margin:8px 0 4px}
+#panel .line{display:flex; gap:6px; align-items:center; flex-wrap:wrap}
+#panel input{flex:1; min-width:0; background:#14151b; color:#fff; border:1px solid #3a3b46; border-radius:7px; padding:7px 9px; font:inherit}
+#panel button{background:#343645; color:#fff; border:0; border-radius:7px; padding:7px 10px; font:inherit; font-size:13px; cursor:pointer; white-space:nowrap}
+#panel button:hover{background:#44475a}
+#panel button.primary{background:#2f6fe4} #panel button.primary:hover{background:#3d7cf0}
+#panel button.danger{background:#6b2230} #panel button.danger:hover{background:#86293a}
+#panel button.on{outline:2px solid #ffd84a}
+#panel .score{font:700 22px/1 system-ui,sans-serif; min-width:44px; text-align:center}
+#panel footer{font-size:12px; color:#8d8e9c}
+#panel kbd{background:#343645; border-radius:4px; padding:1px 5px; font-size:11px}
+#panel .muted{color:#8d8e9c; font-size:12px}
+#panel pre{margin:6px 0 0; white-space:pre-wrap; font:11px/1.35 ui-monospace,Consolas,monospace; color:#cfd0da; background:#14151b; border-radius:7px; padding:8px}
+#panel table{width:100%; border-collapse:collapse; font-size:12px; margin-top:6px}
+#panel td{padding:2px 4px; border-bottom:1px solid #30313c; vertical-align:top}
+#panel td.ok{color:#58e36a} #panel td.no{color:#ff7a70}
+#debug{display:none}
+body.debug #debug{display:block}

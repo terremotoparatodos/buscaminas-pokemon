@@ -1,0 +1,9346 @@
+{
+ "validatedAt": "2026-09-28T23:03:31.285Z",
+ "validator": "scripts/validate-rounds.mjs",
+ "status": "PASS",
+ "sources": {
+  "A": {
+   "name": "PokéAPI",
+   "detail": "PokéAPI v2 REST (https://pokeapi.co/api/v2/)",
+   "fetchedAt": "2026-09-28T17:45:02.690Z"
+  },
+  "B": {
+   "name": "Pokémon Showdown",
+   "detail": "smogon/pokemon-showdown@a5df8274e85b0889bf2a9b3422a08b39732374fc (data/*.ts)",
+   "commit": "a5df8274e85b0889bf2a9b3422a08b39732374fc",
+   "fetchedAt": "2026-09-28T17:44:59.176Z"
+  }
+ },
+ "rulesets": {
+  "gen9": {
+   "id": "gen9",
+   "label": "Gen 9 · Escarlata/Púrpura + DLC",
+   "pokeapiVersionGroups": [
+    "scarlet-violet",
+    "the-teal-mask",
+    "the-indigo-disk"
+   ],
+   "showdownGeneration": 9,
+   "showdownMethods": [
+    "L",
+    "M",
+    "E",
+    "T",
+    "R",
+    "S"
+   ]
+  }
+ },
+ "summary": {
+  "total": 48,
+  "valid": 48,
+  "invalid": 0
+ },
+ "globalErrors": [],
+ "rounds": [
+  {
+   "id": "ability-cursed-body-hard",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "ability",
+    "ability": "cursed-body",
+    "abilityMode": "any",
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "banette",
+     "name": "Banette",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "corsola-galar",
+     "name": "Corsola de Galar",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "cubone",
+     "name": "Cubone",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "cursola",
+     "name": "Cursola",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "dragapult",
+     "name": "Dragapult",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "froslass",
+     "name": "Froslass",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "gengar",
+     "name": "Gengar",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "haunter",
+     "name": "Haunter",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "marowak-alola",
+     "name": "Marowak de Alola",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "polteageist",
+     "name": "Polteageist",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "shuppet",
+     "name": "Shuppet",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "snorunt",
+     "name": "Snorunt",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "ability-sheer-force-hard",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "ability",
+    "ability": "sheer-force",
+    "abilityMode": "any",
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "dugtrio",
+     "name": "Dugtrio",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "feraligatr",
+     "name": "Feraligatr",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "hariyama",
+     "name": "Hariyama",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "kingler",
+     "name": "Kingler",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "krabby",
+     "name": "Krabby",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "nidoking",
+     "name": "Nidoking",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "nidoqueen",
+     "name": "Nidoqueen",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "nidoran-m",
+     "name": "Nidoran♂",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "nidorina",
+     "name": "Nidorina",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "onix",
+     "name": "Onix",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "steelix",
+     "name": "Steelix",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "tauros",
+     "name": "Tauros",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "ability-moxie-hard",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "ability",
+    "ability": "moxie",
+    "abilityMode": "any",
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "gyarados",
+     "name": "Gyarados",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "heracross",
+     "name": "Heracross",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "honchkrow",
+     "name": "Honchkrow",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "krookodile",
+     "name": "Krookodile",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "magikarp",
+     "name": "Magikarp",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "mightyena",
+     "name": "Mightyena",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "murkrow",
+     "name": "Murkrow",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "pinsir",
+     "name": "Pinsir",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "poochyena",
+     "name": "Poochyena",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "salamence",
+     "name": "Salamence",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "scrafty",
+     "name": "Scrafty",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "shelgon",
+     "name": "Shelgon",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "ability-run-away-hard",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "ability",
+    "ability": "run-away",
+    "abilityMode": "any",
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "butterfree",
+     "name": "Butterfree",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "caterpie",
+     "name": "Caterpie",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "dodrio",
+     "name": "Dodrio",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "eevee",
+     "name": "Eevee",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "gloom",
+     "name": "Gloom",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "kakuna",
+     "name": "Kakuna",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "oddish",
+     "name": "Oddish",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "rapidash",
+     "name": "Rapidash",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "raticate",
+     "name": "Raticate",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "venomoth",
+     "name": "Venomoth",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "venonat",
+     "name": "Venonat",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "weedle",
+     "name": "Weedle",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "ability-water-absorb-normal",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "ability",
+    "ability": "water-absorb",
+    "abilityMode": "any",
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "cacturne",
+     "name": "Cacturne",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "chinchou",
+     "name": "Chinchou",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "goldeen",
+     "name": "Goldeen",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "jolteon",
+     "name": "Jolteon",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "lanturn",
+     "name": "Lanturn",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "lapras",
+     "name": "Lapras",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "politoed",
+     "name": "Politoed",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "poliwrath",
+     "name": "Poliwrath",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "quagsire",
+     "name": "Quagsire",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "seaking",
+     "name": "Seaking",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "vaporeon",
+     "name": "Vaporeon",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "wailord",
+     "name": "Wailord",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "ability-rock-head-normal",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "ability",
+    "ability": "rock-head",
+    "abilityMode": "any",
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "aerodactyl",
+     "name": "Aerodactyl",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "aggron",
+     "name": "Aggron",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "camerupt",
+     "name": "Camerupt",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "carracosta",
+     "name": "Carracosta",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "geodude",
+     "name": "Geodude",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "golem",
+     "name": "Golem",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "marowak-alola",
+     "name": "Marowak de Alola",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "relicanth",
+     "name": "Relicanth",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "rhyhorn",
+     "name": "Rhyhorn",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "rhyperior",
+     "name": "Rhyperior",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "tirtouga",
+     "name": "Tirtouga",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "tyrantrum",
+     "name": "Tyrantrum",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "ability-volt-absorb-normal",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "ability",
+    "ability": "volt-absorb",
+    "abilityMode": "any",
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "chinchou",
+     "name": "Chinchou",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "dracozolt",
+     "name": "Dracozolt",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "jolteon",
+     "name": "Jolteon",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "lanturn",
+     "name": "Lanturn",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "mantine",
+     "name": "Mantine",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "minun",
+     "name": "Minun",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "pachirisu",
+     "name": "Pachirisu",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "pawmot",
+     "name": "Pawmot",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "poliwhirl",
+     "name": "Poliwhirl",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "vaporeon",
+     "name": "Vaporeon",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "wooper",
+     "name": "Wooper",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "zeraora",
+     "name": "Zeraora",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "ability-sand-veil-normal",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "ability",
+    "ability": "sand-veil",
+    "abilityMode": "any",
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "diglett",
+     "name": "Diglett",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "donphan",
+     "name": "Donphan",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "dugtrio-alola",
+     "name": "Dugtrio de Alola",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "excadrill",
+     "name": "Excadrill",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "garchomp",
+     "name": "Garchomp",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "golem",
+     "name": "Golem",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "graveler",
+     "name": "Graveler",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad oculta",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "nosepass",
+     "name": "Nosepass",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "probopass",
+     "name": "Probopass",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "sandshrew",
+     "name": "Sandshrew",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "sandslash",
+     "name": "Sandslash",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "tyranitar",
+     "name": "Tyranitar",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "ability-shed-skin-easy",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "ability",
+    "ability": "shed-skin",
+    "abilityMode": "any",
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "arbok",
+     "name": "Arbok",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "dragonair",
+     "name": "Dragonair",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "dratini",
+     "name": "Dratini",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "ekans",
+     "name": "Ekans",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "jynx",
+     "name": "Jynx",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "kakuna",
+     "name": "Kakuna",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "metapod",
+     "name": "Metapod",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "paras",
+     "name": "Paras",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "parasect",
+     "name": "Parasect",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "pupitar",
+     "name": "Pupitar",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "seviper",
+     "name": "Seviper",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "victreebel",
+     "name": "Victreebel",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "ability-levitate-easy",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "ability",
+    "ability": "levitate",
+    "abilityMode": "any",
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "dragonite",
+     "name": "Dragonite",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "flygon",
+     "name": "Flygon",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "gastly",
+     "name": "Gastly",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "hypno",
+     "name": "Hypno",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "koffing",
+     "name": "Koffing",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "latias",
+     "name": "Latias",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "latios",
+     "name": "Latios",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "lunatone",
+     "name": "Lunatone",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "mew",
+     "name": "Mew",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "mewtwo",
+     "name": "Mewtwo",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "unown",
+     "name": "Unown",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "weezing",
+     "name": "Weezing",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "ability-chlorophyll-easy",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "ability",
+    "ability": "chlorophyll",
+    "abilityMode": "any",
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "alakazam",
+     "name": "Alakazam",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "beedrill",
+     "name": "Beedrill",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "bellossom",
+     "name": "Bellossom",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "bellsprout",
+     "name": "Bellsprout",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "exeggcute",
+     "name": "Exeggcute",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "exeggutor",
+     "name": "Exeggutor",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "jumpluff",
+     "name": "Jumpluff",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "slowbro",
+     "name": "Slowbro",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "tangela",
+     "name": "Tangela",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "tentacruel",
+     "name": "Tentacruel",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "vileplume",
+     "name": "Vileplume",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "weepinbell",
+     "name": "Weepinbell",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "ability-keen-eye-easy",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "ability",
+    "ability": "keen-eye",
+    "abilityMode": "any",
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "fearow",
+     "name": "Fearow",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "furret",
+     "name": "Furret",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "hitmonchan",
+     "name": "Hitmonchan",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "kangaskhan",
+     "name": "Kangaskhan",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "moltres",
+     "name": "Moltres",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "noctowl",
+     "name": "Noctowl",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "pelipper",
+     "name": "Pelipper",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "persian",
+     "name": "Persian",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "pidgeot",
+     "name": "Pidgeot",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "sableye",
+     "name": "Sableye",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "skarmory",
+     "name": "Skarmory",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "habilidad normal",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "zapdos",
+     "name": "Zapdos",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no la tiene",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "move-drain-punch-hard",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "move",
+    "move": "drain-punch",
+    "generation": 9,
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "clefable",
+     "name": "Clefable",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "clefairy",
+     "name": "Clefairy",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "combusken",
+     "name": "Combusken",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "kubfu",
+     "name": "Kubfu",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "mankey",
+     "name": "Mankey",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "muk",
+     "name": "Muk",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "pawmo",
+     "name": "Pawmo",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "primeape",
+     "name": "Primeape",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "slowking",
+     "name": "Slowking",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "sneasler",
+     "name": "Sneasler",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "sudowoodo",
+     "name": "Sudowoodo",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "wigglytuff",
+     "name": "Wigglytuff",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "move-spikes-hard",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "move",
+    "move": "spikes",
+    "generation": 9,
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "barboach",
+     "name": "Barboach",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "cloyster",
+     "name": "Cloyster",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "delibird",
+     "name": "Delibird",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "forretress",
+     "name": "Forretress",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L28",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "glalie",
+     "name": "Glalie",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "groudon",
+     "name": "Groudon",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "hippowdon",
+     "name": "Hippowdon",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "numel",
+     "name": "Numel",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "rhydon",
+     "name": "Rhydon",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "sandslash-alola",
+     "name": "Sandslash de Alola",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "shellder",
+     "name": "Shellder",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "whiscash",
+     "name": "Whiscash",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "move-u-turn-hard",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "move",
+    "move": "u-turn",
+    "generation": 9,
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "articuno",
+     "name": "Articuno",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "charjabug",
+     "name": "Charjabug",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "galvantula",
+     "name": "Galvantula",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "grubbin",
+     "name": "Grubbin",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "illumise",
+     "name": "Illumise",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "joltik",
+     "name": "Joltik",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "meowth",
+     "name": "Meowth",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "moltres-galar",
+     "name": "Moltres de Galar",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "persian-alola",
+     "name": "Persian de Alola",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "rayquaza",
+     "name": "Rayquaza",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "scizor",
+     "name": "Scizor",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "zapdos-galar",
+     "name": "Zapdos de Galar",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "move-aqua-tail-hard",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "move",
+    "move": "aqua-tail",
+    "generation": 9,
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "blastoise",
+     "name": "Blastoise",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9L30",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "cyclizar",
+     "name": "Cyclizar",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "egg",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9E",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "dewgong",
+     "name": "Dewgong",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9L49",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "dunsparce",
+     "name": "Dunsparce",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "egg",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9E",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "golduck",
+     "name": "Golduck",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9L24",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "ludicolo",
+     "name": "Ludicolo",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "luvdisc",
+     "name": "Luvdisc",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "minccino",
+     "name": "Minccino",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "egg",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9E",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "poliwag",
+     "name": "Poliwag",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "sandile",
+     "name": "Sandile",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "egg",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9E",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "seadra",
+     "name": "Seadra",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "seel",
+     "name": "Seel",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9L43",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "move-aura-sphere-normal",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "move",
+    "move": "aura-sphere",
+    "generation": 9,
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "blastoise",
+     "name": "Blastoise",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "breloom",
+     "name": "Breloom",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "chesnaught",
+     "name": "Chesnaught",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "hitmonchan",
+     "name": "Hitmonchan",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "hitmonlee",
+     "name": "Hitmonlee",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "jirachi",
+     "name": "Jirachi",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "medicham",
+     "name": "Medicham",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "meditite",
+     "name": "Meditite",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "mew",
+     "name": "Mew",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L90+9S27",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "mewtwo",
+     "name": "Mewtwo",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L40+9S9",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "raikou",
+     "name": "Raikou",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "toxicroak",
+     "name": "Toxicroak",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "move-waterfall-normal",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "move",
+    "move": "waterfall",
+    "generation": 9,
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "kingdra",
+     "name": "Kingdra",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "kyogre",
+     "name": "Kyogre",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "lotad",
+     "name": "Lotad",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "lugia",
+     "name": "Lugia",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "masquerain",
+     "name": "Masquerain",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "psyduck",
+     "name": "Psyduck",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "slowbro-galar",
+     "name": "Slowbro de Galar",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "slowpoke",
+     "name": "Slowpoke",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "suicune",
+     "name": "Suicune",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "swanna",
+     "name": "Swanna",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "tentacool",
+     "name": "Tentacool",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "tentacruel",
+     "name": "Tentacruel",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "move-dragon-dance-normal",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "move",
+    "move": "dragon-dance",
+    "generation": 9,
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "altaria",
+     "name": "Altaria",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "blaziken",
+     "name": "Blaziken",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "charizard",
+     "name": "Charizard",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "charmeleon",
+     "name": "Charmeleon",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "crawdaunt",
+     "name": "Crawdaunt",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "dragonite",
+     "name": "Dragonite",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L62",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "exeggutor-alola",
+     "name": "Exeggutor de Alola",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "gabite",
+     "name": "Gabite",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "gible",
+     "name": "Gible",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "gyarados",
+     "name": "Gyarados",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L36",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "horsea",
+     "name": "Horsea",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L50",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "zekrom",
+     "name": "Zekrom",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "move-hydro-pump-normal",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "move",
+    "move": "hydro-pump",
+    "generation": 9,
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "azumarill",
+     "name": "Azumarill",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L40",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "dragonair",
+     "name": "Dragonair",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "dratini",
+     "name": "Dratini",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "feebas",
+     "name": "Feebas",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "haxorus",
+     "name": "Haxorus",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "lotad",
+     "name": "Lotad",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "milotic",
+     "name": "Milotic",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L52",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "raichu",
+     "name": "Raichu",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "slowpoke-galar",
+     "name": "Slowpoke de Galar",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "squirtle",
+     "name": "Squirtle",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L33",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "swampert",
+     "name": "Swampert",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L63",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "wartortle",
+     "name": "Wartortle",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L45",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "move-x-scissor-easy",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "move",
+    "move": "x-scissor",
+    "generation": 9,
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "ariados",
+     "name": "Ariados",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "gligar",
+     "name": "Gligar",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L40",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "gliscor",
+     "name": "Gliscor",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L40",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "kricketune",
+     "name": "Kricketune",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L30",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "pineco",
+     "name": "Pineco",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "scyther",
+     "name": "Scyther",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L40",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "spinarak",
+     "name": "Spinarak",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "venomoth",
+     "name": "Venomoth",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "vespiquen",
+     "name": "Vespiquen",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "volbeat",
+     "name": "Volbeat",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "yanmega",
+     "name": "Yanmega",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "zangoose",
+     "name": "Zangoose",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L40",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "move-psychic-easy",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "move",
+    "move": "psychic",
+    "generation": 9,
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "articuno-galar",
+     "name": "Articuno de Galar",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "drowzee",
+     "name": "Drowzee",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L37",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "entei",
+     "name": "Entei",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "espeon",
+     "name": "Espeon",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L40",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "exeggutor",
+     "name": "Exeggutor",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "grumpig",
+     "name": "Grumpig",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L52",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "metagross",
+     "name": "Metagross",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L34",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "ninetales",
+     "name": "Ninetales",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "raichu-alola",
+     "name": "Raichu de Alola",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L0",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "slowbro",
+     "name": "Slowbro",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L36",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "snorlax",
+     "name": "Snorlax",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "venusaur",
+     "name": "Venusaur",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "move-energy-ball-easy",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "move",
+    "move": "energy-ball",
+    "generation": 9,
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "blissey",
+     "name": "Blissey",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "bulbasaur",
+     "name": "Bulbasaur",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "flareon",
+     "name": "Flareon",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "ivysaur",
+     "name": "Ivysaur",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "magmar",
+     "name": "Magmar",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "meganium",
+     "name": "Meganium",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "sceptile",
+     "name": "Sceptile",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "egg+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "shiftry",
+     "name": "Shiftry",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "sunflora",
+     "name": "Sunflora",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "tropius",
+     "name": "Tropius",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "umbreon",
+     "name": "Umbreon",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "vileplume",
+     "name": "Vileplume",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "move-fire-fang-easy",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "move",
+    "move": "fire-fang",
+    "generation": 9,
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "arbok",
+     "name": "Arbok",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "arcanine",
+     "name": "Arcanine",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "charizard",
+     "name": "Charizard",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L19",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "granbull",
+     "name": "Granbull",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "growlithe",
+     "name": "Growlithe",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L24",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "heatran",
+     "name": "Heatran",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L18",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "ho-oh",
+     "name": "Ho-Oh",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "houndoom",
+     "name": "Houndoom",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "level-up+machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M+9L30",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "magcargo",
+     "name": "Magcargo",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "torkoal",
+     "name": "Torkoal",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "typhlosion",
+     "name": "Typhlosion",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "machine",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "9M",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "vulpix",
+     "name": "Vulpix",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "no lo aprende",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "resistance-fairy-hard",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "resistance",
+    "attackingType": "fairy",
+    "includeImmunity": true,
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "cobalion",
+     "name": "Cobalion",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "crobat",
+     "name": "Crobat",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "drapion",
+     "name": "Drapion",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "dustox",
+     "name": "Dustox",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "eternatus",
+     "name": "Eternatus",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "golbat",
+     "name": "Golbat",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "magnemite",
+     "name": "Magnemite",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "mawile",
+     "name": "Mawile",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "muk-alola",
+     "name": "Muk de Alola",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "nidoran-f",
+     "name": "Nidoran♀",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "nidorino",
+     "name": "Nidorino",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "weezing-galar",
+     "name": "Weezing de Galar",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "resistance-grass-hard",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "resistance",
+    "attackingType": "grass",
+    "includeImmunity": true,
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "archen",
+     "name": "Archen",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "archeops",
+     "name": "Archeops",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "celebi",
+     "name": "Celebi",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "charmander",
+     "name": "Charmander",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "ducklett",
+     "name": "Ducklett",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "farfetchd",
+     "name": "Farfetch’d",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "grimer",
+     "name": "Grimer",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "magneton",
+     "name": "Magneton",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "pidgeotto",
+     "name": "Pidgeotto",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "spearow",
+     "name": "Spearow",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "wingull",
+     "name": "Wingull",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "xatu",
+     "name": "Xatu",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "resistance-flying-hard",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "resistance",
+    "attackingType": "flying",
+    "includeImmunity": true,
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "armaldo",
+     "name": "Armaldo",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "cradily",
+     "name": "Cradily",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "electrode",
+     "name": "Electrode",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "kabuto",
+     "name": "Kabuto",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "kabutops",
+     "name": "Kabutops",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "larvitar",
+     "name": "Larvitar",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "lileep",
+     "name": "Lileep",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "omastar",
+     "name": "Omastar",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "pikachu",
+     "name": "Pikachu",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "regirock",
+     "name": "Regirock",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "shuckle",
+     "name": "Shuckle",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "solrock",
+     "name": "Solrock",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "resistance-ice-hard",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "resistance",
+    "attackingType": "ice",
+    "includeImmunity": true,
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "celesteela",
+     "name": "Celesteela",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "dialga",
+     "name": "Dialga",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "ferrothorn",
+     "name": "Ferrothorn",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "iron-treads",
+     "name": "Ferrodada",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "magnezone",
+     "name": "Magnezone",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "ninetales-alola",
+     "name": "Ninetales de Alola",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "octillery",
+     "name": "Octillery",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "omanyte",
+     "name": "Omanyte",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "registeel",
+     "name": "Registeel",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "sharpedo",
+     "name": "Sharpedo",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "starmie",
+     "name": "Starmie",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "staryu",
+     "name": "Staryu",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "resistance-bug-normal",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "resistance",
+    "attackingType": "bug",
+    "includeImmunity": true,
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "clefable",
+     "name": "Clefable",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "hoppip",
+     "name": "Hoppip",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "ledian",
+     "name": "Ledian",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "machamp",
+     "name": "Machamp",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "machoke",
+     "name": "Machoke",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "natu",
+     "name": "Natu",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "pidgey",
+     "name": "Pidgey",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "ponyta",
+     "name": "Ponyta",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "skiploom",
+     "name": "Skiploom",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "swoobat",
+     "name": "Swoobat",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "zapdos",
+     "name": "Zapdos",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "zubat",
+     "name": "Zubat",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.25",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.25",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "resistance-dark-normal",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "resistance",
+    "attackingType": "dark",
+    "includeImmunity": true,
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "absol",
+     "name": "Absol",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "darkrai",
+     "name": "Darkrai",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "gallade",
+     "name": "Gallade",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "hitmontop",
+     "name": "Hitmontop",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "jigglypuff",
+     "name": "Jigglypuff",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "machop",
+     "name": "Machop",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "marshadow",
+     "name": "Marshadow",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "mr-mime",
+     "name": "Mr. Mime",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "poliwrath",
+     "name": "Poliwrath",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "rapidash-galar",
+     "name": "Rapidash de Galar",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "snubbull",
+     "name": "Snubbull",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "wigglytuff",
+     "name": "Wigglytuff",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "resistance-fighting-normal",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "resistance",
+    "attackingType": "fighting",
+    "includeImmunity": true,
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "bronzong",
+     "name": "Bronzong",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "doduo",
+     "name": "Doduo",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "gengar",
+     "name": "Gengar",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "kadabra",
+     "name": "Kadabra",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "mandibuzz",
+     "name": "Mandibuzz",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "moltres",
+     "name": "Moltres",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "ninjask",
+     "name": "Ninjask",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.25",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.25",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "starmie",
+     "name": "Starmie",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "swalot",
+     "name": "Swalot",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "swellow",
+     "name": "Swellow",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "victreebel",
+     "name": "Victreebel",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "wobbuffet",
+     "name": "Wobbuffet",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "resistance-fire-normal",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "resistance",
+    "attackingType": "fire",
+    "includeImmunity": true,
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "aerodactyl",
+     "name": "Aerodactyl",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "empoleon",
+     "name": "Empoleon",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "flareon",
+     "name": "Flareon",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "golem-alola",
+     "name": "Golem de Alola",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "houndour",
+     "name": "Houndour",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "huntail",
+     "name": "Huntail",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "kabutops",
+     "name": "Kabutops",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.25",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.25",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "lairon",
+     "name": "Lairon",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "omastar",
+     "name": "Omastar",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.25",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.25",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "rapidash",
+     "name": "Rapidash",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "sealeo",
+     "name": "Sealeo",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "walrein",
+     "name": "Walrein",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "resistance-electric-easy",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "resistance",
+    "attackingType": "electric",
+    "includeImmunity": true,
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "ampharos",
+     "name": "Ampharos",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "bayleef",
+     "name": "Bayleef",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "chikorita",
+     "name": "Chikorita",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "electabuzz",
+     "name": "Electabuzz",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "flygon",
+     "name": "Flygon",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "kingdra",
+     "name": "Kingdra",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "marowak",
+     "name": "Marowak",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "palkia",
+     "name": "Palkia",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "rayquaza",
+     "name": "Rayquaza",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "salamence",
+     "name": "Salamence",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "sandslash",
+     "name": "Sandslash",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "torterra",
+     "name": "Torterra",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "resistance-poison-easy",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "resistance",
+    "attackingType": "poison",
+    "includeImmunity": true,
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "abra",
+     "name": "Abra",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "alakazam",
+     "name": "Alakazam",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "dugtrio",
+     "name": "Dugtrio",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "graveler",
+     "name": "Graveler",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.25",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.25",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "jynx",
+     "name": "Jynx",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "lugia",
+     "name": "Lugia",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "marowak",
+     "name": "Marowak",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "muk",
+     "name": "Muk",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "nidoking",
+     "name": "Nidoking",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.25",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.25",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "nidoqueen",
+     "name": "Nidoqueen",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.25",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.25",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "rhyhorn",
+     "name": "Rhyhorn",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.25",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.25",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "weezing",
+     "name": "Weezing",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "resistance-rock-easy",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "resistance",
+    "attackingType": "rock",
+    "includeImmunity": true,
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "dewgong",
+     "name": "Dewgong",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "dugtrio-alola",
+     "name": "Dugtrio de Alola",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.25",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.25",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "gorebyss",
+     "name": "Gorebyss",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "hitmonlee",
+     "name": "Hitmonlee",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "lucario",
+     "name": "Lucario",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.25",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.25",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "machamp",
+     "name": "Machamp",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "manaphy",
+     "name": "Manaphy",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "parasect",
+     "name": "Parasect",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "phanpy",
+     "name": "Phanpy",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "registeel",
+     "name": "Registeel",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "sandshrew",
+     "name": "Sandshrew",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "steelix",
+     "name": "Steelix",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.25",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.25",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "resistance-steel-easy",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "resistance",
+    "attackingType": "steel",
+    "includeImmunity": true,
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "arcanine",
+     "name": "Arcanine",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "cubone",
+     "name": "Cubone",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "diglett",
+     "name": "Diglett",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "golduck",
+     "name": "Golduck",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "kingler",
+     "name": "Kingler",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "magnemite",
+     "name": "Magnemite",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.25",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.25",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "magneton",
+     "name": "Magneton",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.25",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.25",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "ninetales",
+     "name": "Ninetales",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "onix",
+     "name": "Onix",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "raichu",
+     "name": "Raichu",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "rhydon",
+     "name": "Rhydon",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "voltorb",
+     "name": "Voltorb",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x0.5",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "weakness-electric-hard",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "weakness",
+    "attackingType": "electric",
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "beautifly",
+     "name": "Beautifly",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "chatot",
+     "name": "Chatot",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "corsola",
+     "name": "Corsola",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "drifblim",
+     "name": "Drifblim",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "kilowattrel",
+     "name": "Kilowattrel",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "lombre",
+     "name": "Lombre",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "noivern",
+     "name": "Noivern",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "qwilfish",
+     "name": "Qwilfish",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "togekiss",
+     "name": "Togekiss",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "togetic",
+     "name": "Togetic",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "walking-wake",
+     "name": "Ondulagua",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "yanma",
+     "name": "Yanma",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "weakness-flying-hard",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "weakness",
+    "attackingType": "flying",
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "abomasnow",
+     "name": "Abomasnow",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "anorith",
+     "name": "Anorith",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "dwebble",
+     "name": "Dwebble",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "escavalier",
+     "name": "Escavalier",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "genesect",
+     "name": "Genesect",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "infernape",
+     "name": "Infernape",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "ledyba",
+     "name": "Ledyba",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "mothim",
+     "name": "Mothim",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "roserade",
+     "name": "Roserade",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "scolipede",
+     "name": "Scolipede",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "shedinja",
+     "name": "Shedinja",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "sunkern",
+     "name": "Sunkern",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "weakness-water-hard",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "weakness",
+    "attackingType": "water",
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "bastiodon",
+     "name": "Bastiodon",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "claydol",
+     "name": "Claydol",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "gastrodon",
+     "name": "Gastrodon",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "golurk",
+     "name": "Golurk",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "gouging-fire",
+     "name": "Flamariete",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "magmortar",
+     "name": "Magmortar",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "mamoswine",
+     "name": "Mamoswine",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "reshiram",
+     "name": "Reshiram",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "seismitoad",
+     "name": "Seismitoad",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "slugma",
+     "name": "Slugma",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "swinub",
+     "name": "Swinub",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "volcarona",
+     "name": "Volcarona",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "weakness-ice-hard",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "weakness",
+    "attackingType": "ice",
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "baltoy",
+     "name": "Baltoy",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "emolga",
+     "name": "Emolga",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "hydreigon",
+     "name": "Hydreigon",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "leafeon",
+     "name": "Leafeon",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "nincada",
+     "name": "Nincada",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "nuzleaf",
+     "name": "Nuzleaf",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "piloswine",
+     "name": "Piloswine",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "scovillain",
+     "name": "Scovillain",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "snover",
+     "name": "Snover",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "talonflame",
+     "name": "Talonflame",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "tangrowth",
+     "name": "Tangrowth",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "unfezant",
+     "name": "Unfezant",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "weakness-dark-normal",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "weakness",
+    "attackingType": "dark",
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "chimecho",
+     "name": "Chimecho",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "dusknoir",
+     "name": "Dusknoir",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "gardevoir",
+     "name": "Gardevoir",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "girafarig",
+     "name": "Girafarig",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "hypno",
+     "name": "Hypno",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "lunala",
+     "name": "Lunala",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "malamar",
+     "name": "Malamar",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "misdreavus",
+     "name": "Misdreavus",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "ralts",
+     "name": "Ralts",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "sigilyph",
+     "name": "Sigilyph",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "spiritomb",
+     "name": "Spiritomb",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "victini",
+     "name": "Victini",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "weakness-bug-normal",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "weakness",
+    "attackingType": "bug",
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "azelf",
+     "name": "Azelf",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "carnivine",
+     "name": "Carnivine",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "celebi",
+     "name": "Celebi",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "cherrim",
+     "name": "Cherrim",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "cresselia",
+     "name": "Cresselia",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "grimer-alola",
+     "name": "Grimer de Alola",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "metang",
+     "name": "Metang",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "raticate-alola",
+     "name": "Raticate de Alola",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "slowking-galar",
+     "name": "Slowking de Galar",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "sneasel",
+     "name": "Sneasel",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "weavile",
+     "name": "Weavile",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "whimsicott",
+     "name": "Whimsicott",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "weakness-fairy-normal",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "weakness",
+    "attackingType": "fairy",
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "conkeldurr",
+     "name": "Conkeldurr",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "croagunk",
+     "name": "Croagunk",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "druddigon",
+     "name": "Druddigon",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "emboar",
+     "name": "Emboar",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "kyurem",
+     "name": "Kyurem",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "machoke",
+     "name": "Machoke",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "meowth-alola",
+     "name": "Meowth de Alola",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "skuntank",
+     "name": "Skuntank",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "stunky",
+     "name": "Stunky",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "terrakion",
+     "name": "Terrakion",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "virizion",
+     "name": "Virizion",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "zoroark",
+     "name": "Zoroark",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "weakness-fighting-normal",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "weakness",
+    "attackingType": "fighting",
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "articuno",
+     "name": "Articuno",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "bibarel",
+     "name": "Bibarel",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "chansey",
+     "name": "Chansey",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "cloyster",
+     "name": "Cloyster",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "ditto",
+     "name": "Ditto",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "glaceon",
+     "name": "Glaceon",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "hoothoot",
+     "name": "Hoothoot",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "lapras",
+     "name": "Lapras",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "rampardos",
+     "name": "Rampardos",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "regice",
+     "name": "Regice",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "smoochum",
+     "name": "Smoochum",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "staraptor",
+     "name": "Staraptor",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "weakness-grass-easy",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "weakness",
+    "attackingType": "grass",
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "donphan",
+     "name": "Donphan",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "electrode",
+     "name": "Electrode",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "geodude",
+     "name": "Geodude",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "kabuto",
+     "name": "Kabuto",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "miltank",
+     "name": "Miltank",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "omanyte",
+     "name": "Omanyte",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "quagsire",
+     "name": "Quagsire",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "raikou",
+     "name": "Raikou",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "rattata",
+     "name": "Rattata",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "seaking",
+     "name": "Seaking",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "sudowoodo",
+     "name": "Sudowoodo",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "suicune",
+     "name": "Suicune",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "weakness-fire-easy",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "weakness",
+    "attackingType": "fire",
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "dodrio",
+     "name": "Dodrio",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "fearow",
+     "name": "Fearow",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "forretress",
+     "name": "Forretress",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "meganium",
+     "name": "Meganium",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "metapod",
+     "name": "Metapod",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "paras",
+     "name": "Paras",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "parasect",
+     "name": "Parasect",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "pinsir",
+     "name": "Pinsir",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "porygon",
+     "name": "Porygon",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "scizor",
+     "name": "Scizor",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "smeargle",
+     "name": "Smeargle",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "tangela",
+     "name": "Tangela",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "weakness-ground-easy",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "weakness",
+    "attackingType": "ground",
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "charmander",
+     "name": "Charmander",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "ekans",
+     "name": "Ekans",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "entei",
+     "name": "Entei",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "feraligatr",
+     "name": "Feraligatr",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "hitmontop",
+     "name": "Hitmontop",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "lickitung",
+     "name": "Lickitung",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "magcargo",
+     "name": "Magcargo",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "magneton",
+     "name": "Magneton",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "nidorina",
+     "name": "Nidorina",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "pikachu",
+     "name": "Pikachu",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "snorlax",
+     "name": "Snorlax",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "voltorb",
+     "name": "Voltorb",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "weakness-rock-easy",
+   "status": "PASS",
+   "ruleset": "gen9",
+   "condition": {
+    "type": "weakness",
+    "attackingType": "rock",
+    "ruleset": "gen9"
+   },
+   "errors": [],
+   "cards": [
+    {
+     "pokemon": "abra",
+     "name": "Abra",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "articuno",
+     "name": "Articuno",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "butterfree",
+     "name": "Butterfree",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "caterpie",
+     "name": "Caterpie",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "delibird",
+     "name": "Delibird",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "ho-oh",
+     "name": "Ho-Oh",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "kangaskhan",
+     "name": "Kangaskhan",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "ledian",
+     "name": "Ledian",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x4",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "ponyta",
+     "name": "Ponyta",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "raticate",
+     "name": "Raticate",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "venusaur",
+     "name": "Venusaur",
+     "answer": "bomb",
+     "sourceA": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": false,
+      "detail": "x1",
+      "confirmed": true
+     }
+    },
+    {
+     "pokemon": "vulpix",
+     "name": "Vulpix",
+     "answer": "correct",
+     "sourceA": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     },
+     "sourceB": {
+      "value": true,
+      "detail": "x2",
+      "confirmed": true
+     }
+    }
+   ]
+  }
+ ]
+}

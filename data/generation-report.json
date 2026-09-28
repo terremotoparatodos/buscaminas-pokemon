@@ -1,0 +1,2726 @@
+{
+ "generatedAt": "2026-09-28T17:45:17.894Z",
+ "excludedPokemon": [
+  {
+   "pokemon": "growlithe-hisui",
+   "reason": "forma sin nombre en español"
+  },
+  {
+   "pokemon": "arcanine-hisui",
+   "reason": "forma sin nombre en español"
+  },
+  {
+   "pokemon": "voltorb-hisui",
+   "reason": "forma sin nombre en español"
+  },
+  {
+   "pokemon": "electrode-hisui",
+   "reason": "forma sin nombre en español"
+  },
+  {
+   "pokemon": "tauros-paldea-combat-breed",
+   "reason": "forma sin nombre en español"
+  },
+  {
+   "pokemon": "tauros-paldea-blaze-breed",
+   "reason": "forma sin nombre en español"
+  },
+  {
+   "pokemon": "tauros-paldea-aqua-breed",
+   "reason": "forma sin nombre en español"
+  },
+  {
+   "pokemon": "typhlosion-hisui",
+   "reason": "forma sin nombre en español"
+  },
+  {
+   "pokemon": "wooper-paldea",
+   "reason": "forma sin nombre en español"
+  },
+  {
+   "pokemon": "qwilfish-hisui",
+   "reason": "forma sin nombre en español"
+  },
+  {
+   "pokemon": "sneasel-hisui",
+   "reason": "forma sin nombre en español"
+  },
+  {
+   "species": "castform",
+   "reason": "formas con otros tipos: castform-sunny, castform-rainy, castform-snowy, showdown:Castform-Sunny, showdown:Castform-Rainy, showdown:Castform-Snowy"
+  },
+  {
+   "species": "deoxys",
+   "reason": "forma por defecto con nombre propio (deoxys-normal)"
+  },
+  {
+   "species": "wormadam",
+   "reason": "forma por defecto con nombre propio (wormadam-plant)"
+  },
+  {
+   "species": "rotom",
+   "reason": "formas con otros tipos: rotom-heat, rotom-wash, rotom-frost, rotom-fan, rotom-mow, showdown:Rotom-Heat, showdown:Rotom-Wash, showdown:Rotom-Frost, showdown:Rotom-Fan, showdown:Rotom-Mow"
+  },
+  {
+   "species": "giratina",
+   "reason": "forma por defecto con nombre propio (giratina-altered)"
+  },
+  {
+   "species": "shaymin",
+   "reason": "forma por defecto con nombre propio (shaymin-land)"
+  },
+  {
+   "species": "arceus",
+   "reason": "formas con otros tipos: showdown:Arceus-Bug, showdown:Arceus-Dark, showdown:Arceus-Dragon, showdown:Arceus-Electric, showdown:Arceus-Fairy, showdown:Arceus-Fighting, showdown:Arceus-Fire, showdown:Arceus-Flying, showdown:Arceus-Ghost, showdown:Arceus-Grass, showdown:Arceus-Ground, showdown:Arceus-Ice, showdown:Arceus-Poison, showdown:Arceus-Psychic, showdown:Arceus-Rock, showdown:Arceus-Steel, showdown:Arceus-Water"
+  },
+  {
+   "pokemon": "samurott-hisui",
+   "reason": "forma sin nombre en español"
+  },
+  {
+   "pokemon": "lilligant-hisui",
+   "reason": "forma sin nombre en español"
+  },
+  {
+   "species": "basculin",
+   "reason": "forma por defecto con nombre propio (basculin-red-striped)"
+  },
+  {
+   "species": "darmanitan",
+   "reason": "forma por defecto con nombre propio (darmanitan-standard)"
+  },
+  {
+   "pokemon": "zorua-hisui",
+   "reason": "forma sin nombre en español"
+  },
+  {
+   "pokemon": "zoroark-hisui",
+   "reason": "forma sin nombre en español"
+  },
+  {
+   "species": "frillish",
+   "reason": "forma por defecto con nombre propio (frillish-male)"
+  },
+  {
+   "species": "jellicent",
+   "reason": "forma por defecto con nombre propio (jellicent-male)"
+  },
+  {
+   "pokemon": "braviary-hisui",
+   "reason": "forma sin nombre en español"
+  },
+  {
+   "species": "tornadus",
+   "reason": "forma por defecto con nombre propio (tornadus-incarnate)"
+  },
+  {
+   "species": "thundurus",
+   "reason": "forma por defecto con nombre propio (thundurus-incarnate)"
+  },
+  {
+   "species": "landorus",
+   "reason": "forma por defecto con nombre propio (landorus-incarnate)"
+  },
+  {
+   "species": "keldeo",
+   "reason": "forma por defecto con nombre propio (keldeo-ordinary)"
+  },
+  {
+   "species": "meloetta",
+   "reason": "forma por defecto con nombre propio (meloetta-aria)"
+  },
+  {
+   "species": "pyroar",
+   "reason": "forma por defecto con nombre propio (pyroar-male)"
+  },
+  {
+   "species": "meowstic",
+   "reason": "forma por defecto con nombre propio (meowstic-male)"
+  },
+  {
+   "species": "aegislash",
+   "reason": "forma por defecto con nombre propio (aegislash-shield)"
+  },
+  {
+   "pokemon": "sliggoo-hisui",
+   "reason": "forma sin nombre en español"
+  },
+  {
+   "pokemon": "goodra-hisui",
+   "reason": "forma sin nombre en español"
+  },
+  {
+   "species": "pumpkaboo",
+   "reason": "forma por defecto con nombre propio (pumpkaboo-average)"
+  },
+  {
+   "species": "gourgeist",
+   "reason": "forma por defecto con nombre propio (gourgeist-average)"
+  },
+  {
+   "pokemon": "avalugg-hisui",
+   "reason": "forma sin nombre en español"
+  },
+  {
+   "species": "zygarde",
+   "reason": "forma por defecto con nombre propio (zygarde-50)"
+  },
+  {
+   "species": "hoopa",
+   "reason": "formas con otros tipos: hoopa-unbound, showdown:Hoopa-Unbound"
+  },
+  {
+   "pokemon": "decidueye-hisui",
+   "reason": "forma sin nombre en español"
+  },
+  {
+   "species": "oricorio",
+   "reason": "forma por defecto con nombre propio (oricorio-baile)"
+  },
+  {
+   "species": "lycanroc",
+   "reason": "forma por defecto con nombre propio (lycanroc-midday)"
+  },
+  {
+   "species": "wishiwashi",
+   "reason": "forma por defecto con nombre propio (wishiwashi-solo)"
+  },
+  {
+   "species": "silvally",
+   "reason": "formas con otros tipos: showdown:Silvally-Bug, showdown:Silvally-Dark, showdown:Silvally-Dragon, showdown:Silvally-Electric, showdown:Silvally-Fairy, showdown:Silvally-Fighting, showdown:Silvally-Fire, showdown:Silvally-Flying, showdown:Silvally-Ghost, showdown:Silvally-Grass, showdown:Silvally-Ground, showdown:Silvally-Ice, showdown:Silvally-Poison, showdown:Silvally-Psychic, showdown:Silvally-Rock, showdown:Silvally-Steel, showdown:Silvally-Water"
+  },
+  {
+   "species": "minior",
+   "reason": "forma por defecto con nombre propio (minior-red-meteor)"
+  },
+  {
+   "species": "mimikyu",
+   "reason": "forma por defecto con nombre propio (mimikyu-disguised)"
+  },
+  {
+   "species": "necrozma",
+   "reason": "formas con otros tipos: necrozma-dusk, necrozma-dawn, necrozma-ultra, showdown:Necrozma-Dusk-Mane, showdown:Necrozma-Dawn-Wings, showdown:Necrozma-Ultra"
+  },
+  {
+   "species": "toxtricity",
+   "reason": "forma por defecto con nombre propio (toxtricity-amped)"
+  },
+  {
+   "species": "eiscue",
+   "reason": "forma por defecto con nombre propio (eiscue-ice)"
+  },
+  {
+   "species": "indeedee",
+   "reason": "forma por defecto con nombre propio (indeedee-male)"
+  },
+  {
+   "species": "morpeko",
+   "reason": "forma por defecto con nombre propio (morpeko-full-belly)"
+  },
+  {
+   "species": "zacian",
+   "reason": "formas con otros tipos: zacian-crowned, showdown:Zacian-Crowned"
+  },
+  {
+   "species": "zamazenta",
+   "reason": "formas con otros tipos: zamazenta-crowned, showdown:Zamazenta-Crowned"
+  },
+  {
+   "species": "urshifu",
+   "reason": "forma por defecto con nombre propio (urshifu-single-strike)"
+  },
+  {
+   "species": "calyrex",
+   "reason": "formas con otros tipos: calyrex-ice, calyrex-shadow, showdown:Calyrex-Ice, showdown:Calyrex-Shadow"
+  },
+  {
+   "species": "basculegion",
+   "reason": "forma por defecto con nombre propio (basculegion-male)"
+  },
+  {
+   "species": "enamorus",
+   "reason": "forma por defecto con nombre propio (enamorus-incarnate)"
+  },
+  {
+   "species": "oinkologne",
+   "reason": "forma por defecto con nombre propio (oinkologne-male)"
+  },
+  {
+   "species": "maushold",
+   "reason": "forma por defecto con nombre propio (maushold-family-of-four)"
+  },
+  {
+   "species": "squawkabilly",
+   "reason": "forma por defecto con nombre propio (squawkabilly-green-plumage)"
+  },
+  {
+   "species": "palafin",
+   "reason": "forma por defecto con nombre propio (palafin-zero)"
+  },
+  {
+   "species": "tatsugiri",
+   "reason": "forma por defecto con nombre propio (tatsugiri-curly)"
+  },
+  {
+   "species": "dudunsparce",
+   "reason": "forma por defecto con nombre propio (dudunsparce-two-segment)"
+  },
+  {
+   "species": "ogerpon",
+   "reason": "formas con otros tipos: ogerpon-wellspring-mask, ogerpon-hearthflame-mask, ogerpon-cornerstone-mask, showdown:Ogerpon-Wellspring, showdown:Ogerpon-Hearthflame, showdown:Ogerpon-Cornerstone, showdown:Ogerpon-Wellspring-Tera, showdown:Ogerpon-Hearthflame-Tera, showdown:Ogerpon-Cornerstone-Tera"
+  }
+ ],
+ "sourceDiscrepancies": [
+  {
+   "pokemon": "pikachu",
+   "field": "gen9.move:fly",
+   "sourceA": null,
+   "sourceB": [
+    "9S53"
+   ]
+  },
+  {
+   "pokemon": "sandslash-alola",
+   "field": "gen9.move:rapid-spin",
+   "sourceA": null,
+   "sourceB": [
+    "9L1"
+   ]
+  },
+  {
+   "pokemon": "tentacruel",
+   "field": "gen9.move:rapid-spin",
+   "sourceA": [
+    "egg"
+   ],
+   "sourceB": null
+  },
+  {
+   "pokemon": "hitmonlee",
+   "field": "gen9.move:rapid-spin",
+   "sourceA": [
+    "egg"
+   ],
+   "sourceB": null
+  },
+  {
+   "pokemon": "hitmonchan",
+   "field": "gen9.move:rapid-spin",
+   "sourceA": [
+    "egg"
+   ],
+   "sourceB": null
+  },
+  {
+   "pokemon": "cinccino",
+   "field": "gen9.move:aqua-tail",
+   "sourceA": [
+    "egg"
+   ],
+   "sourceB": null
+  },
+  {
+   "pokemon": "decidueye",
+   "field": "gen9.move:close-combat",
+   "sourceA": [
+    "machine"
+   ],
+   "sourceB": null
+  },
+  {
+   "pokemon": "decidueye",
+   "field": "gen9.move:aura-sphere",
+   "sourceA": [
+    "machine"
+   ],
+   "sourceB": null
+  }
+ ],
+ "discardedCandidates": [
+  {
+   "condition": "ability-volt-absorb",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-flash-fire",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-levitate",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-intimidate",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-swift-swim",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-chlorophyll",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-sturdy",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-thick-fat",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-blaze",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-torrent",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-overgrow",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-static",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-lightning-rod",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-storm-drain",
+   "difficulty": "hard",
+   "reason": "pocos candidatos (7 positivos, 999 negativos)"
+  },
+  {
+   "condition": "ability-snow-cloak",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-keen-eye",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-inner-focus",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-synchronize",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-regenerator",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-prankster",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-rock-head",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-guts",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-own-tempo",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-natural-cure",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-serene-grace",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-dry-skin",
+   "difficulty": "hard",
+   "reason": "pocos candidatos (7 positivos, 999 negativos)"
+  },
+  {
+   "condition": "ability-justified",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-magic-guard",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-unaware",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-iron-fist",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-swarm",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-shed-skin",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-poison-point",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-pressure",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-cute-charm",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-volt-absorb",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-flash-fire",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-levitate",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-intimidate",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-swift-swim",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-chlorophyll",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-sturdy",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-thick-fat",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-blaze",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-torrent",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-overgrow",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-static",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-lightning-rod",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-storm-drain",
+   "difficulty": "hard",
+   "reason": "pocos candidatos (7 positivos, 999 negativos)"
+  },
+  {
+   "condition": "ability-snow-cloak",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-keen-eye",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-inner-focus",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-synchronize",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-regenerator",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-prankster",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-rock-head",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-guts",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-own-tempo",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-natural-cure",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-serene-grace",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-dry-skin",
+   "difficulty": "hard",
+   "reason": "pocos candidatos (7 positivos, 999 negativos)"
+  },
+  {
+   "condition": "ability-justified",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-magic-guard",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-unaware",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-iron-fist",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-swarm",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-shed-skin",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-poison-point",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-pressure",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-cute-charm",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-volt-absorb",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-flash-fire",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-levitate",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-intimidate",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-swift-swim",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-chlorophyll",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-sturdy",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-thick-fat",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-blaze",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-torrent",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-overgrow",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-static",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-lightning-rod",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-storm-drain",
+   "difficulty": "hard",
+   "reason": "pocos candidatos (7 positivos, 999 negativos)"
+  },
+  {
+   "condition": "ability-snow-cloak",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-keen-eye",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-inner-focus",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-synchronize",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-regenerator",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-prankster",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-rock-head",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-guts",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-own-tempo",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-natural-cure",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-serene-grace",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-dry-skin",
+   "difficulty": "hard",
+   "reason": "pocos candidatos (7 positivos, 999 negativos)"
+  },
+  {
+   "condition": "ability-justified",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-magic-guard",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-unaware",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-iron-fist",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-swarm",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-shed-skin",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-poison-point",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-pressure",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-cute-charm",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-volt-absorb",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-flash-fire",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-levitate",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-intimidate",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-swift-swim",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-chlorophyll",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-sturdy",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-thick-fat",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-blaze",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-torrent",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-overgrow",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-static",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-lightning-rod",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-storm-drain",
+   "difficulty": "hard",
+   "reason": "pocos candidatos (7 positivos, 999 negativos)"
+  },
+  {
+   "condition": "ability-snow-cloak",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-keen-eye",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-inner-focus",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-synchronize",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-regenerator",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-prankster",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-rock-head",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-guts",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-own-tempo",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-natural-cure",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-serene-grace",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-dry-skin",
+   "difficulty": "hard",
+   "reason": "pocos candidatos (7 positivos, 999 negativos)"
+  },
+  {
+   "condition": "ability-justified",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-magic-guard",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-unaware",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-iron-fist",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-swarm",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-shed-skin",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-poison-point",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-pressure",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "ability-cute-charm",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "ability-flash-fire",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-levitate",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-intimidate",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-swift-swim",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-chlorophyll",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-sturdy",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-thick-fat",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-blaze",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-torrent",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-overgrow",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-static",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-lightning-rod",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-storm-drain",
+   "difficulty": "normal",
+   "reason": "pocos candidatos (7 positivos, 999 negativos)"
+  },
+  {
+   "condition": "ability-snow-cloak",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-keen-eye",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-inner-focus",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-synchronize",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-technician",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-regenerator",
+   "difficulty": "normal",
+   "reason": "no hay 8 positivos adecuados para normal"
+  },
+  {
+   "condition": "ability-prankster",
+   "difficulty": "normal",
+   "reason": "no hay 8 positivos adecuados para normal"
+  },
+  {
+   "condition": "ability-guts",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-own-tempo",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-natural-cure",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-serene-grace",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-dry-skin",
+   "difficulty": "normal",
+   "reason": "pocos candidatos (7 positivos, 999 negativos)"
+  },
+  {
+   "condition": "ability-justified",
+   "difficulty": "normal",
+   "reason": "no hay 8 positivos adecuados para normal"
+  },
+  {
+   "condition": "ability-magic-guard",
+   "difficulty": "normal",
+   "reason": "no hay 8 positivos adecuados para normal"
+  },
+  {
+   "condition": "ability-unaware",
+   "difficulty": "normal",
+   "reason": "no hay 8 positivos adecuados para normal"
+  },
+  {
+   "condition": "ability-swarm",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-shed-skin",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-poison-point",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-sand-rush",
+   "difficulty": "normal",
+   "reason": "no hay 8 positivos adecuados para normal"
+  },
+  {
+   "condition": "ability-pressure",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-cute-charm",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-flash-fire",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-levitate",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-intimidate",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-swift-swim",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-chlorophyll",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-sturdy",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-thick-fat",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-blaze",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-torrent",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-overgrow",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-static",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-lightning-rod",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-storm-drain",
+   "difficulty": "normal",
+   "reason": "pocos candidatos (7 positivos, 999 negativos)"
+  },
+  {
+   "condition": "ability-snow-cloak",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-keen-eye",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-inner-focus",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-synchronize",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-technician",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-regenerator",
+   "difficulty": "normal",
+   "reason": "no hay 8 positivos adecuados para normal"
+  },
+  {
+   "condition": "ability-prankster",
+   "difficulty": "normal",
+   "reason": "no hay 8 positivos adecuados para normal"
+  },
+  {
+   "condition": "ability-guts",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-own-tempo",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-natural-cure",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-serene-grace",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-dry-skin",
+   "difficulty": "normal",
+   "reason": "pocos candidatos (7 positivos, 999 negativos)"
+  },
+  {
+   "condition": "ability-justified",
+   "difficulty": "normal",
+   "reason": "no hay 8 positivos adecuados para normal"
+  },
+  {
+   "condition": "ability-magic-guard",
+   "difficulty": "normal",
+   "reason": "no hay 8 positivos adecuados para normal"
+  },
+  {
+   "condition": "ability-unaware",
+   "difficulty": "normal",
+   "reason": "no hay 8 positivos adecuados para normal"
+  },
+  {
+   "condition": "ability-swarm",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-shed-skin",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-poison-point",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-sand-rush",
+   "difficulty": "normal",
+   "reason": "no hay 8 positivos adecuados para normal"
+  },
+  {
+   "condition": "ability-pressure",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-cute-charm",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-flash-fire",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-levitate",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-intimidate",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-swift-swim",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-chlorophyll",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-sturdy",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-thick-fat",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-blaze",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-torrent",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-overgrow",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-static",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-lightning-rod",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-storm-drain",
+   "difficulty": "normal",
+   "reason": "pocos candidatos (7 positivos, 999 negativos)"
+  },
+  {
+   "condition": "ability-snow-cloak",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-keen-eye",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-inner-focus",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-synchronize",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-technician",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-regenerator",
+   "difficulty": "normal",
+   "reason": "no hay 8 positivos adecuados para normal"
+  },
+  {
+   "condition": "ability-prankster",
+   "difficulty": "normal",
+   "reason": "no hay 8 positivos adecuados para normal"
+  },
+  {
+   "condition": "ability-guts",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-own-tempo",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-natural-cure",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-serene-grace",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-dry-skin",
+   "difficulty": "normal",
+   "reason": "pocos candidatos (7 positivos, 999 negativos)"
+  },
+  {
+   "condition": "ability-justified",
+   "difficulty": "normal",
+   "reason": "no hay 8 positivos adecuados para normal"
+  },
+  {
+   "condition": "ability-magic-guard",
+   "difficulty": "normal",
+   "reason": "no hay 8 positivos adecuados para normal"
+  },
+  {
+   "condition": "ability-unaware",
+   "difficulty": "normal",
+   "reason": "no hay 8 positivos adecuados para normal"
+  },
+  {
+   "condition": "ability-swarm",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-shed-skin",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-poison-point",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-sand-rush",
+   "difficulty": "normal",
+   "reason": "no hay 8 positivos adecuados para normal"
+  },
+  {
+   "condition": "ability-pressure",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-cute-charm",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-flash-fire",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-levitate",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-intimidate",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-swift-swim",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-chlorophyll",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-sturdy",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-thick-fat",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-blaze",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-torrent",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-overgrow",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-static",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-lightning-rod",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-storm-drain",
+   "difficulty": "normal",
+   "reason": "pocos candidatos (7 positivos, 999 negativos)"
+  },
+  {
+   "condition": "ability-snow-cloak",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-keen-eye",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-inner-focus",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-synchronize",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-technician",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-regenerator",
+   "difficulty": "normal",
+   "reason": "no hay 8 positivos adecuados para normal"
+  },
+  {
+   "condition": "ability-prankster",
+   "difficulty": "normal",
+   "reason": "no hay 8 positivos adecuados para normal"
+  },
+  {
+   "condition": "ability-guts",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-own-tempo",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-natural-cure",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-serene-grace",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-dry-skin",
+   "difficulty": "normal",
+   "reason": "pocos candidatos (7 positivos, 999 negativos)"
+  },
+  {
+   "condition": "ability-justified",
+   "difficulty": "normal",
+   "reason": "no hay 8 positivos adecuados para normal"
+  },
+  {
+   "condition": "ability-magic-guard",
+   "difficulty": "normal",
+   "reason": "no hay 8 positivos adecuados para normal"
+  },
+  {
+   "condition": "ability-unaware",
+   "difficulty": "normal",
+   "reason": "no hay 8 positivos adecuados para normal"
+  },
+  {
+   "condition": "ability-swarm",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-shed-skin",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-poison-point",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-sand-rush",
+   "difficulty": "normal",
+   "reason": "no hay 8 positivos adecuados para normal"
+  },
+  {
+   "condition": "ability-pressure",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "ability-cute-charm",
+   "difficulty": "normal",
+   "reason": "no hay 2 positivos no obvios para normal"
+  },
+  {
+   "condition": "ability-flash-fire",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-blaze",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-torrent",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-overgrow",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-static",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-lightning-rod",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-storm-drain",
+   "difficulty": "easy",
+   "reason": "pocos candidatos (7 positivos, 999 negativos)"
+  },
+  {
+   "condition": "ability-snow-cloak",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-synchronize",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-technician",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-regenerator",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-prankster",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-own-tempo",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-serene-grace",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-dry-skin",
+   "difficulty": "easy",
+   "reason": "pocos candidatos (7 positivos, 999 negativos)"
+  },
+  {
+   "condition": "ability-justified",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-magic-guard",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-unaware",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-iron-fist",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-clear-body",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-poison-point",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-sand-rush",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-cute-charm",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-flash-fire",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-blaze",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-torrent",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-overgrow",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-static",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-lightning-rod",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-storm-drain",
+   "difficulty": "easy",
+   "reason": "pocos candidatos (7 positivos, 999 negativos)"
+  },
+  {
+   "condition": "ability-snow-cloak",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-synchronize",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-technician",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-regenerator",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-prankster",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-own-tempo",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-serene-grace",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-dry-skin",
+   "difficulty": "easy",
+   "reason": "pocos candidatos (7 positivos, 999 negativos)"
+  },
+  {
+   "condition": "ability-justified",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-magic-guard",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-unaware",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-iron-fist",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-clear-body",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-poison-point",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-sand-rush",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-cute-charm",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-flash-fire",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-blaze",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-torrent",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-overgrow",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-static",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-lightning-rod",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-storm-drain",
+   "difficulty": "easy",
+   "reason": "pocos candidatos (7 positivos, 999 negativos)"
+  },
+  {
+   "condition": "ability-snow-cloak",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-synchronize",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-technician",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-regenerator",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-prankster",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-own-tempo",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-serene-grace",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-dry-skin",
+   "difficulty": "easy",
+   "reason": "pocos candidatos (7 positivos, 999 negativos)"
+  },
+  {
+   "condition": "ability-justified",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-magic-guard",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-unaware",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-iron-fist",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-clear-body",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-poison-point",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-sand-rush",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-cute-charm",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-flash-fire",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-blaze",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-torrent",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-overgrow",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-static",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-lightning-rod",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-storm-drain",
+   "difficulty": "easy",
+   "reason": "pocos candidatos (7 positivos, 999 negativos)"
+  },
+  {
+   "condition": "ability-snow-cloak",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-synchronize",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-technician",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-regenerator",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-prankster",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-own-tempo",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-serene-grace",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-dry-skin",
+   "difficulty": "easy",
+   "reason": "pocos candidatos (7 positivos, 999 negativos)"
+  },
+  {
+   "condition": "ability-justified",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-magic-guard",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-unaware",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-iron-fist",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-clear-body",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-poison-point",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-sand-rush",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "ability-cute-charm",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "move-dig",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "move-rock-slide",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "move-bug-buzz",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "move-outrage",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "move-zen-headbutt",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "move-close-combat",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "move-rapid-spin",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "move-dig",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "move-rock-slide",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "move-bug-buzz",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "move-outrage",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "move-earthquake",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "move-close-combat",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "move-rapid-spin",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "move-dig",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "move-rock-slide",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "move-bug-buzz",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "move-outrage",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "move-earthquake",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "move-close-combat",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "move-rapid-spin",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "move-dig",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "move-rock-slide",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "move-bug-buzz",
+   "difficulty": "hard",
+   "reason": "no hay 3 positivos no obvios para hard"
+  },
+  {
+   "condition": "move-outrage",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "move-earthquake",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "move-close-combat",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "move-rapid-spin",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "move-rock-slide",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "move-bug-buzz",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "move-outrage",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "move-rock-slide",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "move-bug-buzz",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "move-outrage",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "move-rock-slide",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "move-bug-buzz",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "move-outrage",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "move-rock-slide",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "move-bug-buzz",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "move-outrage",
+   "difficulty": "normal",
+   "reason": "no hay 4 impostores creíbles para normal"
+  },
+  {
+   "condition": "move-body-press",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "move-leech-life",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "move-body-press",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "move-leech-life",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "move-close-combat",
+   "difficulty": "easy",
+   "reason": "no hay 4 impostores creíbles para easy"
+  },
+  {
+   "condition": "move-body-press",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "move-leech-life",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "move-close-combat",
+   "difficulty": "easy",
+   "reason": "no hay 4 impostores creíbles para easy"
+  },
+  {
+   "condition": "move-body-press",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "move-leech-life",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "move-close-combat",
+   "difficulty": "easy",
+   "reason": "no hay 4 impostores creíbles para easy"
+  },
+  {
+   "condition": "resistance-normal",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "resistance-normal",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "resistance-psychic",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "resistance-ghost",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "resistance-dragon",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "resistance-normal",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "resistance-psychic",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "resistance-rock",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "resistance-ghost",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "resistance-dragon",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "resistance-normal",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "resistance-psychic",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "resistance-ghost",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "resistance-dragon",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "resistance-normal",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "resistance-psychic",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "resistance-ghost",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "resistance-dragon",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "weakness-normal",
+   "difficulty": "hard",
+   "reason": "pocos candidatos (0 positivos, 1014 negativos)"
+  },
+  {
+   "condition": "weakness-dragon",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "weakness-normal",
+   "difficulty": "hard",
+   "reason": "pocos candidatos (0 positivos, 1014 negativos)"
+  },
+  {
+   "condition": "weakness-dragon",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "weakness-normal",
+   "difficulty": "hard",
+   "reason": "pocos candidatos (0 positivos, 1014 negativos)"
+  },
+  {
+   "condition": "weakness-dragon",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "weakness-normal",
+   "difficulty": "hard",
+   "reason": "pocos candidatos (0 positivos, 1014 negativos)"
+  },
+  {
+   "condition": "weakness-dragon",
+   "difficulty": "hard",
+   "reason": "no hay 4 impostores creíbles para hard"
+  },
+  {
+   "condition": "weakness-normal",
+   "difficulty": "normal",
+   "reason": "pocos candidatos (0 positivos, 1014 negativos)"
+  },
+  {
+   "condition": "weakness-dragon",
+   "difficulty": "normal",
+   "reason": "no hay 8 positivos adecuados para normal"
+  },
+  {
+   "condition": "weakness-normal",
+   "difficulty": "normal",
+   "reason": "pocos candidatos (0 positivos, 1014 negativos)"
+  },
+  {
+   "condition": "weakness-dragon",
+   "difficulty": "normal",
+   "reason": "no hay 8 positivos adecuados para normal"
+  },
+  {
+   "condition": "weakness-normal",
+   "difficulty": "normal",
+   "reason": "pocos candidatos (0 positivos, 1014 negativos)"
+  },
+  {
+   "condition": "weakness-dragon",
+   "difficulty": "normal",
+   "reason": "no hay 8 positivos adecuados para normal"
+  },
+  {
+   "condition": "weakness-normal",
+   "difficulty": "normal",
+   "reason": "pocos candidatos (0 positivos, 1014 negativos)"
+  },
+  {
+   "condition": "weakness-dragon",
+   "difficulty": "normal",
+   "reason": "no hay 8 positivos adecuados para normal"
+  },
+  {
+   "condition": "weakness-normal",
+   "difficulty": "easy",
+   "reason": "pocos candidatos (0 positivos, 1014 negativos)"
+  },
+  {
+   "condition": "weakness-poison",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "weakness-psychic",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "weakness-ghost",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "weakness-dragon",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "weakness-steel",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "weakness-normal",
+   "difficulty": "easy",
+   "reason": "pocos candidatos (0 positivos, 1014 negativos)"
+  },
+  {
+   "condition": "weakness-poison",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "weakness-psychic",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "weakness-ghost",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "weakness-dragon",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "weakness-steel",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "weakness-normal",
+   "difficulty": "easy",
+   "reason": "pocos candidatos (0 positivos, 1014 negativos)"
+  },
+  {
+   "condition": "weakness-poison",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "weakness-psychic",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "weakness-ghost",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "weakness-dragon",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "weakness-steel",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "weakness-normal",
+   "difficulty": "easy",
+   "reason": "pocos candidatos (0 positivos, 1014 negativos)"
+  },
+  {
+   "condition": "weakness-poison",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "weakness-psychic",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "weakness-ghost",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "weakness-dragon",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  },
+  {
+   "condition": "weakness-steel",
+   "difficulty": "easy",
+   "reason": "no hay 8 positivos adecuados para easy"
+  }
+ ]
+}

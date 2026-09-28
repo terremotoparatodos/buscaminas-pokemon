@@ -1,0 +1,51 @@
+/* ═══════════════════════════════════════════════════════════════
+   LAYOUT VERTICAL · reel 1080 × 1982 (idéntico a PokeDuelo index.html)
+   banner 78 · CÁMARAS 1080×650 · JUEGO 1080×984 · banner+logo 270
+   Sólo se diseña dentro de #game: nada invade la zona de cámaras.
+   ═══════════════════════════════════════════════════════════════ */
+:root{
+  --h-banner-top: 78px;
+  --h-cams: 650px;
+  --h-game: 984px;
+  --h-banner-bottom: 270px;
+  --reel-w: 1080px;
+}
+
+/* SKY y GUTI quedan justo debajo de su cámara (izquierda / derecha) */
+#game{padding:22px 24px 24px;
+  grid-template-columns:250px 1fr 250px;
+  grid-template-rows:132px 16px 118px 64px 1fr;
+  grid-template-areas:"p0 head p1" "prog prog prog" "q q q" "st st st" "grid grid grid";
+  column-gap:16px; row-gap:14px}
+
+.player[data-p="0"]{--area:p0} .player[data-p="1"]{--area:p1}
+.player{gap:4px; padding-top:10px}
+.player .turn{position:absolute; top:-15px; font-size:13px; padding:5px 10px 4px}
+.player .pname{font-size:30px}
+.player .pscore{font-size:58px}
+.player .plabel{display:none}
+.player .phist{display:none}
+
+.head{flex-direction:column; gap:10px}
+.head .title{font-size:42px; text-align:center}
+.head .title span{display:block}
+.head .round-no{font-size:21px}
+.chip{font-size:15px}
+
+.question .q-text{font-size:38px}
+
+.status .hits{font-size:30px}
+.status .turnlbl{font-size:26px}
+.status .result{font-size:30px}
+
+.grid{gap:14px}
+.card{flex-direction:column; gap:6px; padding:8px 8px 12px}
+.card .art{width:118px; height:118px}
+.card .art img{width:118px; height:118px}
+.card .name{font-size:21px; text-align:center; max-width:100%}
+.card .name.long{font-size:17px}
+.card .badge{top:8px; left:8px}
+.card .detail{top:9px; right:9px}
+
+.stamp{font-size:66px}
+.stamp.final{font-size:54px}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- ═══════════════════════════════════════════════════════════════
+     BUSCAMINAS POKÉMON · basado en PokeDuelo
+     Reel vertical 1080 × 1982 (mismas zonas que PokeDuelo index.html).
+     Modo: un clic cada uno (js/config.js › turnMode)
+     Teclas: R grabación 1:1 · G guías · P panel · M mute · D debug · U deshacer clic
+             Enter/Espacio continuar · T reintentar · J cambiar jugador
+             ←/→ ronda anterior/siguiente · +/− puntaje del jugador activo
+     URL: ?seed=12345 partida reproducible · ?debug=1 panel de debug
+          ?nopanel=1 sin panel · ?clean=1 sin guías · #panel panel en otra pestaña
+     ═══════════════════════════════════════════════════════════════ -->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buscaminas Pokémon · Vertical</title>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/vertical.css">
+</head>
+<body class="vertical" data-layout="vertical">
+
+<div id="reel">
+  <div class="virtual" id="v-top"><span>BANNER · 1080×78</span></div>
+  <div class="virtual" id="v-cams"><span>CÁMARAS · 1080×650</span></div>
+
+  <!-- ═════════ ZONA JUEGO (única interactiva) ═════════ -->
+  <div id="game">
+    <section class="player slab" data-p="0"><div class="turn">▲ JUEGA</div><div class="pname outline"></div><div class="pscore outline">0</div><div class="plabel">PUNTOS</div><div class="phist"></div></section>
+    <header class="head"><div class="title outline">BUSCAMINAS <span>POKÉMON</span></div><div class="meta"><span class="round-no outline"></span><span class="chip"></span></div></header>
+    <section class="player slab" data-p="1"><div class="turn">▲ JUEGA</div><div class="pname outline"></div><div class="pscore outline">0</div><div class="plabel">PUNTOS</div><div class="phist"></div></section>
+    <div class="progress"></div>
+    <div class="question slab"><div class="q-text outline"></div><div class="q-rule"></div></div>
+    <div class="status"></div>
+    <div class="grid"></div>
+    <div class="stamp outline-s"></div>
+  </div>
+
+  <div class="virtual" id="v-bottom"><span>BANNER + LOGO · 1080×270</span></div>
+</div>
+
+<aside id="panel"></aside>
+
+<script src="data/game-data.js"></script>
+<script src="js/config.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/game.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

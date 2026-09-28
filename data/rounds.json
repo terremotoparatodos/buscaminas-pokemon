@@ -1,0 +1,1387 @@
+{
+  "generatedAt": "2026-09-28T17:45:17.889Z",
+  "seed": "banco-v1",
+  "note": "Las respuestas NO están acá: se recalculan con js/engine.js desde pokemon-facts.json. \"verified\" lo escribe scripts/validate-rounds.mjs.",
+  "rounds": [
+    {
+      "id": "ability-cursed-body-hard",
+      "family": "ability",
+      "difficulty": "hard",
+      "question": "POKÉMON QUE PUEDEN TENER CUERPO MALDITO",
+      "rule": "Habilidad normal u oculta",
+      "condition": {
+        "type": "ability",
+        "ability": "cursed-body",
+        "abilityMode": "any",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "banette",
+        "corsola-galar",
+        "cubone",
+        "cursola",
+        "dragapult",
+        "froslass",
+        "gengar",
+        "haunter",
+        "marowak-alola",
+        "polteageist",
+        "shuppet",
+        "snorunt"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "ability-sheer-force-hard",
+      "family": "ability",
+      "difficulty": "hard",
+      "question": "POKÉMON QUE PUEDEN TENER POTENCIA BRUTA",
+      "rule": "Habilidad normal u oculta",
+      "condition": {
+        "type": "ability",
+        "ability": "sheer-force",
+        "abilityMode": "any",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "dugtrio",
+        "feraligatr",
+        "hariyama",
+        "kingler",
+        "krabby",
+        "nidoking",
+        "nidoqueen",
+        "nidoran-m",
+        "nidorina",
+        "onix",
+        "steelix",
+        "tauros"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "ability-moxie-hard",
+      "family": "ability",
+      "difficulty": "hard",
+      "question": "POKÉMON QUE PUEDEN TENER AUTOESTIMA",
+      "rule": "Habilidad normal u oculta",
+      "condition": {
+        "type": "ability",
+        "ability": "moxie",
+        "abilityMode": "any",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "gyarados",
+        "heracross",
+        "honchkrow",
+        "krookodile",
+        "magikarp",
+        "mightyena",
+        "murkrow",
+        "pinsir",
+        "poochyena",
+        "salamence",
+        "scrafty",
+        "shelgon"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "ability-run-away-hard",
+      "family": "ability",
+      "difficulty": "hard",
+      "question": "POKÉMON QUE PUEDEN TENER FUGA",
+      "rule": "Habilidad normal u oculta",
+      "condition": {
+        "type": "ability",
+        "ability": "run-away",
+        "abilityMode": "any",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "butterfree",
+        "caterpie",
+        "dodrio",
+        "eevee",
+        "gloom",
+        "kakuna",
+        "oddish",
+        "rapidash",
+        "raticate",
+        "venomoth",
+        "venonat",
+        "weedle"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "ability-water-absorb-normal",
+      "family": "ability",
+      "difficulty": "normal",
+      "question": "POKÉMON QUE PUEDEN TENER ABSORBE AGUA",
+      "rule": "Habilidad normal u oculta",
+      "condition": {
+        "type": "ability",
+        "ability": "water-absorb",
+        "abilityMode": "any",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "cacturne",
+        "chinchou",
+        "goldeen",
+        "jolteon",
+        "lanturn",
+        "lapras",
+        "politoed",
+        "poliwrath",
+        "quagsire",
+        "seaking",
+        "vaporeon",
+        "wailord"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "ability-rock-head-normal",
+      "family": "ability",
+      "difficulty": "normal",
+      "question": "POKÉMON QUE PUEDEN TENER CABEZA ROCA",
+      "rule": "Habilidad normal u oculta",
+      "condition": {
+        "type": "ability",
+        "ability": "rock-head",
+        "abilityMode": "any",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "aerodactyl",
+        "aggron",
+        "camerupt",
+        "carracosta",
+        "geodude",
+        "golem",
+        "marowak-alola",
+        "relicanth",
+        "rhyhorn",
+        "rhyperior",
+        "tirtouga",
+        "tyrantrum"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "ability-volt-absorb-normal",
+      "family": "ability",
+      "difficulty": "normal",
+      "question": "POKÉMON QUE PUEDEN TENER ABSORBE ELECTRICIDAD",
+      "rule": "Habilidad normal u oculta",
+      "condition": {
+        "type": "ability",
+        "ability": "volt-absorb",
+        "abilityMode": "any",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "chinchou",
+        "dracozolt",
+        "jolteon",
+        "lanturn",
+        "mantine",
+        "minun",
+        "pachirisu",
+        "pawmot",
+        "poliwhirl",
+        "vaporeon",
+        "wooper",
+        "zeraora"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "ability-sand-veil-normal",
+      "family": "ability",
+      "difficulty": "normal",
+      "question": "POKÉMON QUE PUEDEN TENER VELO ARENA",
+      "rule": "Habilidad normal u oculta",
+      "condition": {
+        "type": "ability",
+        "ability": "sand-veil",
+        "abilityMode": "any",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "diglett",
+        "donphan",
+        "dugtrio-alola",
+        "excadrill",
+        "garchomp",
+        "golem",
+        "graveler",
+        "nosepass",
+        "probopass",
+        "sandshrew",
+        "sandslash",
+        "tyranitar"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "ability-shed-skin-easy",
+      "family": "ability",
+      "difficulty": "easy",
+      "question": "POKÉMON QUE PUEDEN TENER MUDAR",
+      "rule": "Habilidad normal u oculta",
+      "condition": {
+        "type": "ability",
+        "ability": "shed-skin",
+        "abilityMode": "any",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "arbok",
+        "dragonair",
+        "dratini",
+        "ekans",
+        "jynx",
+        "kakuna",
+        "metapod",
+        "paras",
+        "parasect",
+        "pupitar",
+        "seviper",
+        "victreebel"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "ability-levitate-easy",
+      "family": "ability",
+      "difficulty": "easy",
+      "question": "POKÉMON QUE PUEDEN TENER LEVITACIÓN",
+      "rule": "Habilidad normal u oculta",
+      "condition": {
+        "type": "ability",
+        "ability": "levitate",
+        "abilityMode": "any",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "dragonite",
+        "flygon",
+        "gastly",
+        "hypno",
+        "koffing",
+        "latias",
+        "latios",
+        "lunatone",
+        "mew",
+        "mewtwo",
+        "unown",
+        "weezing"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "ability-chlorophyll-easy",
+      "family": "ability",
+      "difficulty": "easy",
+      "question": "POKÉMON QUE PUEDEN TENER CLOROFILA",
+      "rule": "Habilidad normal u oculta",
+      "condition": {
+        "type": "ability",
+        "ability": "chlorophyll",
+        "abilityMode": "any",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "alakazam",
+        "beedrill",
+        "bellossom",
+        "bellsprout",
+        "exeggcute",
+        "exeggutor",
+        "jumpluff",
+        "slowbro",
+        "tangela",
+        "tentacruel",
+        "vileplume",
+        "weepinbell"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "ability-keen-eye-easy",
+      "family": "ability",
+      "difficulty": "easy",
+      "question": "POKÉMON QUE PUEDEN TENER VISTA LINCE",
+      "rule": "Habilidad normal u oculta",
+      "condition": {
+        "type": "ability",
+        "ability": "keen-eye",
+        "abilityMode": "any",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "fearow",
+        "furret",
+        "hitmonchan",
+        "kangaskhan",
+        "moltres",
+        "noctowl",
+        "pelipper",
+        "persian",
+        "pidgeot",
+        "sableye",
+        "skarmory",
+        "zapdos"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "move-drain-punch-hard",
+      "family": "move",
+      "difficulty": "hard",
+      "question": "POKÉMON QUE PUEDEN APRENDER PUÑO DRENAJE",
+      "rule": "Gen 9 · Escarlata/Púrpura + DLC · cualquier método",
+      "condition": {
+        "type": "move",
+        "move": "drain-punch",
+        "generation": 9,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "clefable",
+        "clefairy",
+        "combusken",
+        "kubfu",
+        "mankey",
+        "muk",
+        "pawmo",
+        "primeape",
+        "slowking",
+        "sneasler",
+        "sudowoodo",
+        "wigglytuff"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "move-spikes-hard",
+      "family": "move",
+      "difficulty": "hard",
+      "question": "POKÉMON QUE PUEDEN APRENDER PÚAS",
+      "rule": "Gen 9 · Escarlata/Púrpura + DLC · cualquier método",
+      "condition": {
+        "type": "move",
+        "move": "spikes",
+        "generation": 9,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "barboach",
+        "cloyster",
+        "delibird",
+        "forretress",
+        "glalie",
+        "groudon",
+        "hippowdon",
+        "numel",
+        "rhydon",
+        "sandslash-alola",
+        "shellder",
+        "whiscash"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "move-u-turn-hard",
+      "family": "move",
+      "difficulty": "hard",
+      "question": "POKÉMON QUE PUEDEN APRENDER IDA Y VUELTA",
+      "rule": "Gen 9 · Escarlata/Púrpura + DLC · cualquier método",
+      "condition": {
+        "type": "move",
+        "move": "u-turn",
+        "generation": 9,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "articuno",
+        "charjabug",
+        "galvantula",
+        "grubbin",
+        "illumise",
+        "joltik",
+        "meowth",
+        "moltres-galar",
+        "persian-alola",
+        "rayquaza",
+        "scizor",
+        "zapdos-galar"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "move-aqua-tail-hard",
+      "family": "move",
+      "difficulty": "hard",
+      "question": "POKÉMON QUE PUEDEN APRENDER ACUA COLA",
+      "rule": "Gen 9 · Escarlata/Púrpura + DLC · cualquier método",
+      "condition": {
+        "type": "move",
+        "move": "aqua-tail",
+        "generation": 9,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "blastoise",
+        "cyclizar",
+        "dewgong",
+        "dunsparce",
+        "golduck",
+        "ludicolo",
+        "luvdisc",
+        "minccino",
+        "poliwag",
+        "sandile",
+        "seadra",
+        "seel"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "move-aura-sphere-normal",
+      "family": "move",
+      "difficulty": "normal",
+      "question": "POKÉMON QUE PUEDEN APRENDER ESFERA AURAL",
+      "rule": "Gen 9 · Escarlata/Púrpura + DLC · cualquier método",
+      "condition": {
+        "type": "move",
+        "move": "aura-sphere",
+        "generation": 9,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "blastoise",
+        "breloom",
+        "chesnaught",
+        "hitmonchan",
+        "hitmonlee",
+        "jirachi",
+        "medicham",
+        "meditite",
+        "mew",
+        "mewtwo",
+        "raikou",
+        "toxicroak"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "move-waterfall-normal",
+      "family": "move",
+      "difficulty": "normal",
+      "question": "POKÉMON QUE PUEDEN APRENDER CASCADA",
+      "rule": "Gen 9 · Escarlata/Púrpura + DLC · cualquier método",
+      "condition": {
+        "type": "move",
+        "move": "waterfall",
+        "generation": 9,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "kingdra",
+        "kyogre",
+        "lotad",
+        "lugia",
+        "masquerain",
+        "psyduck",
+        "slowbro-galar",
+        "slowpoke",
+        "suicune",
+        "swanna",
+        "tentacool",
+        "tentacruel"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "move-dragon-dance-normal",
+      "family": "move",
+      "difficulty": "normal",
+      "question": "POKÉMON QUE PUEDEN APRENDER DANZA DRAGÓN",
+      "rule": "Gen 9 · Escarlata/Púrpura + DLC · cualquier método",
+      "condition": {
+        "type": "move",
+        "move": "dragon-dance",
+        "generation": 9,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "altaria",
+        "blaziken",
+        "charizard",
+        "charmeleon",
+        "crawdaunt",
+        "dragonite",
+        "exeggutor-alola",
+        "gabite",
+        "gible",
+        "gyarados",
+        "horsea",
+        "zekrom"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "move-hydro-pump-normal",
+      "family": "move",
+      "difficulty": "normal",
+      "question": "POKÉMON QUE PUEDEN APRENDER HIDROBOMBA",
+      "rule": "Gen 9 · Escarlata/Púrpura + DLC · cualquier método",
+      "condition": {
+        "type": "move",
+        "move": "hydro-pump",
+        "generation": 9,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "azumarill",
+        "dragonair",
+        "dratini",
+        "feebas",
+        "haxorus",
+        "lotad",
+        "milotic",
+        "raichu",
+        "slowpoke-galar",
+        "squirtle",
+        "swampert",
+        "wartortle"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "move-x-scissor-easy",
+      "family": "move",
+      "difficulty": "easy",
+      "question": "POKÉMON QUE PUEDEN APRENDER TIJERA X",
+      "rule": "Gen 9 · Escarlata/Púrpura + DLC · cualquier método",
+      "condition": {
+        "type": "move",
+        "move": "x-scissor",
+        "generation": 9,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "ariados",
+        "gligar",
+        "gliscor",
+        "kricketune",
+        "pineco",
+        "scyther",
+        "spinarak",
+        "venomoth",
+        "vespiquen",
+        "volbeat",
+        "yanmega",
+        "zangoose"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "move-psychic-easy",
+      "family": "move",
+      "difficulty": "easy",
+      "question": "POKÉMON QUE PUEDEN APRENDER PSÍQUICO",
+      "rule": "Gen 9 · Escarlata/Púrpura + DLC · cualquier método",
+      "condition": {
+        "type": "move",
+        "move": "psychic",
+        "generation": 9,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "articuno-galar",
+        "drowzee",
+        "entei",
+        "espeon",
+        "exeggutor",
+        "grumpig",
+        "metagross",
+        "ninetales",
+        "raichu-alola",
+        "slowbro",
+        "snorlax",
+        "venusaur"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "move-energy-ball-easy",
+      "family": "move",
+      "difficulty": "easy",
+      "question": "POKÉMON QUE PUEDEN APRENDER ENERGIBOLA",
+      "rule": "Gen 9 · Escarlata/Púrpura + DLC · cualquier método",
+      "condition": {
+        "type": "move",
+        "move": "energy-ball",
+        "generation": 9,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "blissey",
+        "bulbasaur",
+        "flareon",
+        "ivysaur",
+        "magmar",
+        "meganium",
+        "sceptile",
+        "shiftry",
+        "sunflora",
+        "tropius",
+        "umbreon",
+        "vileplume"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "move-fire-fang-easy",
+      "family": "move",
+      "difficulty": "easy",
+      "question": "POKÉMON QUE PUEDEN APRENDER COLMILLO ÍGNEO",
+      "rule": "Gen 9 · Escarlata/Púrpura + DLC · cualquier método",
+      "condition": {
+        "type": "move",
+        "move": "fire-fang",
+        "generation": 9,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "arbok",
+        "arcanine",
+        "charizard",
+        "granbull",
+        "growlithe",
+        "heatran",
+        "ho-oh",
+        "houndoom",
+        "magcargo",
+        "torkoal",
+        "typhlosion",
+        "vulpix"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "resistance-fairy-hard",
+      "family": "resistance",
+      "difficulty": "hard",
+      "question": "POKÉMON RESISTENTES AL TIPO HADA",
+      "rule": "Sólo por tipos · la inmunidad cuenta",
+      "condition": {
+        "type": "resistance",
+        "attackingType": "fairy",
+        "includeImmunity": true,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "cobalion",
+        "crobat",
+        "drapion",
+        "dustox",
+        "eternatus",
+        "golbat",
+        "magnemite",
+        "mawile",
+        "muk-alola",
+        "nidoran-f",
+        "nidorino",
+        "weezing-galar"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "resistance-grass-hard",
+      "family": "resistance",
+      "difficulty": "hard",
+      "question": "POKÉMON RESISTENTES AL TIPO PLANTA",
+      "rule": "Sólo por tipos · la inmunidad cuenta",
+      "condition": {
+        "type": "resistance",
+        "attackingType": "grass",
+        "includeImmunity": true,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "archen",
+        "archeops",
+        "celebi",
+        "charmander",
+        "ducklett",
+        "farfetchd",
+        "grimer",
+        "magneton",
+        "pidgeotto",
+        "spearow",
+        "wingull",
+        "xatu"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "resistance-flying-hard",
+      "family": "resistance",
+      "difficulty": "hard",
+      "question": "POKÉMON RESISTENTES AL TIPO VOLADOR",
+      "rule": "Sólo por tipos · la inmunidad cuenta",
+      "condition": {
+        "type": "resistance",
+        "attackingType": "flying",
+        "includeImmunity": true,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "armaldo",
+        "cradily",
+        "electrode",
+        "kabuto",
+        "kabutops",
+        "larvitar",
+        "lileep",
+        "omastar",
+        "pikachu",
+        "regirock",
+        "shuckle",
+        "solrock"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "resistance-ice-hard",
+      "family": "resistance",
+      "difficulty": "hard",
+      "question": "POKÉMON RESISTENTES AL TIPO HIELO",
+      "rule": "Sólo por tipos · la inmunidad cuenta",
+      "condition": {
+        "type": "resistance",
+        "attackingType": "ice",
+        "includeImmunity": true,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "celesteela",
+        "dialga",
+        "ferrothorn",
+        "iron-treads",
+        "magnezone",
+        "ninetales-alola",
+        "octillery",
+        "omanyte",
+        "registeel",
+        "sharpedo",
+        "starmie",
+        "staryu"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "resistance-bug-normal",
+      "family": "resistance",
+      "difficulty": "normal",
+      "question": "POKÉMON RESISTENTES AL TIPO BICHO",
+      "rule": "Sólo por tipos · la inmunidad cuenta",
+      "condition": {
+        "type": "resistance",
+        "attackingType": "bug",
+        "includeImmunity": true,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "clefable",
+        "hoppip",
+        "ledian",
+        "machamp",
+        "machoke",
+        "natu",
+        "pidgey",
+        "ponyta",
+        "skiploom",
+        "swoobat",
+        "zapdos",
+        "zubat"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "resistance-dark-normal",
+      "family": "resistance",
+      "difficulty": "normal",
+      "question": "POKÉMON RESISTENTES AL TIPO SINIESTRO",
+      "rule": "Sólo por tipos · la inmunidad cuenta",
+      "condition": {
+        "type": "resistance",
+        "attackingType": "dark",
+        "includeImmunity": true,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "absol",
+        "darkrai",
+        "gallade",
+        "hitmontop",
+        "jigglypuff",
+        "machop",
+        "marshadow",
+        "mr-mime",
+        "poliwrath",
+        "rapidash-galar",
+        "snubbull",
+        "wigglytuff"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "resistance-fighting-normal",
+      "family": "resistance",
+      "difficulty": "normal",
+      "question": "POKÉMON RESISTENTES AL TIPO LUCHA",
+      "rule": "Sólo por tipos · la inmunidad cuenta",
+      "condition": {
+        "type": "resistance",
+        "attackingType": "fighting",
+        "includeImmunity": true,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "bronzong",
+        "doduo",
+        "gengar",
+        "kadabra",
+        "mandibuzz",
+        "moltres",
+        "ninjask",
+        "starmie",
+        "swalot",
+        "swellow",
+        "victreebel",
+        "wobbuffet"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "resistance-fire-normal",
+      "family": "resistance",
+      "difficulty": "normal",
+      "question": "POKÉMON RESISTENTES AL TIPO FUEGO",
+      "rule": "Sólo por tipos · la inmunidad cuenta",
+      "condition": {
+        "type": "resistance",
+        "attackingType": "fire",
+        "includeImmunity": true,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "aerodactyl",
+        "empoleon",
+        "flareon",
+        "golem-alola",
+        "houndour",
+        "huntail",
+        "kabutops",
+        "lairon",
+        "omastar",
+        "rapidash",
+        "sealeo",
+        "walrein"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "resistance-electric-easy",
+      "family": "resistance",
+      "difficulty": "easy",
+      "question": "POKÉMON RESISTENTES AL TIPO ELÉCTRICO",
+      "rule": "Sólo por tipos · la inmunidad cuenta",
+      "condition": {
+        "type": "resistance",
+        "attackingType": "electric",
+        "includeImmunity": true,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "ampharos",
+        "bayleef",
+        "chikorita",
+        "electabuzz",
+        "flygon",
+        "kingdra",
+        "marowak",
+        "palkia",
+        "rayquaza",
+        "salamence",
+        "sandslash",
+        "torterra"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "resistance-poison-easy",
+      "family": "resistance",
+      "difficulty": "easy",
+      "question": "POKÉMON RESISTENTES AL TIPO VENENO",
+      "rule": "Sólo por tipos · la inmunidad cuenta",
+      "condition": {
+        "type": "resistance",
+        "attackingType": "poison",
+        "includeImmunity": true,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "abra",
+        "alakazam",
+        "dugtrio",
+        "graveler",
+        "jynx",
+        "lugia",
+        "marowak",
+        "muk",
+        "nidoking",
+        "nidoqueen",
+        "rhyhorn",
+        "weezing"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "resistance-rock-easy",
+      "family": "resistance",
+      "difficulty": "easy",
+      "question": "POKÉMON RESISTENTES AL TIPO ROCA",
+      "rule": "Sólo por tipos · la inmunidad cuenta",
+      "condition": {
+        "type": "resistance",
+        "attackingType": "rock",
+        "includeImmunity": true,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "dewgong",
+        "dugtrio-alola",
+        "gorebyss",
+        "hitmonlee",
+        "lucario",
+        "machamp",
+        "manaphy",
+        "parasect",
+        "phanpy",
+        "registeel",
+        "sandshrew",
+        "steelix"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "resistance-steel-easy",
+      "family": "resistance",
+      "difficulty": "easy",
+      "question": "POKÉMON RESISTENTES AL TIPO ACERO",
+      "rule": "Sólo por tipos · la inmunidad cuenta",
+      "condition": {
+        "type": "resistance",
+        "attackingType": "steel",
+        "includeImmunity": true,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "arcanine",
+        "cubone",
+        "diglett",
+        "golduck",
+        "kingler",
+        "magnemite",
+        "magneton",
+        "ninetales",
+        "onix",
+        "raichu",
+        "rhydon",
+        "voltorb"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "weakness-electric-hard",
+      "family": "weakness",
+      "difficulty": "hard",
+      "question": "POKÉMON DÉBILES AL TIPO ELÉCTRICO",
+      "rule": "Sólo por tipos (x2 o x4)",
+      "condition": {
+        "type": "weakness",
+        "attackingType": "electric",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "beautifly",
+        "chatot",
+        "corsola",
+        "drifblim",
+        "kilowattrel",
+        "lombre",
+        "noivern",
+        "qwilfish",
+        "togekiss",
+        "togetic",
+        "walking-wake",
+        "yanma"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "weakness-flying-hard",
+      "family": "weakness",
+      "difficulty": "hard",
+      "question": "POKÉMON DÉBILES AL TIPO VOLADOR",
+      "rule": "Sólo por tipos (x2 o x4)",
+      "condition": {
+        "type": "weakness",
+        "attackingType": "flying",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "abomasnow",
+        "anorith",
+        "dwebble",
+        "escavalier",
+        "genesect",
+        "infernape",
+        "ledyba",
+        "mothim",
+        "roserade",
+        "scolipede",
+        "shedinja",
+        "sunkern"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "weakness-water-hard",
+      "family": "weakness",
+      "difficulty": "hard",
+      "question": "POKÉMON DÉBILES AL TIPO AGUA",
+      "rule": "Sólo por tipos (x2 o x4)",
+      "condition": {
+        "type": "weakness",
+        "attackingType": "water",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "bastiodon",
+        "claydol",
+        "gastrodon",
+        "golurk",
+        "gouging-fire",
+        "magmortar",
+        "mamoswine",
+        "reshiram",
+        "seismitoad",
+        "slugma",
+        "swinub",
+        "volcarona"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "weakness-ice-hard",
+      "family": "weakness",
+      "difficulty": "hard",
+      "question": "POKÉMON DÉBILES AL TIPO HIELO",
+      "rule": "Sólo por tipos (x2 o x4)",
+      "condition": {
+        "type": "weakness",
+        "attackingType": "ice",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "baltoy",
+        "emolga",
+        "hydreigon",
+        "leafeon",
+        "nincada",
+        "nuzleaf",
+        "piloswine",
+        "scovillain",
+        "snover",
+        "talonflame",
+        "tangrowth",
+        "unfezant"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "weakness-dark-normal",
+      "family": "weakness",
+      "difficulty": "normal",
+      "question": "POKÉMON DÉBILES AL TIPO SINIESTRO",
+      "rule": "Sólo por tipos (x2 o x4)",
+      "condition": {
+        "type": "weakness",
+        "attackingType": "dark",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "chimecho",
+        "dusknoir",
+        "gardevoir",
+        "girafarig",
+        "hypno",
+        "lunala",
+        "malamar",
+        "misdreavus",
+        "ralts",
+        "sigilyph",
+        "spiritomb",
+        "victini"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "weakness-bug-normal",
+      "family": "weakness",
+      "difficulty": "normal",
+      "question": "POKÉMON DÉBILES AL TIPO BICHO",
+      "rule": "Sólo por tipos (x2 o x4)",
+      "condition": {
+        "type": "weakness",
+        "attackingType": "bug",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "azelf",
+        "carnivine",
+        "celebi",
+        "cherrim",
+        "cresselia",
+        "grimer-alola",
+        "metang",
+        "raticate-alola",
+        "slowking-galar",
+        "sneasel",
+        "weavile",
+        "whimsicott"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "weakness-fairy-normal",
+      "family": "weakness",
+      "difficulty": "normal",
+      "question": "POKÉMON DÉBILES AL TIPO HADA",
+      "rule": "Sólo por tipos (x2 o x4)",
+      "condition": {
+        "type": "weakness",
+        "attackingType": "fairy",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "conkeldurr",
+        "croagunk",
+        "druddigon",
+        "emboar",
+        "kyurem",
+        "machoke",
+        "meowth-alola",
+        "skuntank",
+        "stunky",
+        "terrakion",
+        "virizion",
+        "zoroark"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "weakness-fighting-normal",
+      "family": "weakness",
+      "difficulty": "normal",
+      "question": "POKÉMON DÉBILES AL TIPO LUCHA",
+      "rule": "Sólo por tipos (x2 o x4)",
+      "condition": {
+        "type": "weakness",
+        "attackingType": "fighting",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "articuno",
+        "bibarel",
+        "chansey",
+        "cloyster",
+        "ditto",
+        "glaceon",
+        "hoothoot",
+        "lapras",
+        "rampardos",
+        "regice",
+        "smoochum",
+        "staraptor"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "weakness-grass-easy",
+      "family": "weakness",
+      "difficulty": "easy",
+      "question": "POKÉMON DÉBILES AL TIPO PLANTA",
+      "rule": "Sólo por tipos (x2 o x4)",
+      "condition": {
+        "type": "weakness",
+        "attackingType": "grass",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "donphan",
+        "electrode",
+        "geodude",
+        "kabuto",
+        "miltank",
+        "omanyte",
+        "quagsire",
+        "raikou",
+        "rattata",
+        "seaking",
+        "sudowoodo",
+        "suicune"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "weakness-fire-easy",
+      "family": "weakness",
+      "difficulty": "easy",
+      "question": "POKÉMON DÉBILES AL TIPO FUEGO",
+      "rule": "Sólo por tipos (x2 o x4)",
+      "condition": {
+        "type": "weakness",
+        "attackingType": "fire",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "dodrio",
+        "fearow",
+        "forretress",
+        "meganium",
+        "metapod",
+        "paras",
+        "parasect",
+        "pinsir",
+        "porygon",
+        "scizor",
+        "smeargle",
+        "tangela"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "weakness-ground-easy",
+      "family": "weakness",
+      "difficulty": "easy",
+      "question": "POKÉMON DÉBILES AL TIPO TIERRA",
+      "rule": "Sólo por tipos (x2 o x4)",
+      "condition": {
+        "type": "weakness",
+        "attackingType": "ground",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "charmander",
+        "ekans",
+        "entei",
+        "feraligatr",
+        "hitmontop",
+        "lickitung",
+        "magcargo",
+        "magneton",
+        "nidorina",
+        "pikachu",
+        "snorlax",
+        "voltorb"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    },
+    {
+      "id": "weakness-rock-easy",
+      "family": "weakness",
+      "difficulty": "easy",
+      "question": "POKÉMON DÉBILES AL TIPO ROCA",
+      "rule": "Sólo por tipos (x2 o x4)",
+      "condition": {
+        "type": "weakness",
+        "attackingType": "rock",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "abra",
+        "articuno",
+        "butterfree",
+        "caterpie",
+        "delibird",
+        "ho-oh",
+        "kangaskhan",
+        "ledian",
+        "ponyta",
+        "raticate",
+        "venusaur",
+        "vulpix"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-09-28T23:03:31.285Z"
+    }
+  ]
+}

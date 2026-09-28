@@ -1,0 +1,14 @@
+{
+  "name": "buscaminas-pokemon",
+  "private": true,
+  "description": "Buscaminas Pokémon — modo de juego basado en PokeDuelo. Sin dependencias.",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "fetch": "node scripts/fetch-sources.mjs",
+    "generate": "node scripts/generate-rounds.mjs",
+    "validate": "node scripts/validate-rounds.mjs",
+    "build": "node scripts/generate-rounds.mjs && node scripts/validate-rounds.mjs",
+    "test": "node scripts/run-tests.mjs",
+    "serve": "node scripts/serve.mjs"
+  }
+}
