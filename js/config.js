@@ -11,9 +11,9 @@ window.BUSCAMINAS_CONFIG = {
   keepPointsOnBomb: true,     // al tocar una bomba se conservan los aciertos de esa ronda
   difficultyCurve: true,      // fácil → normal → difícil a lo largo de la partida
   audio: {                    // si el archivo no existe, se ignora en silencio
-    correct: 'assets/audio/correct.mp3',
-    bomb: 'assets/audio/bomb.mp3',
-    perfect: 'assets/audio/perfect.mp3',
-    nextRound: 'assets/audio/next-round.mp3',
+    correct: 'assets/audio/correct.wav',
+    bomb: 'assets/audio/bomb.wav',
+    perfect: 'assets/audio/perfect.wav',
+    nextRound: 'assets/audio/next-round.wav',
   },
 };

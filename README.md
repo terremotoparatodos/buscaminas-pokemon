@@ -72,7 +72,8 @@ El panel (botón *↗ Pestaña*) se puede abrir en otra pestaña: se sincroniza 
 `keepPointsOnBomb` (true), `difficultyCurve` (fácil → normal → difícil; en modo ronda va por pares para que A y B
 jueguen la misma dificultad), rutas de `audio`.
 
-Audio: `assets/audio/{correct,bomb,perfect,next-round}.mp3`. Si no existen, no suena nada.
+Audio: efectos arcade originales en `assets/audio/{correct,bomb,perfect,next-round}.wav`. Si un archivo no carga,
+el juego continúa con fallback silencioso.
 
 ## Datos: cómo se garantiza que no haya respuestas incorrectas
 
