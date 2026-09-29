@@ -217,6 +217,9 @@ body.panel-only #panel{position:static; margin:24px auto; width:min(760px,calc(1
 #panel footer{font-size:12px; color:#8d8e9c}
 #panel kbd{background:#343645; border-radius:4px; padding:1px 5px; font-size:11px}
 #panel .muted{color:#8d8e9c; font-size:12px}
+#panel .sync{margin-top:6px; color:#cfd0da; font-size:12px}
+#panel .sync.online{color:#58e36a}
+#panel .sync.error{color:#ff7a70}
 #panel pre{margin:6px 0 0; white-space:pre-wrap; font:11px/1.35 ui-monospace,Consolas,monospace; color:#cfd0da; background:#14151b; border-radius:7px; padding:8px}
 #panel table{width:100%; border-collapse:collapse; font-size:12px; margin-top:6px}
 #panel td{padding:2px 4px; border-bottom:1px solid #30313c; vertical-align:top}

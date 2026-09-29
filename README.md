@@ -31,6 +31,8 @@ datos, sprites, fuentes y fondo están en el proyecto).
 Parámetros de URL:
 
 - `?seed=12345` partida reproducible (mismo orden de rondas y mismas posiciones de cartas)
+- `?room=nombre` abre una sala compartida concreta; si se omite, el navegador crea una sala privada y actualiza el enlace
+- `?sync=0` desactiva la sincronización P2P y deja la partida sólo en ese navegador
 - `?debug=1` panel de debug (id de ronda, condición, correctos/bombas, multiplicadores, fuentes A/B)
 - `?nopanel=1` arranca sin panel · `?clean=1` sin guías de zonas · `#panel` sólo el panel (para otra pestaña)
 
@@ -74,6 +76,14 @@ jueguen la misma dificultad), rutas de `audio`.
 
 Audio: efectos arcade originales en `assets/audio/{correct,bomb,perfect,next-round}.wav`. Si un archivo no carga,
 el juego continúa con fallback silencioso.
+
+## Partida compartida entre PCs
+
+Abrí el enlace completo de la sala en las dos computadoras. La primera conserva el estado y, al conectarse la
+segunda, ambas reciben cada jugada en tiempo real. El panel muestra cuántas PCs están sincronizadas y ofrece
+**Copiar link compartido**. La conexión usa WebRTC P2P; los datos del juego viajan directamente entre los navegadores
+y el juego sigue funcionando en modo local si la conexión no está disponible. Para separar partidas, usá otro valor
+de `room`.
 
 ## Datos: cómo se garantiza que no haya respuestas incorrectas
 

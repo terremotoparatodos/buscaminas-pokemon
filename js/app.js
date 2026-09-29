@@ -14,7 +14,27 @@
   const G = window.BMGame, E = window.BMEngine, A = window.BMAudio;
   const CFG = Object.assign({}, G.DEFAULTS, window.BUSCAMINAS_CONFIG || {});
   const params = new URLSearchParams(location.search);
-  const KEY = 'buscaminas-state-v1';
+  const ROOM = (() => {
+    const requested = (params.get('room') || '').replace(/[^a-z0-9_-]/gi, '').slice(0, 80);
+    if (requested) return requested;
+    let saved = '';
+    try { saved = localStorage.getItem('buscaminas-default-room') || ''; } catch (_) {}
+    if (!saved) {
+      const token = crypto.randomUUID ? crypto.randomUUID().replace(/-/g, '') : Math.random().toString(36).slice(2) + Date.now().toString(36);
+      saved = `sala-${token.slice(0, 20)}`;
+      try { localStorage.setItem('buscaminas-default-room', saved); } catch (_) {}
+    }
+    const url = new URL(location.href); url.searchParams.set('room', saved); history.replaceState(null, '', url);
+    return saved;
+  })();
+  const KEY = `buscaminas-state-v2:${ROOM}`;
+  const CLIENT_ID = (() => {
+    try {
+      let id = sessionStorage.getItem('buscaminas-client-id');
+      if (!id) { id = crypto.randomUUID ? crypto.randomUUID() : `${Date.now()}-${Math.random()}`; sessionStorage.setItem('buscaminas-client-id', id); }
+      return id;
+    } catch (_) { return `${Date.now()}-${Math.random()}`; }
+  })();
   const DIFF_TEXT = { easy: 'FÁCIL', normal: 'NORMAL', hard: 'DIFÍCIL' };
   const up = s => String(s).toLocaleUpperCase('es');
   const $ = s => document.querySelector(s);
@@ -42,19 +62,34 @@
   let S = null;
   try { S = JSON.parse(localStorage.getItem(KEY)); } catch (_) {}
   const urlSeed = params.get('seed');
-  if (!validState(S) || (urlSeed && S.seed !== urlSeed)) S = newMatch(urlSeed || undefined);
+  if (!validState(S) || (urlSeed && S.seed !== urlSeed)) S = newMatch(urlSeed || ROOM);
   S.config = Object.assign({}, S.config, flags(CFG));
+  if (!S.sync) S.sync = { rev: 0, by: '' };
 
   let bc = null;
-  try { bc = new BroadcastChannel('buscaminas'); bc.onmessage = e => receive(e.data); } catch (_) {}
+  let remotePublish = () => {};
+  try { bc = new BroadcastChannel(`buscaminas:${ROOM}`); bc.onmessage = e => receive(e.data); } catch (_) {}
   addEventListener('storage', e => { if (e.key === KEY && e.newValue) { try { receive(JSON.parse(e.newValue)); } catch (_) {} } });
+  const stamp = s => [s && s.sync ? s.sync.rev || 0 : 0, s && s.sync ? s.sync.by || '' : ''];
+  const newer = (a, b) => {
+    const [ar, ab] = stamp(a), [br, bb] = stamp(b);
+    return ar > br || (ar === br && ab > bb);
+  };
   function commit() {
+    S.sync = { rev: (S.sync && S.sync.rev || 0) + 1, by: CLIENT_ID };
     S.v = Date.now();
     try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (_) {}
     try { bc && bc.postMessage(S); } catch (_) {}
+    remotePublish(S);
     render();
   }
-  function receive(ns) { if (ns && ns.v > (S.v || 0) && validState(ns)) { S = ns; render(); } }
+  function receive(ns) {
+    if (validState(ns) && newer(ns, S)) {
+      S = ns;
+      try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (_) {}
+      render();
+    }
+  }
 
   /* ─────────── SPRITES: todos los de la partida, precargados al abrir ─────────── */
   const spriteOf = key => DATA.facts.pokemon[key].sprite;
@@ -266,7 +301,7 @@
     resetScores: () => { if (confirm('¿Poner los dos marcadores en 0?')) { G.resetScores(S); commit(); } },
     newMatch: seed => {
       if (!confirm('¿Empezar una partida nueva? Se pierde la actual.')) return;
-      const v = S.v; S = newMatch(seed || undefined); S.v = v; view.key = null; view.first = true; preload(); commit();
+      const v = S.v, sync = S.sync; S = newMatch(seed || ROOM); S.v = v; S.sync = sync; view.key = null; view.first = true; preload(); commit();
     },
   };
 
@@ -290,6 +325,8 @@
       <div class="line"><button id="b-sound" title="Silenciar (M)">🔊</button><button id="b-pop" title="Abrir el panel en otra pestaña">↗ Pestaña</button></div></header>
     <section><h3>Partida</h3>
       <div class="muted">Seed <b id="p-seed"></b> · ronda <b id="p-round"></b> · <span id="p-diff"></span></div>
+      <div class="sync" id="p-sync"></div>
+      <div class="line" style="margin-top:8px"><button id="b-copy-link">🔗 Copiar link compartido</button></div>
       <div class="line" style="margin-top:8px"><button id="b-prev" title="←">◀ Anterior</button><button id="b-retry" title="T">↺ Reintentar</button><button id="b-skip" title="→">Siguiente ▶</button></div>
       <label>Nueva partida (seed opcional, para reproducirla)</label>
       <div class="line"><input id="p-seed-in" placeholder="p. ej. 12345"><button class="danger" id="b-new">Nueva partida</button></div>
@@ -307,6 +344,13 @@
   const pq = s => panel.querySelector(s);
   pq('#b-sound').onclick = () => { A.setMuted(!A.isMuted()); updateSound(); };
   pq('#b-pop').onclick = () => window.open(location.href.split('#')[0] + '#panel', '_blank');
+  pq('#b-copy-link').onclick = async () => {
+    const button = pq('#b-copy-link');
+    const url = new URL(location.href); url.searchParams.set('room', ROOM); url.hash = '';
+    try { await navigator.clipboard.writeText(url.href); button.textContent = '✓ Link copiado'; }
+    catch (_) { button.textContent = url.href; }
+    setTimeout(() => { button.textContent = '🔗 Copiar link compartido'; }, 2200);
+  };
   pq('#b-prev').onclick = act.prev;
   pq('#b-retry').onclick = act.retry;
   pq('#b-skip').onclick = act.skip;
@@ -320,11 +364,22 @@
     if (d) { const [i, v] = d.dataset.adj.split(':').map(Number); act.adjust(i, v); }
   });
   function updateSound() { pq('#b-sound').textContent = A.isMuted() ? '🔇' : '🔊'; }
+  let syncInfo = { phase: 'connecting', peers: 0 };
+  function updateSync() {
+    const node = pq('#p-sync');
+    if (!node) return;
+    node.className = `sync ${syncInfo.phase === 'error' ? 'error' : syncInfo.peers ? 'online' : ''}`;
+    node.textContent = syncInfo.phase === 'error' ? '● Modo local · sin conexión P2P'
+      : syncInfo.phase === 'connecting' ? '● Conectando la sala…'
+      : syncInfo.peers ? `● ${syncInfo.peers + 1} PCs sincronizadas · sala ${ROOM}`
+      : `● Esperando la segunda PC · sala ${ROOM}`;
+  }
 
   function renderPanel(def, solution) {
     pq('#p-seed').textContent = S.seed;
     pq('#p-round').textContent = `${S.index + 1}/${S.order.length}${S.finished ? ' (terminada)' : ''}`;
     pq('#p-diff').textContent = DIFF_TEXT[def.difficulty];
+    updateSync();
     pq('#b-retry').disabled = !S.config.allowRetry;
     [0, 1].forEach(i => {
       const b = pq(`[data-active="${i}"]`);
@@ -385,6 +440,15 @@
   });
 
   A.init(CFG.audio);
+  if (window.BMSync && params.get('sync') !== '0') {
+    const link = window.BMSync.connect({
+      roomId: ROOM,
+      getState: () => S,
+      onState: receive,
+      onStatus: info => { syncInfo = info; updateSync(); },
+    });
+    remotePublish = link.publish;
+  } else syncInfo = { phase: 'error', peers: 0 };
   updateSound();
   document.fonts && document.fonts.ready.then(() => { view.key = null; view.first = true; render(); });
   fit();
