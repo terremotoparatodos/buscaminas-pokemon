@@ -194,11 +194,24 @@
     const serial = (state.rerolls[state.index] || 0) + 1;
     state.rerolls[state.index] = serial;
 
+    // Recuerda todas las opciones descartadas en esta posición. Así el botón no
+    // alterna entre la ronda original y la última elegida al pulsarlo varias veces.
+    state.rerollHistory = state.rerollHistory || {};
+    const discarded = state.rerollHistory[state.index] || [current.id];
+    if (!discarded.includes(current.id)) discarded.push(current.id);
+    state.rerollHistory[state.index] = discarded;
+
     const occupied = new Set(state.order);
+    const unavailable = new Set([...occupied, ...discarded]);
     const recent = new Set(state.order.slice(Math.max(0, state.index - 4), state.index)
       .flatMap(id => roundById(data, id).pokemon));
     const rand = E.rng(`${state.seed}:reroll:${state.index}:${serial}`);
-    const candidates = data.rounds.filter(r => !occupied.has(r.id));
+    let candidates = data.rounds.filter(r => !unavailable.has(r.id));
+    // Sólo después de agotar todo el banco se habilitan otra vez las descartadas.
+    if (!candidates.length) {
+      state.rerollHistory[state.index] = [current.id];
+      candidates = data.rounds.filter(r => !occupied.has(r.id));
+    }
     if (!candidates.length) return false;
 
     let best = null, bestScore = -Infinity;
@@ -210,6 +223,7 @@
     }
 
     state.order[state.index] = best.id;
+    state.rerollHistory[state.index].push(best.id);
     state.round = freshRound(state, data, 0);
     return true;
   }

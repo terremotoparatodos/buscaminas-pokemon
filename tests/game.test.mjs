@@ -225,6 +225,18 @@ test('reroll: quita sólo los puntos parciales de la ronda en curso', () => {
   assert.deepEqual(s.round.scoresBefore, [12, 12]);
 });
 
+test('reroll: ofrece muchas opciones seguidas sin volver a una ya descartada', () => {
+  const s = match('muchos-rerolls');
+  const seen = new Set([s.round.id]);
+  for (let i = 0; i < 12; i++) {
+    assert.equal(G.reroll(s, DATA), true);
+    assert.equal(seen.has(s.round.id), false, `la opción ${i + 1} no debe repetirse`);
+    seen.add(s.round.id);
+  }
+  assert.equal(seen.size, 13);
+  assert.equal(s.index, 0);
+});
+
 test('continuar sólo con la ronda terminada (salvo admin) y fin de partida', () => {
   const s = match('fin', { totalRounds: 2 });
   assert.equal(G.next(s, DATA), false);
