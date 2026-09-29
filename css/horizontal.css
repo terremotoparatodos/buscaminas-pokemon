@@ -16,8 +16,8 @@
 
 #game{padding:14px 16px;
   grid-template-columns:290px 1fr 290px;
-  grid-template-rows:50px 12px 76px 52px 1fr;
-  grid-template-areas:"p0 head p1" "p0 prog p1" "p0 q p1" "p0 st p1" "p0 grid p1";
+  grid-template-rows:50px 12px 76px 1fr 52px;
+  grid-template-areas:"p0 head p1" "p0 prog p1" "p0 q p1" "p0 grid p1" "p0 st p1";
   column-gap:16px; row-gap:10px}
 
 .player[data-p="0"]{--area:p0} .player[data-p="1"]{--area:p1}

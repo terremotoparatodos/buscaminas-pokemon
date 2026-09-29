@@ -11,12 +11,15 @@
   --reel-w: 1080px;
 }
 
-/* SKY y GUTI quedan justo debajo de su cámara (izquierda / derecha) */
+/* Para el reel sólo quedan la consigna, el estado de la ronda y el tablero. */
 #game{padding:22px 24px 24px;
-  grid-template-columns:250px 1fr 250px;
-  grid-template-rows:132px 16px 118px 64px 1fr;
-  grid-template-areas:"p0 head p1" "prog prog prog" "q q q" "st st st" "grid grid grid";
-  column-gap:16px; row-gap:14px}
+  grid-template-columns:1fr;
+  grid-template-rows:118px 64px 1fr;
+  grid-template-areas:"q" "st" "grid";
+  row-gap:14px}
+
+/* El marcador, el título y el progreso no forman parte de la captura vertical. */
+.player, .head, .progress{display:none}
 
 .player[data-p="0"]{--area:p0} .player[data-p="1"]{--area:p1}
 .player{gap:4px; padding-top:10px}

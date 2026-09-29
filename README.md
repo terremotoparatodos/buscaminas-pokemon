@@ -40,9 +40,9 @@ Igual que PokeDuelo, cada orientación tiene su diseño propio (`css/vertical.cs
 motor, lógica, banco de rondas y puntuación (`js/*`). Las zonas virtuales son idénticas a PokeDuelo:
 
 - **Vertical** (`index.html`): banner 1080×78 · **cámaras 1080×650** · juego 1080×984 · banner+logo 1080×270.
-  Marcadores de SKY/GUTI arriba a izquierda/derecha (bajo su cámara), cartas verticales 4×3.
+  La zona de juego empieza directamente con la consigna; debajo quedan el estado y las cartas verticales 4×3.
 - **Horizontal** (`horizontal.html`): **cámaras 1920×482** · juego 1920×598. Marcadores en columnas laterales,
-  tablero al centro, cartas apaisadas 4×3.
+  tablero al centro, cartas apaisadas 4×3 y estado de la ronda debajo del tablero.
 
 El tablero nunca sale de la zona de juego (verificado automáticamente en QA) y no hay scroll durante la partida.
 
