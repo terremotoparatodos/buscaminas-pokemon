@@ -292,6 +292,7 @@
     pick: k => { if (G.pick(S, DATA, k).type !== 'ignored') commit(); },
     next: () => { if (G.next(S, DATA)) commit(); },
     retry: () => { if (G.retry(S, DATA)) commit(); },
+    reroll: () => { if (G.reroll(S, DATA)) { view.key = null; preload(); commit(); } },
     skip: () => { if (G.next(S, DATA, { force: true })) commit(); },
     prev: () => { if (G.prev(S, DATA)) commit(); },
     swap: () => { G.setActive(S, 1 - S.active); commit(); },
@@ -327,6 +328,7 @@
       <div class="muted">Seed <b id="p-seed"></b> · ronda <b id="p-round"></b> · <span id="p-diff"></span></div>
       <div class="sync" id="p-sync"></div>
       <div class="line" style="margin-top:8px"><button id="b-copy-link">🔗 Copiar link compartido</button></div>
+      <div class="line" style="margin-top:8px"><button id="b-reroll" title="Cambia la consigna y los 12 Pokémon sin avanzar ni alterar el marcador">🎲 Reroll ronda actual</button></div>
       <div class="line" style="margin-top:8px"><button id="b-prev" title="←">◀ Anterior</button><button id="b-retry" title="T">↺ Reintentar</button><button id="b-skip" title="→">Siguiente ▶</button></div>
       <label>Nueva partida (seed opcional, para reproducirla)</label>
       <div class="line"><input id="p-seed-in" placeholder="p. ej. 12345"><button class="danger" id="b-new">Nueva partida</button></div>
@@ -353,6 +355,7 @@
   };
   pq('#b-prev').onclick = act.prev;
   pq('#b-retry').onclick = act.retry;
+  pq('#b-reroll').onclick = act.reroll;
   pq('#b-skip').onclick = act.skip;
   pq('#b-new').onclick = () => act.newMatch(pq('#p-seed-in').value.trim());
   pq('#b-swap').onclick = act.swap;

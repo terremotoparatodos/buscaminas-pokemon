@@ -199,6 +199,32 @@ test('reintentar: sólo con la ronda terminada; restaura puntaje, turno inicial 
   assert.equal(G.retry(c, DATA), false, 'desactivable por configuración');
 });
 
+test('reroll: cambia la ronda y conserva número, marcador y orden sin duplicados', () => {
+  const s = match('reroll');
+  for (let i = 0; i < 3; i++) G.next(s, DATA, { force: true });
+  G.adjustScore(s, 0, 12); G.adjustScore(s, 1, 12);
+  const oldId = s.round.id;
+  assert.equal(G.reroll(s, DATA), true);
+  assert.equal(s.index, 3, 'sigue siendo la ronda 4');
+  assert.deepEqual(s.scores, [12, 12]);
+  assert.notEqual(s.round.id, oldId);
+  assert.equal(s.round.status, 'playing');
+  assert.deepEqual(s.round.picked, []);
+  assert.equal(new Set(s.order).size, s.order.length);
+  assert.equal(diff(s.round.id), diff(oldId), 'mantiene la dificultad prevista');
+});
+
+test('reroll: quita sólo los puntos parciales de la ronda en curso', () => {
+  const s = match('reroll-parcial');
+  G.adjustScore(s, 0, 12); G.adjustScore(s, 1, 12);
+  const { ok } = split(s);
+  G.pick(s, DATA, ok[0]); G.pick(s, DATA, ok[1]);
+  assert.deepEqual(s.scores, [13, 13]);
+  assert.equal(G.reroll(s, DATA), true);
+  assert.deepEqual(s.scores, [12, 12]);
+  assert.deepEqual(s.round.scoresBefore, [12, 12]);
+});
+
 test('continuar sólo con la ronda terminada (salvo admin) y fin de partida', () => {
   const s = match('fin', { totalRounds: 2 });
   assert.equal(G.next(s, DATA), false);

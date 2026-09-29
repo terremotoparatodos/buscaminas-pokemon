@@ -177,6 +177,43 @@
     return true;
   }
 
+  /* Cambia por completo la ronda actual sin avanzar el contador. La elección queda
+     guardada en el estado compartido, así que ambas PCs ven exactamente el mismo reroll. */
+  function reroll(state, data) {
+    if (state.finished) return false;
+    const current = roundById(data, state.round.id);
+
+    // Si había clics a medio jugar, quita sólo los puntos producidos por esos clics.
+    // Una ronda ya cerrada conserva el marcador visible (útil al retomar una grabación).
+    if (state.round.status === 'playing') {
+      state.scores = state.scores.map((score, player) => score - state.round.pointsBy[player]);
+    }
+    state.history = state.history.filter(h => h.index !== state.index);
+
+    state.rerolls = state.rerolls || {};
+    const serial = (state.rerolls[state.index] || 0) + 1;
+    state.rerolls[state.index] = serial;
+
+    const occupied = new Set(state.order);
+    const recent = new Set(state.order.slice(Math.max(0, state.index - 4), state.index)
+      .flatMap(id => roundById(data, id).pokemon));
+    const rand = E.rng(`${state.seed}:reroll:${state.index}:${serial}`);
+    const candidates = data.rounds.filter(r => !occupied.has(r.id));
+    if (!candidates.length) return false;
+
+    let best = null, bestScore = -Infinity;
+    for (const candidate of candidates) {
+      const overlap = candidate.pokemon.filter(k => recent.has(k)).length;
+      const score = (candidate.difficulty === current.difficulty ? 20 : 0)
+        - 2 * overlap - (candidate.family === current.family ? 2 : 0) + rand();
+      if (score > bestScore) { best = candidate; bestScore = score; }
+    }
+
+    state.order[state.index] = best.id;
+    state.round = freshRound(state, data, 0);
+    return true;
+  }
+
   /* CONTINUAR. Con {force:true} (admin) salta aunque la ronda no haya terminado. */
   function next(state, data, opts) {
     if (state.finished) return false;
@@ -230,5 +267,5 @@
     return state.scores[0] > state.scores[1] ? 0 : 1;
   }
 
-  return { DEFAULTS, buildOrder, dealCards, createMatch, solution, hits, pick, undo, retry, next, prev, setActive, adjustScore, resetScores, winner, roundById };
+  return { DEFAULTS, buildOrder, dealCards, createMatch, solution, hits, pick, undo, retry, reroll, next, prev, setActive, adjustScore, resetScores, winner, roundById };
 });
