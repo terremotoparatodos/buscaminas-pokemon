@@ -18,7 +18,7 @@ const sameSet = (a, b) => Array.isArray(a) && Array.isArray(b) && a.length === b
 
 /* Adapta la entrada de una fuente a la forma que espera el motor. */
 export const engineShape = s => s && ({
-  key: s.key, types: s.types,
+  key: s.key, types: s.types, color: s.color,
   abilities: { normal: s.abilities.normal, hidden: s.abilities.hidden },
   learnsets: { gen9: { available: s.gen9.available, moves: s.gen9.moves, disputed: [] } },
 });
@@ -85,6 +85,9 @@ export function validateRounds({ rounds, facts, SA, SB, identities, names, rules
       if (spriteExists && !spriteExists(f)) fail(`falta el sprite local ${f.sprite}`, key);
       // 8. Datos base de cada fuente
       if (!sameSet(a.types, b.types) || !sameSet(a.types, f.types)) fail(`tipos: A=${a.types} B=${b.types} facts=${f.types}`, key);
+      if (cond.type === 'color' && (!(a.color && b.color && f.color) || a.color !== b.color || b.color !== f.color)) {
+        fail(`color Pokédex: A=${a.color} B=${b.color} facts=${f.color}`, key);
+      }
       if (cond.type === 'ability') {
         if (b.abilities.special && b.abilities.special.length) fail(`habilidad especial en Showdown (${b.abilities.special})`, key);
         if (id.abilityAmbiguous) fail('otra forma de la especie tiene habilidades distintas', key);

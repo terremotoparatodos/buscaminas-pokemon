@@ -47,6 +47,7 @@ test('cada condición declara ruleset y los campos de su familia', () => {
     if (c.type === 'ability') assert.ok(['any', 'normal', 'hidden'].includes(c.abilityMode));
     if (c.type === 'move') assert.equal(c.generation, 9);
     if (c.type === 'resistance') assert.equal(typeof c.includeImmunity, 'boolean');
+    if (c.type === 'color') assert.ok(facts.names.colors[c.color], r.id);
     assert.equal(E.describeCondition(c, facts.names).question, r.question);
   }
 });
@@ -55,7 +56,15 @@ test('ids de ronda únicos y banco equilibrado por familia', () => {
   assert.equal(new Set(rounds.map(r => r.id)).size, rounds.length);
   const fam = {};
   rounds.forEach(r => { fam[r.family] = (fam[r.family] || 0) + 1; });
-  assert.deepEqual(Object.keys(fam).sort(), ['ability', 'move', 'resistance', 'weakness']);
+  assert.deepEqual(Object.keys(fam).sort(), ['ability', 'color', 'move', 'resistance', 'weakness']);
+});
+
+test('hay exactamente 50 alternativas nuevas, incluidas las 10 categorías de color Pokédex', () => {
+  assert.equal(rounds.length, 98);
+  const colors = rounds.filter(r => r.family === 'color');
+  assert.equal(colors.length, 10);
+  assert.equal(new Set(colors.map(r => r.condition.color)).size, 10);
+  for (const r of colors) assert.match(r.rule, /Color oficial/);
 });
 
 test('formas: cada carta identifica species + form + id; regionales con su propio id', () => {

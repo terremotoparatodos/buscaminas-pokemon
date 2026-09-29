@@ -68,6 +68,13 @@
         return { value: m > 1, detail: `x${m}`, multiplier: m };
       },
     },
+    color: {
+      requires: ['color'],
+      evaluate(p, c) {
+        if (!p.color) throw new Error(`${p.key}: color de Pokédex sin verificar`);
+        return { value: p.color === c.color, detail: `color Pokédex: ${p.color}` };
+      },
+    },
     /* Ejemplo de familia futura: basta con agregar una entrada acá.
        type: { requires:['pokemonType'], evaluate:(p,c)=>({value:p.types.includes(c.pokemonType)}) } */
   };
@@ -103,6 +110,10 @@
       case 'weakness': return {
         question: up(`Pokémon débiles al tipo ${n('types', c.attackingType)}`),
         rule: 'Sólo por tipos (x2 o x4)',
+      };
+      case 'color': return {
+        question: up(`Pokémon de color ${n('colors', c.color)} en la Pokédex`),
+        rule: 'Color oficial de la especie en la Pokédex',
       };
       default: throw new Error(`Condición desconocida: ${c.type}`);
     }

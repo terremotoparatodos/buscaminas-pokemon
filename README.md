@@ -115,7 +115,7 @@ otros tipos (Rotom, Castform, Ogerpon, Necrozma, Arceus…) o cuya forma por def
 
 ```bash
 npm run fetch      # descarga/cachea las dos fuentes en .cache/ (no se versiona)
-npm run build      # generate-rounds + validate-rounds
+npm run build      # conserva las rondas publicadas, amplía el banco y valida todo
 npm test           # tests automáticos
 node scripts/audit-serebii.mjs   # opcional: tercera fuente (Serebii) para rondas de movimiento
 ```

@@ -237,6 +237,12 @@ test('reroll: ofrece muchas opciones seguidas sin volver a una ya descartada', (
   assert.equal(s.index, 0);
 });
 
+test('reroll: prioriza el banco nuevo de alternativas para el video', () => {
+  const s = match('prioridad-alternativas');
+  assert.equal(G.reroll(s, DATA), true);
+  assert.match(s.round.id, /-alt-\d+$/);
+});
+
 test('continuar sólo con la ronda terminada (salvo admin) y fin de partida', () => {
   const s = match('fin', { totalRounds: 2 });
   assert.equal(G.next(s, DATA), false);

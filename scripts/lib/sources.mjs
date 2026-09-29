@@ -45,7 +45,7 @@ export function buildSourceA(A, ruleset) {
     }
     pokemon[p.name] = {
       key: p.name, id: p.id, species: p.species, isDefault: p.isDefault, sprite: p.sprite,
-      types: p.types.slice(),
+      types: p.types.slice(), color: species[p.species] && species[p.species].color,
       abilities: {
         normal: p.abilities.filter(a => !a.hidden).map(a => a.name),
         hidden: p.abilities.filter(a => a.hidden).map(a => a.name),
@@ -129,7 +129,7 @@ export function buildSourceB(B, ruleset, identities, pokeapiAbilitySlugs) {
     const nonstandard = B.formatsData[showdownId] && B.formatsData[showdownId].isNonstandard;
     const ab = e.abilities || {};
     pokemon[key] = {
-      key, showdownId, types: e.types.map(t => t.toLowerCase()),
+      key, showdownId, types: e.types.map(t => t.toLowerCase()), color: e.color && e.color.toLowerCase(),
       abilities: {
         normal: ['0', '1'].filter(k => ab[k]).map(k => toAbility(ab[k])),
         hidden: ab.H ? [toAbility(ab.H)] : [],

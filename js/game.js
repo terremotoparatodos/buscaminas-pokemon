@@ -213,6 +213,9 @@
       candidates = data.rounds.filter(r => !occupied.has(r.id));
     }
     if (!candidates.length) return false;
+    // Mientras queden rondas creadas para este video, el reroll usa ésas primero.
+    const freshAlternatives = candidates.filter(r => /-alt-\d+$/.test(r.id));
+    if (freshAlternatives.length) candidates = freshAlternatives;
 
     let best = null, bestScore = -Infinity;
     for (const candidate of candidates) {

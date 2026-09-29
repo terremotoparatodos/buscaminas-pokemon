@@ -6,8 +6,9 @@
   "scripts": {
     "fetch": "node scripts/fetch-sources.mjs",
     "generate": "node scripts/generate-rounds.mjs",
+    "expand": "node scripts/expand-rounds.mjs",
     "validate": "node scripts/validate-rounds.mjs",
-    "build": "node scripts/generate-rounds.mjs && node scripts/validate-rounds.mjs",
+    "build": "node scripts/expand-rounds.mjs && node scripts/validate-rounds.mjs",
     "test": "node scripts/run-tests.mjs",
     "serve": "node scripts/serve.mjs"
   }

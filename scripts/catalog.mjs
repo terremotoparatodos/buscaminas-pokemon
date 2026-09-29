@@ -53,4 +53,7 @@ export const MOVE_SIBLINGS = [
 export const TYPES = ['normal', 'fire', 'water', 'grass', 'electric', 'ice', 'fighting', 'poison',
   'ground', 'flying', 'psychic', 'bug', 'rock', 'ghost', 'dragon', 'dark', 'steel', 'fairy'];
 
+/* Colores oficiales usados por la Pokédex (recurso pokemon-color de PokéAPI). */
+export const COLORS = ['black', 'blue', 'brown', 'gray', 'green', 'pink', 'purple', 'red', 'white', 'yellow'];
+
 export const REGIONS = ['alola', 'galar', 'hisui', 'paldea'];

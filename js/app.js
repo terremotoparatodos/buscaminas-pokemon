@@ -53,7 +53,7 @@
   const flags = c => ({ allowRetry: c.allowRetry, perfectBonus: c.perfectBonus, bombPenalty: c.bombPenalty, keepPointsOnBomb: c.keepPointsOnBomb, players: c.players });
   function validState(s) {
     try {
-      return s && s.version === 2 && s.dataBuiltAt === DATA.builtAt && s.round && s.order[s.index] === s.round.id
+      return s && s.version === 2 && s.round && s.order[s.index] === s.round.id
         && s.config.turnMode === CFG.turnMode
         && s.order.every(id => DATA.rounds.some(r => r.id === id));
     } catch (_) { return false; }
@@ -63,6 +63,7 @@
   try { S = JSON.parse(localStorage.getItem(KEY)); } catch (_) {}
   const urlSeed = params.get('seed');
   if (!validState(S) || (urlSeed && S.seed !== urlSeed)) S = newMatch(urlSeed || ROOM);
+  S.dataBuiltAt = DATA.builtAt; // migra partidas guardadas cuando sólo se amplía el banco
   S.config = Object.assign({}, S.config, flags(CFG));
   if (!S.sync) S.sync = { rev: 0, by: '' };
 

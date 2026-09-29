@@ -108,6 +108,11 @@ export function buildConsensus(bundles, ruleset) {
       continue;
     }
     const facts = { ...id, types: a.types.slice() };
+    if (a.color && a.color === b.color) facts.color = a.color;
+    else {
+      discrepancies.push({ pokemon: id.key, field: 'color', sourceA: a.color || null, sourceB: b.color || null });
+      facts.color = null;
+    }
 
     // Habilidades
     if (b.abilities.special.length) facts.abilitiesExcluded = `habilidad especial en Showdown: ${b.abilities.special}`;
@@ -176,7 +181,7 @@ export function isCleanMoveNegative(consensus, key, move) {
 
 export function spanishNames(rawA) {
   const pick = list => Object.fromEntries(list.filter(x => !x.missing && x.names && x.names.es).map(x => [x.name, x.names.es]));
-  return { abilities: pick(rawA.abilities), moves: pick(rawA.moves), types: pick(rawA.types) };
+  return { abilities: pick(rawA.abilities), moves: pick(rawA.moves), types: pick(rawA.types), colors: pick(rawA.colors || []) };
 }
 
 export const displayName = p => p.formEs ? `${p.nameEs} ${p.formEs}` : p.nameEs;

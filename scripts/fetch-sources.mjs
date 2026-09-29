@@ -11,7 +11,7 @@ import path from 'node:path';
 import vm from 'node:vm';
 import { fileURLToPath } from 'node:url';
 import { execSync } from 'node:child_process';
-import { MOVES, TYPES } from './catalog.mjs';
+import { COLORS, MOVES, TYPES } from './catalog.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const CACHE = path.join(ROOT, '.cache');
@@ -74,6 +74,11 @@ const stripSpecies = s => ({
   varieties: s.varieties.map(v => ({ name: v.pokemon.name, isDefault: v.is_default })),
 });
 
+const stripColor = c => ({
+  id: c.id, name: c.name, names: langs(c.names),
+  species: c.pokemon_species.map(s => s.name),
+});
+
 const stripPokemon = p => {
   const moves = {}, otherGen9Moves = {};
   const versionGroups = new Set();
@@ -131,6 +136,9 @@ async function fetchPokeApi() {
   const list = await getJson(`${API}pokemon-species?limit=5000`);
   const speciesIds = list.results.map(r => idFromUrl(r.url));
   const species = await pool(speciesIds, id => cached('species', id, `${API}pokemon-species/${id}/`, stripSpecies), 10, 'species');
+  const colors = await pool(COLORS, n => cached('color', n, `${API}pokemon-color/${n}/`, stripColor), 5, 'colors');
+  const colorBySpecies = Object.fromEntries(colors.flatMap(c => c.species.map(s => [s, c.name])));
+  species.forEach(s => { s.color = colorBySpecies[s.name] || null; });
   const varietyNames = [...new Set(species.flatMap(s => s.varieties.map(v => v.name)))];
   const pokemon = await pool(varietyNames, n => cached('pokemon', n, `${API}pokemon/${n}/`, stripPokemon), 8, 'pokemon');
   const formNames = [...new Set(pokemon.filter(p => !p.missing).flatMap(p => p.forms))];
@@ -145,7 +153,7 @@ async function fetchPokeApi() {
   const bundle = {
     source: 'PokéAPI v2 REST (https://pokeapi.co/api/v2/)',
     fetchedAt: new Date().toISOString(),
-    species, pokemon, forms, chains, types, abilities, moves,
+    species, colors, pokemon, forms, chains, types, abilities, moves,
   };
   fs.writeFileSync(path.join(A_DIR, 'bundle.json'), JSON.stringify(bundle));
   console.log(`  ok: ${species.length} especies, ${pokemon.length} pokémon, ${forms.length} formas, ${abilities.length} habilidades, ${moves.length} movimientos`);
