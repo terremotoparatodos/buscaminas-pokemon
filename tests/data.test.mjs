@@ -60,11 +60,23 @@ test('ids de ronda únicos y banco equilibrado por familia', () => {
 });
 
 test('hay exactamente 50 alternativas nuevas, incluidas las 10 categorías de color Pokédex', () => {
-  assert.equal(rounds.length, 98);
+  assert.equal(rounds.filter(r => /-alt-\d+$/.test(r.id)).length, 50);
   const colors = rounds.filter(r => r.family === 'color');
   assert.equal(colors.length, 10);
   assert.equal(new Set(colors.map(r => r.condition.color)).size, 10);
   for (const r of colors) assert.match(r.rule, /Color oficial/);
+});
+
+test('set de mañana: 20 consignas exclusivas que no repiten ninguna de las 98 anteriores', () => {
+  assert.equal(rounds.length, 118);
+  const batch = rounds.filter(r => r.batch === 'grabacion-2026-10-02');
+  const previous = rounds.filter(r => !r.batch);
+  assert.equal(batch.length, 20);
+  const key = r => `${r.condition.type}:${r.condition.ability || r.condition.move || r.condition.attackingType || r.condition.color}`;
+  const oldConditions = new Set(previous.map(key));
+  assert.equal(new Set(batch.map(key)).size, 20);
+  assert.ok(batch.every(r => !oldConditions.has(key(r))));
+  assert.equal(new Set(batch.map(r => r.question)).size, 20);
 });
 
 test('formas: cada carta identifica species + form + id; regionales con su propio id', () => {

@@ -1,5 +1,5 @@
 /* Amplía el banco existente sin modificar ninguna ronda ya publicada.
-   Objetivo actual: 48 originales + 50 alternativas = 98 rondas. */
+   Agrega un set cerrado de 20 rondas exclusivas para la grabación del 2026-10-02. */
 import fs from 'node:fs';
 import path from 'node:path';
 import { createRequire } from 'node:module';
@@ -12,7 +12,8 @@ const require = createRequire(import.meta.url);
 const E = require('../js/engine.js');
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DATA = path.join(ROOT, 'data');
-const TARGET = 98;
+const TARGET = 118;
+const BATCH = 'grabacion-2026-10-02';
 const bundles = loadBundles(ROOT);
 const C = buildConsensus(bundles, RULESETS.gen9);
 const NAMES = spanishNames(bundles.A);
@@ -20,15 +21,16 @@ const ctx = { typeChart: C.typeChart, checkedMoves: { gen9: MOVES } };
 const file = JSON.parse(fs.readFileSync(path.join(DATA, 'rounds.json'), 'utf8'));
 const rounds = file.rounds;
 
-if (rounds.length >= TARGET) {
+if (rounds.filter(r => r.batch === BATCH).length === 20) {
   console.log(`El banco ya tiene ${rounds.length} rondas; no se agregaron más.`);
   process.exit(0);
 }
+if (rounds.length !== 98) throw new Error(`Se esperaban las 98 rondas publicadas antes de crear el set exclusivo; hay ${rounds.length}`);
 
 const usage = {};
 rounds.flatMap(r => r.pokemon).forEach(k => { usage[k] = (usage[k] || 0) + 1; });
 const usedConditions = new Set(rounds.map(r => conditionKey(r.condition)));
-const rand = E.rng('alternativas-video-50-v1');
+const rand = E.rng('grabacion-2026-10-02-v1');
 const ALL = Object.values(C.pokemon);
 const GEN_SCORE = { 1: 6, 2: 5, 3: 4.5, 4: 4, 5: 3.5, 6: 3, 7: 2.7, 8: 2.4, 9: 2.5 };
 const familiar = p => (GEN_SCORE[p.generation] || 2) + (p.finalStage ? 1 : 0) - (p.region ? 0.5 : 0);
@@ -81,7 +83,7 @@ for (const family of Object.keys(candidates)) {
   candidates[family] = E.shuffle(candidates[family].filter(c => !usedConditions.has(conditionKey(c))), rand);
 }
 
-const plan = [['color', 10], ['ability', 16], ['move', 16], ['resistance', 4], ['weakness', 4]];
+const plan = [['ability', 9], ['move', 8], ['resistance', 2], ['weakness', 1]];
 const added = [];
 for (const [family, quota] of plan) {
   let made = 0;
@@ -92,8 +94,8 @@ for (const [family, quota] of plan) {
     const difficulty = ['easy', 'normal', 'hard'][added.length % 3];
     const text = E.describeCondition(cond, NAMES);
     const round = {
-      id: `${conditionId(cond)}-alt-${String(added.length + 1).padStart(2, '0')}`,
-      family, difficulty, question: text.question, rule: text.rule, condition: cond, pokemon,
+      id: `${conditionId(cond)}-manana-${String(added.length + 1).padStart(2, '0')}`,
+      family, difficulty, batch: BATCH, question: text.question, rule: text.rule, condition: cond, pokemon,
     };
     rounds.push(round); added.push(round); usedConditions.add(conditionKey(cond));
     pokemon.forEach(k => { usage[k] = (usage[k] || 0) + 1; });
@@ -101,10 +103,10 @@ for (const [family, quota] of plan) {
   }
   if (made !== quota) throw new Error(`${family}: sólo se pudieron crear ${made}/${quota} rondas nuevas`);
 }
-if (rounds.length !== TARGET || added.length !== 50) throw new Error(`Se esperaban 50 nuevas y ${TARGET} totales; hay ${added.length} y ${rounds.length}`);
+if (rounds.length !== TARGET || added.length !== 20) throw new Error(`Se esperaban 20 nuevas y ${TARGET} totales; hay ${added.length} y ${rounds.length}`);
 
 file.generatedAt = new Date().toISOString();
-file.note = '48 rondas originales preservadas + 50 alternativas nuevas. Las respuestas se recalculan desde pokemon-facts.json.';
+file.note = '48 originales + 50 alternativas + 20 exclusivas para grabacion-2026-10-02. Las respuestas se recalculan desde pokemon-facts.json.';
 fs.writeFileSync(path.join(DATA, 'rounds.json'), JSON.stringify(file, null, 2));
 
 const used = [...new Set(rounds.flatMap(r => r.pokemon))].sort();
@@ -142,5 +144,4 @@ for (const key of used) {
   fs.writeFileSync(dest, Buffer.from(await response.arrayBuffer()));
 }
 
-console.log(`Rondas agregadas: ${added.length} · total: ${rounds.length}`);
-console.log(`Incluyen ${added.filter(r => r.family === 'color').length} rondas de color Pokédex.`);
+console.log(`Set ${BATCH}: ${added.length} rondas exclusivas · total del banco: ${rounds.length}`);

@@ -95,9 +95,12 @@
   function createMatch(data, opts) {
     const cfg = Object.assign({}, DEFAULTS, opts && opts.config);
     const seed = String(opts && opts.seed != null ? opts.seed : Math.floor(Math.random() * 1e9));
+    const batch = opts && opts.batch;
+    const orderData = batch ? Object.assign({}, data, { rounds: data.rounds.filter(r => r.batch === batch) }) : data;
+    if (batch && !orderData.rounds.length) throw new Error(`Set de rondas desconocido: ${batch}`);
     const state = {
       version: 2, dataBuiltAt: data.builtAt, seed, config: cfg,
-      order: buildOrder(data, seed, cfg), index: 0, scores: [0, 0],
+      order: buildOrder(orderData, seed, cfg), index: 0, scores: [0, 0], batch: batch || null,
       active: cfg.startingPlayer, history: [], finished: false, round: null,
     };
     state.round = freshRound(state, data, 0);
@@ -182,6 +185,8 @@
   function reroll(state, data) {
     if (state.finished) return false;
     const current = roundById(data, state.round.id);
+    const availableRounds = state.batch ? data.rounds.filter(r => r.batch === state.batch) : data.rounds;
+    if (!availableRounds.some(r => !state.order.includes(r.id))) return false;
 
     // Si había clics a medio jugar, quita sólo los puntos producidos por esos clics.
     // Una ronda ya cerrada conserva el marcador visible (útil al retomar una grabación).
@@ -206,11 +211,11 @@
     const recent = new Set(state.order.slice(Math.max(0, state.index - 4), state.index)
       .flatMap(id => roundById(data, id).pokemon));
     const rand = E.rng(`${state.seed}:reroll:${state.index}:${serial}`);
-    let candidates = data.rounds.filter(r => !unavailable.has(r.id));
+    let candidates = availableRounds.filter(r => !unavailable.has(r.id));
     // Sólo después de agotar todo el banco se habilitan otra vez las descartadas.
     if (!candidates.length) {
       state.rerollHistory[state.index] = [current.id];
-      candidates = data.rounds.filter(r => !occupied.has(r.id));
+      candidates = availableRounds.filter(r => !occupied.has(r.id));
     }
     if (!candidates.length) return false;
     // Mientras queden rondas creadas para este video, el reroll usa ésas primero.

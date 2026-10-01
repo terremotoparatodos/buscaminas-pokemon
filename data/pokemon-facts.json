@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-29T22:21:19.153Z",
+ "generatedAt": "2026-10-01T05:41:37.858Z",
  "sources": {
   "A": "PokéAPI v2 REST (https://pokeapi.co/api/v2/) · 2026-09-29T22:20:57.721Z",
   "B": "smogon/pokemon-showdown@a5df8274e85b0889bf2a9b3422a08b39732374fc (data/*.ts) · 2026-09-29T22:18:17.331Z"
@@ -468,7 +468,16 @@
    "pressure": "Presión",
    "guts": "Agallas",
    "cute-charm": "Gran Encanto",
-   "intimidate": "Intimidación"
+   "intimidate": "Intimidación",
+   "thick-fat": "Sebo",
+   "clear-body": "Cuerpo Puro",
+   "static": "Electricidad Estática",
+   "swarm": "Enjambre",
+   "torrent": "Torrente",
+   "own-tempo": "Ritmo Propio",
+   "unaware": "Ignorante",
+   "snow-cloak": "Manto Níveo",
+   "inner-focus": "Fuerza Mental"
   },
   "moves": {
    "drain-punch": "Puño Drenaje",
@@ -498,7 +507,15 @@
    "rock-slide": "Avalancha",
    "ice-fang": "Colmillo Hielo",
    "dragon-claw": "Garra Dragón",
-   "flamethrower": "Lanzallamas"
+   "flamethrower": "Lanzallamas",
+   "sludge-bomb": "Bomba Lodo",
+   "fire-punch": "Puño Fuego",
+   "dazzling-gleam": "Brillo Mágico",
+   "crunch": "Triturar",
+   "thunderbolt": "Rayo",
+   "outrage": "Enfado",
+   "earthquake": "Terremoto",
+   "leech-life": "Chupavidas"
   },
   "types": {
    "normal": "Normal",
@@ -1661,6 +1678,93 @@
     }
    },
    "sprite": "assets/sprites/567.png"
+  },
+  "arctibax": {
+   "key": "arctibax",
+   "id": 997,
+   "species": "arctibax",
+   "form": "default",
+   "dex": 997,
+   "name": "Arctibax",
+   "types": [
+    "dragon",
+    "ice"
+   ],
+   "color": null,
+   "abilities": {
+    "normal": [
+     "thermal-exchange"
+    ],
+    "hidden": [
+     "ice-body"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "ice-fang": [
+       "level-up",
+       "machine"
+      ],
+      "dig": [
+       "machine"
+      ],
+      "ice-beam": [
+       "level-up",
+       "machine"
+      ],
+      "dragon-claw": [
+       "machine"
+      ],
+      "swords-dance": [
+       "machine"
+      ],
+      "outrage": [
+       "machine"
+      ],
+      "iron-head": [
+       "machine"
+      ],
+      "crunch": [
+       "level-up",
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/997.png"
+  },
+  "arctovish": {
+   "key": "arctovish",
+   "id": 883,
+   "species": "arctovish",
+   "form": "default",
+   "dex": 883,
+   "name": "Arctovish",
+   "types": [
+    "water",
+    "ice"
+   ],
+   "color": "blue",
+   "abilities": {
+    "normal": [
+     "water-absorb",
+     "ice-body"
+    ],
+    "hidden": [
+     "slush-rush"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": false,
+     "moves": {},
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/883.png"
   },
   "arctozolt": {
    "key": "arctozolt",
@@ -3280,6 +3384,36 @@
    },
    "sprite": "assets/sprites/399.png"
   },
+  "binacle": {
+   "key": "binacle",
+   "id": 688,
+   "species": "binacle",
+   "form": "default",
+   "dex": 688,
+   "name": "Binacle",
+   "types": [
+    "rock",
+    "water"
+   ],
+   "color": "brown",
+   "abilities": {
+    "normal": [
+     "tough-claws",
+     "sniper"
+    ],
+    "hidden": [
+     "pickpocket"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": false,
+     "moves": {},
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/688.png"
+  },
   "bisharp": {
    "key": "bisharp",
    "id": 625,
@@ -3494,6 +3628,35 @@
     }
    },
    "sprite": "assets/sprites/257.png"
+  },
+  "blipbug": {
+   "key": "blipbug",
+   "id": 824,
+   "species": "blipbug",
+   "form": "default",
+   "dex": 824,
+   "name": "Blipbug",
+   "types": [
+    "bug"
+   ],
+   "color": "blue",
+   "abilities": {
+    "normal": [
+     "swarm",
+     "compound-eyes"
+    ],
+    "hidden": [
+     "telepathy"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": false,
+     "moves": {},
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/824.png"
   },
   "blissey": {
    "key": "blissey",
@@ -3782,6 +3945,110 @@
    },
    "sprite": "assets/sprites/626.png"
   },
+  "bounsweet": {
+   "key": "bounsweet",
+   "id": 761,
+   "species": "bounsweet",
+   "form": "default",
+   "dex": 761,
+   "name": "Bounsweet",
+   "types": [
+    "grass"
+   ],
+   "color": "purple",
+   "abilities": {
+    "normal": [
+     "leaf-guard",
+     "oblivious"
+    ],
+    "hidden": [
+     "sweet-veil"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "draining-kiss": [
+       "machine"
+      ],
+      "bullet-seed": [
+       "machine"
+      ],
+      "play-rough": [
+       "machine"
+      ],
+      "zen-headbutt": [
+       "machine"
+      ],
+      "dazzling-gleam": [
+       "machine"
+      ],
+      "energy-ball": [
+       "machine"
+      ],
+      "rapid-spin": [
+       "level-up"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/761.png"
+  },
+  "braixen": {
+   "key": "braixen",
+   "id": 654,
+   "species": "braixen",
+   "form": "default",
+   "dex": 654,
+   "name": "Braixen",
+   "types": [
+    "fire"
+   ],
+   "color": "red",
+   "abilities": {
+    "normal": [
+     "blaze"
+    ],
+    "hidden": [
+     "magician"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "thunder-punch": [
+       "machine"
+      ],
+      "fire-punch": [
+       "machine"
+      ],
+      "flamethrower": [
+       "level-up",
+       "machine"
+      ],
+      "psychic": [
+       "level-up",
+       "machine"
+      ],
+      "trick-room": [
+       "machine"
+      ],
+      "will-o-wisp": [
+       "level-up",
+       "machine"
+      ],
+      "zen-headbutt": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/654.png"
+  },
   "brambleghast": {
    "key": "brambleghast",
    "id": 947,
@@ -3943,6 +4210,54 @@
     }
    },
    "sprite": "assets/sprites/286.png"
+  },
+  "brionne": {
+   "key": "brionne",
+   "id": 729,
+   "species": "brionne",
+   "form": "default",
+   "dex": 729,
+   "name": "Brionne",
+   "types": [
+    "water"
+   ],
+   "color": "blue",
+   "abilities": {
+    "normal": [
+     "torrent"
+    ],
+    "hidden": [
+     "liquid-voice"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "surf": [
+       "machine"
+      ],
+      "ice-beam": [
+       "machine"
+      ],
+      "draining-kiss": [
+       "machine"
+      ],
+      "play-rough": [
+       "machine"
+      ],
+      "hydro-pump": [
+       "level-up",
+       "machine"
+      ],
+      "waterfall": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/729.png"
   },
   "bronzong": {
    "key": "bronzong",
@@ -4619,6 +4934,51 @@
    },
    "sprite": "assets/sprites/323.png"
   },
+  "capsakid": {
+   "key": "capsakid",
+   "id": 951,
+   "species": "capsakid",
+   "form": "default",
+   "dex": 951,
+   "name": "Capsakid",
+   "types": [
+    "grass"
+   ],
+   "color": "green",
+   "abilities": {
+    "normal": [
+     "chlorophyll",
+     "insomnia"
+    ],
+    "hidden": [
+     "klutz"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "bullet-seed": [
+       "level-up",
+       "machine"
+      ],
+      "zen-headbutt": [
+       "level-up",
+       "machine"
+      ],
+      "energy-ball": [
+       "machine"
+      ],
+      "crunch": [
+       "level-up",
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/951.png"
+  },
   "carbink": {
    "key": "carbink",
    "id": 703,
@@ -4674,6 +5034,65 @@
     }
    },
    "sprite": "assets/sprites/703.png"
+  },
+  "carkol": {
+   "key": "carkol",
+   "id": 838,
+   "species": "carkol",
+   "form": "default",
+   "dex": 838,
+   "name": "Carkol",
+   "types": [
+    "rock",
+    "fire"
+   ],
+   "color": "black",
+   "abilities": {
+    "normal": [
+     "steam-engine",
+     "flame-body"
+    ],
+    "hidden": [
+     "flash-fire"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "dig": [
+       "machine"
+      ],
+      "flamethrower": [
+       "machine"
+      ],
+      "rock-slide": [
+       "machine"
+      ],
+      "body-press": [
+       "machine"
+      ],
+      "will-o-wisp": [
+       "machine"
+      ],
+      "spikes": [
+       "machine"
+      ],
+      "stealth-rock": [
+       "level-up",
+       "machine"
+      ],
+      "iron-head": [
+       "machine"
+      ],
+      "rapid-spin": [
+       "level-up"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/838.png"
   },
   "carnivine": {
    "key": "carnivine",
@@ -5005,6 +5424,51 @@
    },
    "sprite": "assets/sprites/975.png"
   },
+  "cetoddle": {
+   "key": "cetoddle",
+   "id": 974,
+   "species": "cetoddle",
+   "form": "default",
+   "dex": 974,
+   "name": "Cetoddle",
+   "types": [
+    "ice"
+   ],
+   "color": "white",
+   "abilities": {
+    "normal": [
+     "thick-fat",
+     "snow-cloak"
+    ],
+    "hidden": [
+     "sheer-force"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "ice-fang": [
+       "machine"
+      ],
+      "ice-beam": [
+       "machine"
+      ],
+      "body-press": [
+       "machine"
+      ],
+      "play-rough": [
+       "machine"
+      ],
+      "earthquake": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/974.png"
+  },
   "chandelure": {
    "key": "chandelure",
    "id": 609,
@@ -5127,6 +5591,42 @@
     }
    },
    "sprite": "assets/sprites/113.png"
+  },
+  "charcadet": {
+   "key": "charcadet",
+   "id": 935,
+   "species": "charcadet",
+   "form": "default",
+   "dex": 935,
+   "name": "Charcadet",
+   "types": [
+    "fire"
+   ],
+   "color": "red",
+   "abilities": {
+    "normal": [
+     "flash-fire"
+    ],
+    "hidden": [
+     "flame-body"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "flamethrower": [
+       "machine"
+      ],
+      "will-o-wisp": [
+       "level-up",
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/935.png"
   },
   "charizard": {
    "key": "charizard",
@@ -5549,6 +6049,66 @@
     }
    },
    "sprite": "assets/sprites/652.png"
+  },
+  "chespin": {
+   "key": "chespin",
+   "id": 650,
+   "species": "chespin",
+   "form": "default",
+   "dex": 650,
+   "name": "Chespin",
+   "types": [
+    "grass"
+   ],
+   "color": "green",
+   "abilities": {
+    "normal": [
+     "overgrow"
+    ],
+    "hidden": [
+     "bulletproof"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "thunder-punch": [
+       "machine"
+      ],
+      "dig": [
+       "machine"
+      ],
+      "poison-jab": [
+       "machine"
+      ],
+      "rock-slide": [
+       "machine"
+      ],
+      "drain-punch": [
+       "machine"
+      ],
+      "bullet-seed": [
+       "machine"
+      ],
+      "spikes": [
+       "egg",
+       "machine"
+      ],
+      "zen-headbutt": [
+       "machine"
+      ],
+      "iron-head": [
+       "machine"
+      ],
+      "energy-ball": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/650.png"
   },
   "chi-yu": {
    "key": "chi-yu",
@@ -6015,6 +6575,62 @@
     }
    },
    "sprite": "assets/sprites/366.png"
+  },
+  "clauncher": {
+   "key": "clauncher",
+   "id": 692,
+   "species": "clauncher",
+   "form": "default",
+   "dex": 692,
+   "name": "Clauncher",
+   "types": [
+    "water"
+   ],
+   "color": "blue",
+   "abilities": {
+    "normal": [
+     "mega-launcher"
+    ],
+    "hidden": []
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "surf": [
+       "machine"
+      ],
+      "ice-beam": [
+       "machine"
+      ],
+      "aqua-tail": [
+       "egg"
+      ],
+      "rock-slide": [
+       "machine"
+      ],
+      "swords-dance": [
+       "level-up",
+       "machine"
+      ],
+      "hydro-pump": [
+       "machine"
+      ],
+      "waterfall": [
+       "machine"
+      ],
+      "aura-sphere": [
+       "level-up",
+       "machine"
+      ],
+      "u-turn": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/692.png"
   },
   "clawitzer": {
    "key": "clawitzer",
@@ -7012,6 +7628,58 @@
    },
    "sprite": "assets/sprites/823.png"
   },
+  "cosmoem": {
+   "key": "cosmoem",
+   "id": 790,
+   "species": "cosmoem",
+   "form": "default",
+   "dex": 790,
+   "name": "Cosmoem",
+   "types": [
+    "psychic"
+   ],
+   "color": "blue",
+   "abilities": {
+    "normal": [
+     "sturdy"
+    ],
+    "hidden": []
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {},
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/790.png"
+  },
+  "cosmog": {
+   "key": "cosmog",
+   "id": 789,
+   "species": "cosmog",
+   "form": "default",
+   "dex": 789,
+   "name": "Cosmog",
+   "types": [
+    "psychic"
+   ],
+   "color": "blue",
+   "abilities": {
+    "normal": [
+     "unaware"
+    ],
+    "hidden": []
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {},
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/789.png"
+  },
   "cottonee": {
    "key": "cottonee",
    "id": 546,
@@ -7115,6 +7783,64 @@
     }
    },
    "sprite": "assets/sprites/740.png"
+  },
+  "crabrawler": {
+   "key": "crabrawler",
+   "id": 739,
+   "species": "crabrawler",
+   "form": "default",
+   "dex": 739,
+   "name": "Crabrawler",
+   "types": [
+    "fighting"
+   ],
+   "color": "purple",
+   "abilities": {
+    "normal": [
+     "hyper-cutter",
+     "iron-fist"
+    ],
+    "hidden": [
+     "anger-point"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "thunder-punch": [
+       "machine"
+      ],
+      "ice-punch": [
+       "machine"
+      ],
+      "dig": [
+       "machine"
+      ],
+      "rock-slide": [
+       "machine"
+      ],
+      "drain-punch": [
+       "machine"
+      ],
+      "zen-headbutt": [
+       "machine"
+      ],
+      "earthquake": [
+       "machine"
+      ],
+      "close-combat": [
+       "level-up",
+       "machine"
+      ],
+      "iron-head": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/739.png"
   },
   "cradily": {
    "key": "cradily",
@@ -7471,6 +8197,61 @@
    },
    "sprite": "assets/sprites/169.png"
   },
+  "crocalor": {
+   "key": "crocalor",
+   "id": 910,
+   "species": "crocalor",
+   "form": "default",
+   "dex": 910,
+   "name": "Crocalor",
+   "types": [
+    "fire"
+   ],
+   "color": "red",
+   "abilities": {
+    "normal": [
+     "blaze"
+    ],
+    "hidden": [
+     "unaware"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "thunder-fang": [
+       "machine"
+      ],
+      "fire-fang": [
+       "machine"
+      ],
+      "dig": [
+       "machine"
+      ],
+      "flamethrower": [
+       "level-up",
+       "machine"
+      ],
+      "will-o-wisp": [
+       "level-up",
+       "machine"
+      ],
+      "outrage": [
+       "machine"
+      ],
+      "zen-headbutt": [
+       "machine"
+      ],
+      "crunch": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/910.png"
+  },
   "croconaw": {
    "key": "croconaw",
    "id": 159,
@@ -7726,6 +8507,64 @@
    },
    "sprite": "assets/sprites/864.png"
   },
+  "cutiefly": {
+   "key": "cutiefly",
+   "id": 742,
+   "species": "cutiefly",
+   "form": "default",
+   "dex": 742,
+   "name": "Cutiefly",
+   "types": [
+    "bug",
+    "fairy"
+   ],
+   "color": "yellow",
+   "abilities": {
+    "normal": [
+     "honey-gather",
+     "shield-dust"
+    ],
+    "hidden": [
+     "sweet-veil"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "psychic": [
+       "machine"
+      ],
+      "draining-kiss": [
+       "level-up",
+       "machine"
+      ],
+      "leech-life": [
+       "machine"
+      ],
+      "play-rough": [
+       "machine"
+      ],
+      "bug-buzz": [
+       "level-up",
+       "machine"
+      ],
+      "dazzling-gleam": [
+       "level-up",
+       "machine"
+      ],
+      "energy-ball": [
+       "machine"
+      ],
+      "u-turn": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/742.png"
+  },
   "cyclizar": {
    "key": "cyclizar",
    "id": 967,
@@ -7953,6 +8792,73 @@
     }
    },
    "sprite": "assets/sprites/491.png"
+  },
+  "dartrix": {
+   "key": "dartrix",
+   "id": 723,
+   "species": "dartrix",
+   "form": "default",
+   "dex": 723,
+   "name": "Dartrix",
+   "types": [
+    "grass",
+    "flying"
+   ],
+   "color": "brown",
+   "abilities": {
+    "normal": [
+     "overgrow"
+    ],
+    "hidden": [
+     "long-reach"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "swords-dance": [
+       "machine"
+      ],
+      "bullet-seed": [
+       "machine"
+      ],
+      "energy-ball": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/723.png"
+  },
+  "darumaka": {
+   "key": "darumaka",
+   "id": 554,
+   "species": "darumaka",
+   "form": "default",
+   "dex": 554,
+   "name": "Darumaka",
+   "types": [
+    "fire"
+   ],
+   "color": "red",
+   "abilities": {
+    "normal": [
+     "hustle"
+    ],
+    "hidden": [
+     "inner-focus"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": false,
+     "moves": {},
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/554.png"
   },
   "darumaka-galar": {
    "key": "darumaka-galar",
@@ -8431,6 +9337,65 @@
     }
    },
    "sprite": "assets/sprites/502.png"
+  },
+  "dewpider": {
+   "key": "dewpider",
+   "id": 751,
+   "species": "dewpider",
+   "form": "default",
+   "dex": 751,
+   "name": "Dewpider",
+   "types": [
+    "water",
+    "bug"
+   ],
+   "color": "green",
+   "abilities": {
+    "normal": [
+     "water-bubble"
+    ],
+    "hidden": [
+     "water-absorb"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "surf": [
+       "machine"
+      ],
+      "ice-beam": [
+       "machine"
+      ],
+      "poison-jab": [
+       "machine"
+      ],
+      "x-scissor": [
+       "machine"
+      ],
+      "leech-life": [
+       "level-up",
+       "machine"
+      ],
+      "bug-buzz": [
+       "machine"
+      ],
+      "hydro-pump": [
+       "machine"
+      ],
+      "waterfall": [
+       "machine"
+      ],
+      "crunch": [
+       "level-up",
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/751.png"
   },
   "dhelmise": {
    "key": "dhelmise",
@@ -8993,6 +9958,63 @@
    },
    "sprite": "assets/sprites/232.png"
   },
+  "dottler": {
+   "key": "dottler",
+   "id": 825,
+   "species": "dottler",
+   "form": "default",
+   "dex": 825,
+   "name": "Dottler",
+   "types": [
+    "bug",
+    "psychic"
+   ],
+   "color": "yellow",
+   "abilities": {
+    "normal": [
+     "swarm",
+     "compound-eyes"
+    ],
+    "hidden": [
+     "telepathy"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": false,
+     "moves": {},
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/825.png"
+  },
+  "doublade": {
+   "key": "doublade",
+   "id": 680,
+   "species": "doublade",
+   "form": "default",
+   "dex": 680,
+   "name": "Doublade",
+   "types": [
+    "steel",
+    "ghost"
+   ],
+   "color": "brown",
+   "abilities": {
+    "normal": [
+     "no-guard"
+    ],
+    "hidden": []
+   },
+   "learnsets": {
+    "gen9": {
+     "available": false,
+     "moves": {},
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/680.png"
+  },
   "dracovish": {
    "key": "dracovish",
    "id": 882,
@@ -9333,6 +10355,66 @@
    },
    "sprite": "assets/sprites/149.png"
   },
+  "drakloak": {
+   "key": "drakloak",
+   "id": 886,
+   "species": "drakloak",
+   "form": "default",
+   "dex": 886,
+   "name": "Drakloak",
+   "types": [
+    "dragon",
+    "ghost"
+   ],
+   "color": "green",
+   "abilities": {
+    "normal": [
+     "clear-body",
+     "infiltrator"
+    ],
+    "hidden": [
+     "cursed-body"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "surf": [
+       "machine"
+      ],
+      "flamethrower": [
+       "machine"
+      ],
+      "thunderbolt": [
+       "machine"
+      ],
+      "shadow-ball": [
+       "machine"
+      ],
+      "will-o-wisp": [
+       "machine"
+      ],
+      "dragon-dance": [
+       "level-up",
+       "machine"
+      ],
+      "hydro-pump": [
+       "machine"
+      ],
+      "outrage": [
+       "machine"
+      ],
+      "u-turn": [
+       "level-up",
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/886.png"
+  },
   "drampa": {
    "key": "drampa",
    "id": 780,
@@ -9525,6 +10607,36 @@
    },
    "sprite": "assets/sprites/834.png"
   },
+  "dreepy": {
+   "key": "dreepy",
+   "id": 885,
+   "species": "dreepy",
+   "form": "default",
+   "dex": 885,
+   "name": "Dreepy",
+   "types": [
+    "dragon",
+    "ghost"
+   ],
+   "color": "green",
+   "abilities": {
+    "normal": [
+     "clear-body",
+     "infiltrator"
+    ],
+    "hidden": [
+     "cursed-body"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {},
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/885.png"
+  },
   "drifblim": {
    "key": "drifblim",
    "id": 426,
@@ -9682,6 +10794,48 @@
     }
    },
    "sprite": "assets/sprites/529.png"
+  },
+  "drizzile": {
+   "key": "drizzile",
+   "id": 817,
+   "species": "drizzile",
+   "form": "default",
+   "dex": 817,
+   "name": "Drizzile",
+   "types": [
+    "water"
+   ],
+   "color": "blue",
+   "abilities": {
+    "normal": [
+     "torrent"
+    ],
+    "hidden": [
+     "sniper"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "surf": [
+       "machine"
+      ],
+      "hydro-pump": [
+       "machine"
+      ],
+      "waterfall": [
+       "machine"
+      ],
+      "u-turn": [
+       "level-up",
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/817.png"
   },
   "drowzee": {
    "key": "drowzee",
@@ -10066,6 +11220,62 @@
     }
    },
    "sprite": "assets/sprites/578.png"
+  },
+  "duraludon": {
+   "key": "duraludon",
+   "id": 884,
+   "species": "duraludon",
+   "form": "default",
+   "dex": 884,
+   "name": "Duraludon",
+   "types": [
+    "steel",
+    "dragon"
+   ],
+   "color": "white",
+   "abilities": {
+    "normal": [
+     "light-metal",
+     "heavy-metal"
+    ],
+    "hidden": [
+     "stalwart"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "thunderbolt": [
+       "machine"
+      ],
+      "dragon-claw": [
+       "level-up",
+       "machine"
+      ],
+      "rock-slide": [
+       "machine"
+      ],
+      "body-press": [
+       "machine"
+      ],
+      "swords-dance": [
+       "machine"
+      ],
+      "stealth-rock": [
+       "machine"
+      ],
+      "outrage": [
+       "machine"
+      ],
+      "iron-head": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/884.png"
   },
   "durant": {
    "key": "durant",
@@ -11164,6 +12374,57 @@
    },
    "sprite": "assets/sprites/196.png"
   },
+  "espurr": {
+   "key": "espurr",
+   "id": 677,
+   "species": "espurr",
+   "form": "default",
+   "dex": 677,
+   "name": "Espurr",
+   "types": [
+    "psychic"
+   ],
+   "color": "gray",
+   "abilities": {
+    "normal": [
+     "keen-eye",
+     "infiltrator"
+    ],
+    "hidden": [
+     "own-tempo"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "thunderbolt": [
+       "machine"
+      ],
+      "shadow-ball": [
+       "machine"
+      ],
+      "psychic": [
+       "machine"
+      ],
+      "trick-room": [
+       "machine"
+      ],
+      "play-rough": [
+       "machine"
+      ],
+      "zen-headbutt": [
+       "machine"
+      ],
+      "energy-ball": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/677.png"
+  },
   "eternatus": {
    "key": "eternatus",
    "id": 890,
@@ -11714,6 +12975,50 @@
    },
    "sprite": "assets/sprites/349.png"
   },
+  "fennekin": {
+   "key": "fennekin",
+   "id": 653,
+   "species": "fennekin",
+   "form": "default",
+   "dex": 653,
+   "name": "Fennekin",
+   "types": [
+    "fire"
+   ],
+   "color": "red",
+   "abilities": {
+    "normal": [
+     "blaze"
+    ],
+    "hidden": [
+     "magician"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "flamethrower": [
+       "level-up",
+       "machine"
+      ],
+      "psychic": [
+       "level-up",
+       "machine"
+      ],
+      "trick-room": [
+       "machine"
+      ],
+      "will-o-wisp": [
+       "level-up",
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/653.png"
+  },
   "feraligatr": {
    "key": "feraligatr",
    "id": 160,
@@ -11903,6 +13208,107 @@
     }
    },
    "sprite": "assets/sprites/1016.png"
+  },
+  "fidough": {
+   "key": "fidough",
+   "id": 926,
+   "species": "fidough",
+   "form": "default",
+   "dex": 926,
+   "name": "Fidough",
+   "types": [
+    "fairy"
+   ],
+   "color": "yellow",
+   "abilities": {
+    "normal": [
+     "own-tempo"
+    ],
+    "hidden": [
+     "klutz"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "thunder-fang": [
+       "machine"
+      ],
+      "fire-fang": [
+       "machine"
+      ],
+      "ice-fang": [
+       "machine"
+      ],
+      "dig": [
+       "machine"
+      ],
+      "play-rough": [
+       "level-up",
+       "machine"
+      ],
+      "dazzling-gleam": [
+       "machine"
+      ],
+      "crunch": [
+       "level-up",
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/926.png"
+  },
+  "finizen": {
+   "key": "finizen",
+   "id": 963,
+   "species": "finizen",
+   "form": "default",
+   "dex": 963,
+   "name": "Finizen",
+   "types": [
+    "water"
+   ],
+   "color": "blue",
+   "abilities": {
+    "normal": [
+     "water-veil"
+    ],
+    "hidden": []
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "surf": [
+       "machine"
+      ],
+      "ice-beam": [
+       "machine"
+      ],
+      "draining-kiss": [
+       "machine"
+      ],
+      "aqua-tail": [
+       "level-up"
+      ],
+      "hydro-pump": [
+       "level-up",
+       "machine"
+      ],
+      "zen-headbutt": [
+       "machine"
+      ],
+      "waterfall": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/963.png"
   },
   "finneon": {
    "key": "finneon",
@@ -12239,6 +13645,49 @@
    },
    "sprite": "assets/sprites/662.png"
   },
+  "fletchling": {
+   "key": "fletchling",
+   "id": 661,
+   "species": "fletchling",
+   "form": "default",
+   "dex": 661,
+   "name": "Fletchling",
+   "types": [
+    "normal",
+    "flying"
+   ],
+   "color": "red",
+   "abilities": {
+    "normal": [
+     "big-pecks"
+    ],
+    "hidden": [
+     "gale-wings"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "fly": [
+       "level-up",
+       "machine"
+      ],
+      "swords-dance": [
+       "machine"
+      ],
+      "hurricane": [
+       "machine"
+      ],
+      "u-turn": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/661.png"
+  },
   "floatzel": {
    "key": "floatzel",
    "id": 419,
@@ -12297,6 +13746,94 @@
     }
    },
    "sprite": "assets/sprites/419.png"
+  },
+  "floette": {
+   "key": "floette",
+   "id": 670,
+   "species": "floette",
+   "form": "default",
+   "dex": 670,
+   "name": "Floette",
+   "types": [
+    "fairy"
+   ],
+   "color": "white",
+   "abilities": {
+    "normal": [
+     "flower-veil"
+    ],
+    "hidden": [
+     "symbiosis"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "psychic": [
+       "machine"
+      ],
+      "draining-kiss": [
+       "machine"
+      ],
+      "dazzling-gleam": [
+       "machine"
+      ],
+      "energy-ball": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/670.png"
+  },
+  "floragato": {
+   "key": "floragato",
+   "id": 907,
+   "species": "floragato",
+   "form": "default",
+   "dex": 907,
+   "name": "Floragato",
+   "types": [
+    "grass"
+   ],
+   "color": "green",
+   "abilities": {
+    "normal": [
+     "overgrow"
+    ],
+    "hidden": [
+     "protean"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "thunder-punch": [
+       "machine"
+      ],
+      "bullet-seed": [
+       "machine"
+      ],
+      "play-rough": [
+       "level-up",
+       "machine"
+      ],
+      "energy-ball": [
+       "level-up",
+       "machine"
+      ],
+      "u-turn": [
+       "level-up",
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/907.png"
   },
   "florges": {
    "key": "florges",
@@ -12462,6 +13999,51 @@
     }
    },
    "sprite": "assets/sprites/330.png"
+  },
+  "fomantis": {
+   "key": "fomantis",
+   "id": 753,
+   "species": "fomantis",
+   "form": "default",
+   "dex": 753,
+   "name": "Fomantis",
+   "types": [
+    "grass"
+   ],
+   "color": "pink",
+   "abilities": {
+    "normal": [
+     "leaf-guard"
+    ],
+    "hidden": [
+     "contrary"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "x-scissor": [
+       "level-up",
+       "machine"
+      ],
+      "swords-dance": [
+       "machine"
+      ],
+      "leech-life": [
+       "machine"
+      ],
+      "bullet-seed": [
+       "machine"
+      ],
+      "energy-ball": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/753.png"
   },
   "foongus": {
    "key": "foongus",
@@ -12689,6 +14271,122 @@
    },
    "sprite": "assets/sprites/996.png"
   },
+  "froakie": {
+   "key": "froakie",
+   "id": 656,
+   "species": "froakie",
+   "form": "default",
+   "dex": 656,
+   "name": "Froakie",
+   "types": [
+    "water"
+   ],
+   "color": "blue",
+   "abilities": {
+    "normal": [
+     "torrent"
+    ],
+    "hidden": [
+     "protean"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "surf": [
+       "machine"
+      ],
+      "dig": [
+       "machine"
+      ],
+      "ice-beam": [
+       "machine"
+      ],
+      "rock-slide": [
+       "machine"
+      ],
+      "spikes": [
+       "egg",
+       "machine"
+      ],
+      "hydro-pump": [
+       "level-up",
+       "machine"
+      ],
+      "waterfall": [
+       "machine"
+      ],
+      "u-turn": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/656.png"
+  },
+  "frogadier": {
+   "key": "frogadier",
+   "id": 657,
+   "species": "frogadier",
+   "form": "default",
+   "dex": 657,
+   "name": "Frogadier",
+   "types": [
+    "water"
+   ],
+   "color": "blue",
+   "abilities": {
+    "normal": [
+     "torrent"
+    ],
+    "hidden": [
+     "protean"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "ice-punch": [
+       "machine"
+      ],
+      "surf": [
+       "machine"
+      ],
+      "dig": [
+       "machine"
+      ],
+      "ice-beam": [
+       "machine"
+      ],
+      "rock-slide": [
+       "machine"
+      ],
+      "swords-dance": [
+       "machine"
+      ],
+      "spikes": [
+       "egg",
+       "machine"
+      ],
+      "hydro-pump": [
+       "level-up",
+       "machine"
+      ],
+      "waterfall": [
+       "machine"
+      ],
+      "u-turn": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/657.png"
+  },
   "froslass": {
    "key": "froslass",
    "id": 478,
@@ -12805,6 +14503,60 @@
     }
    },
    "sprite": "assets/sprites/873.png"
+  },
+  "fuecoco": {
+   "key": "fuecoco",
+   "id": 909,
+   "species": "fuecoco",
+   "form": "default",
+   "dex": 909,
+   "name": "Fuecoco",
+   "types": [
+    "fire"
+   ],
+   "color": "red",
+   "abilities": {
+    "normal": [
+     "blaze"
+    ],
+    "hidden": [
+     "unaware"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "thunder-fang": [
+       "machine"
+      ],
+      "fire-fang": [
+       "machine"
+      ],
+      "dig": [
+       "machine"
+      ],
+      "flamethrower": [
+       "level-up",
+       "machine"
+      ],
+      "will-o-wisp": [
+       "machine"
+      ],
+      "outrage": [
+       "machine"
+      ],
+      "zen-headbutt": [
+       "machine"
+      ],
+      "crunch": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/909.png"
   },
   "furfrou": {
    "key": "furfrou",
@@ -14138,6 +15890,53 @@
     }
    },
    "sprite": "assets/sprites/207.png"
+  },
+  "glimmet": {
+   "key": "glimmet",
+   "id": 969,
+   "species": "glimmet",
+   "form": "default",
+   "dex": 969,
+   "name": "Glimmet",
+   "types": [
+    "rock",
+    "poison"
+   ],
+   "color": "blue",
+   "abilities": {
+    "normal": [
+     "toxic-debris"
+    ],
+    "hidden": [
+     "corrosion"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "rock-slide": [
+       "level-up",
+       "machine"
+      ],
+      "spikes": [
+       "machine"
+      ],
+      "stealth-rock": [
+       "level-up",
+       "machine"
+      ],
+      "dazzling-gleam": [
+       "machine"
+      ],
+      "sludge-bomb": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/969.png"
   },
   "glimmora": {
    "key": "glimmora",
@@ -15491,6 +17290,59 @@
     }
    },
    "sprite": "assets/sprites/984.png"
+  },
+  "greavard": {
+   "key": "greavard",
+   "id": 971,
+   "species": "greavard",
+   "form": "default",
+   "dex": 971,
+   "name": "Greavard",
+   "types": [
+    "ghost"
+   ],
+   "color": "white",
+   "abilities": {
+    "normal": [
+     "pickup"
+    ],
+    "hidden": [
+     "fluffy"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "thunder-fang": [
+       "machine"
+      ],
+      "fire-fang": [
+       "machine"
+      ],
+      "ice-fang": [
+       "machine"
+      ],
+      "dig": [
+       "level-up",
+       "machine"
+      ],
+      "shadow-ball": [
+       "machine"
+      ],
+      "play-rough": [
+       "level-up",
+       "machine"
+      ],
+      "crunch": [
+       "level-up",
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/971.png"
   },
   "greedent": {
    "key": "greedent",
@@ -17018,6 +18870,36 @@
    },
    "sprite": "assets/sprites/695.png"
   },
+  "helioptile": {
+   "key": "helioptile",
+   "id": 694,
+   "species": "helioptile",
+   "form": "default",
+   "dex": 694,
+   "name": "Helioptile",
+   "types": [
+    "electric",
+    "normal"
+   ],
+   "color": "yellow",
+   "abilities": {
+    "normal": [
+     "dry-skin",
+     "sand-veil"
+    ],
+    "hidden": [
+     "solar-power"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": false,
+     "moves": {},
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/694.png"
+  },
   "heracross": {
    "key": "heracross",
    "id": 214,
@@ -17499,6 +19381,33 @@
     }
    },
    "sprite": "assets/sprites/430.png"
+  },
+  "honedge": {
+   "key": "honedge",
+   "id": 679,
+   "species": "honedge",
+   "form": "default",
+   "dex": 679,
+   "name": "Honedge",
+   "types": [
+    "steel",
+    "ghost"
+   ],
+   "color": "brown",
+   "abilities": {
+    "normal": [
+     "no-guard"
+    ],
+    "hidden": []
+   },
+   "learnsets": {
+    "gen9": {
+     "available": false,
+     "moves": {},
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/679.png"
   },
   "hoothoot": {
    "key": "hoothoot",
@@ -18148,6 +20057,53 @@
     }
    },
    "sprite": "assets/sprites/314.png"
+  },
+  "impidimp": {
+   "key": "impidimp",
+   "id": 859,
+   "species": "impidimp",
+   "form": "default",
+   "dex": 859,
+   "name": "Impidimp",
+   "types": [
+    "dark",
+    "fairy"
+   ],
+   "color": "pink",
+   "abilities": {
+    "normal": [
+     "prankster",
+     "frisk"
+    ],
+    "hidden": [
+     "pickpocket"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "draining-kiss": [
+       "machine"
+      ],
+      "drain-punch": [
+       "machine"
+      ],
+      "leech-life": [
+       "machine"
+      ],
+      "play-rough": [
+       "level-up",
+       "machine"
+      ],
+      "dazzling-gleam": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/859.png"
   },
   "incineroar": {
    "key": "incineroar",
@@ -20101,6 +22057,35 @@
    },
    "sprite": "assets/sprites/707.png"
   },
+  "klink": {
+   "key": "klink",
+   "id": 599,
+   "species": "klink",
+   "form": "default",
+   "dex": 599,
+   "name": "Klink",
+   "types": [
+    "steel"
+   ],
+   "color": "gray",
+   "abilities": {
+    "normal": [
+     "plus",
+     "minus"
+    ],
+    "hidden": [
+     "clear-body"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": false,
+     "moves": {},
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/599.png"
+  },
   "klinklang": {
    "key": "klinklang",
    "id": 601,
@@ -21360,6 +23345,52 @@
    },
    "sprite": "assets/sprites/542.png"
   },
+  "lechonk": {
+   "key": "lechonk",
+   "id": 915,
+   "species": "lechonk",
+   "form": "default",
+   "dex": 915,
+   "name": "Lechonk",
+   "types": [
+    "normal"
+   ],
+   "color": "gray",
+   "abilities": {
+    "normal": [
+     "aroma-veil",
+     "gluttony"
+    ],
+    "hidden": [
+     "thick-fat"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "dig": [
+       "level-up",
+       "machine"
+      ],
+      "bullet-seed": [
+       "machine"
+      ],
+      "play-rough": [
+       "machine"
+      ],
+      "zen-headbutt": [
+       "machine"
+      ],
+      "iron-head": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/915.png"
+  },
   "ledian": {
    "key": "ledian",
    "id": 166,
@@ -21575,6 +23606,35 @@
     }
    },
    "sprite": "assets/sprites/549.png"
+  },
+  "lillipup": {
+   "key": "lillipup",
+   "id": 506,
+   "species": "lillipup",
+   "form": "default",
+   "dex": 506,
+   "name": "Lillipup",
+   "types": [
+    "normal"
+   ],
+   "color": "brown",
+   "abilities": {
+    "normal": [
+     "vital-spirit",
+     "pickup"
+    ],
+    "hidden": [
+     "run-away"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": false,
+     "moves": {},
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/506.png"
   },
   "linoone": {
    "key": "linoone",
@@ -23582,6 +25642,53 @@
    },
    "sprite": "assets/sprites/556.png"
   },
+  "mareanie": {
+   "key": "mareanie",
+   "id": 747,
+   "species": "mareanie",
+   "form": "default",
+   "dex": 747,
+   "name": "Mareanie",
+   "types": [
+    "poison",
+    "water"
+   ],
+   "color": "blue",
+   "abilities": {
+    "normal": [
+     "merciless",
+     "limber"
+    ],
+    "hidden": [
+     "regenerator"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "surf": [
+       "machine"
+      ],
+      "ice-beam": [
+       "machine"
+      ],
+      "poison-jab": [
+       "level-up",
+       "machine"
+      ],
+      "hydro-pump": [
+       "machine"
+      ],
+      "sludge-bomb": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/747.png"
+  },
   "mareep": {
    "key": "mareep",
    "id": 179,
@@ -23828,6 +25935,56 @@
     }
    },
    "sprite": "assets/sprites/259.png"
+  },
+  "maschiff": {
+   "key": "maschiff",
+   "id": 942,
+   "species": "maschiff",
+   "form": "default",
+   "dex": 942,
+   "name": "Maschiff",
+   "types": [
+    "dark"
+   ],
+   "color": "brown",
+   "abilities": {
+    "normal": [
+     "intimidate",
+     "run-away"
+    ],
+    "hidden": [
+     "stakeout"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "thunder-fang": [
+       "machine"
+      ],
+      "fire-fang": [
+       "machine"
+      ],
+      "ice-fang": [
+       "machine"
+      ],
+      "dig": [
+       "machine"
+      ],
+      "play-rough": [
+       "egg",
+       "machine"
+      ],
+      "crunch": [
+       "level-up",
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/942.png"
   },
   "masquerain": {
    "key": "masquerain",
@@ -24135,6 +26292,32 @@
     }
    },
    "sprite": "assets/sprites/809.png"
+  },
+  "meltan": {
+   "key": "meltan",
+   "id": 808,
+   "species": "meltan",
+   "form": "default",
+   "dex": 808,
+   "name": "Meltan",
+   "types": [
+    "steel"
+   ],
+   "color": "gray",
+   "abilities": {
+    "normal": [
+     "magnet-pull"
+    ],
+    "hidden": []
+   },
+   "learnsets": {
+    "gen9": {
+     "available": false,
+     "moves": {},
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/808.png"
   },
   "meowscarada": {
    "key": "meowscarada",
@@ -24993,6 +27176,43 @@
    },
    "sprite": "assets/sprites/262.png"
   },
+  "milcery": {
+   "key": "milcery",
+   "id": 868,
+   "species": "milcery",
+   "form": "default",
+   "dex": 868,
+   "name": "Milcery",
+   "types": [
+    "fairy"
+   ],
+   "color": "white",
+   "abilities": {
+    "normal": [
+     "sweet-veil"
+    ],
+    "hidden": [
+     "aroma-veil"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "draining-kiss": [
+       "level-up",
+       "machine"
+      ],
+      "dazzling-gleam": [
+       "level-up",
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/868.png"
+  },
   "milotic": {
    "key": "milotic",
    "id": 350,
@@ -25518,6 +27738,53 @@
    },
    "sprite": "assets/sprites/391.png"
   },
+  "morgrem": {
+   "key": "morgrem",
+   "id": 860,
+   "species": "morgrem",
+   "form": "default",
+   "dex": 860,
+   "name": "Morgrem",
+   "types": [
+    "dark",
+    "fairy"
+   ],
+   "color": "pink",
+   "abilities": {
+    "normal": [
+     "prankster",
+     "frisk"
+    ],
+    "hidden": [
+     "pickpocket"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "draining-kiss": [
+       "machine"
+      ],
+      "drain-punch": [
+       "machine"
+      ],
+      "leech-life": [
+       "machine"
+      ],
+      "play-rough": [
+       "level-up",
+       "machine"
+      ],
+      "dazzling-gleam": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/860.png"
+  },
   "mothim": {
    "key": "mothim",
    "id": 414,
@@ -25636,6 +27903,52 @@
     }
    },
    "sprite": "assets/sprites/866.png"
+  },
+  "mudbray": {
+   "key": "mudbray",
+   "id": 749,
+   "species": "mudbray",
+   "form": "default",
+   "dex": 749,
+   "name": "Mudbray",
+   "types": [
+    "ground"
+   ],
+   "color": "brown",
+   "abilities": {
+    "normal": [
+     "own-tempo",
+     "stamina"
+    ],
+    "hidden": [
+     "inner-focus"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "rock-slide": [
+       "machine"
+      ],
+      "stealth-rock": [
+       "machine"
+      ],
+      "earthquake": [
+       "level-up",
+       "machine"
+      ],
+      "close-combat": [
+       "machine"
+      ],
+      "iron-head": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/749.png"
   },
   "mudkip": {
    "key": "mudkip",
@@ -26093,6 +28406,111 @@
     }
    },
    "sprite": "assets/sprites/518.png"
+  },
+  "nacli": {
+   "key": "nacli",
+   "id": 932,
+   "species": "nacli",
+   "form": "default",
+   "dex": 932,
+   "name": "Nacli",
+   "types": [
+    "rock"
+   ],
+   "color": "brown",
+   "abilities": {
+    "normal": [
+     "purifying-salt",
+     "sturdy"
+    ],
+    "hidden": [
+     "clear-body"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "dig": [
+       "machine"
+      ],
+      "rock-slide": [
+       "level-up",
+       "machine"
+      ],
+      "stealth-rock": [
+       "level-up",
+       "machine"
+      ],
+      "zen-headbutt": [
+       "machine"
+      ],
+      "earthquake": [
+       "level-up",
+       "machine"
+      ],
+      "iron-head": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/932.png"
+  },
+  "naclstack": {
+   "key": "naclstack",
+   "id": 933,
+   "species": "naclstack",
+   "form": "default",
+   "dex": 933,
+   "name": "Naclstack",
+   "types": [
+    "rock"
+   ],
+   "color": "brown",
+   "abilities": {
+    "normal": [
+     "purifying-salt",
+     "sturdy"
+    ],
+    "hidden": [
+     "clear-body"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "dig": [
+       "machine"
+      ],
+      "rock-slide": [
+       "level-up",
+       "machine"
+      ],
+      "body-press": [
+       "machine"
+      ],
+      "stealth-rock": [
+       "level-up",
+       "machine"
+      ],
+      "zen-headbutt": [
+       "machine"
+      ],
+      "earthquake": [
+       "level-up",
+       "machine"
+      ],
+      "iron-head": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/933.png"
   },
   "naganadel": {
    "key": "naganadel",
@@ -26850,6 +29268,47 @@
    },
    "sprite": "assets/sprites/274.png"
   },
+  "nymble": {
+   "key": "nymble",
+   "id": 919,
+   "species": "nymble",
+   "form": "default",
+   "dex": 919,
+   "name": "Nymble",
+   "types": [
+    "bug"
+   ],
+   "color": "gray",
+   "abilities": {
+    "normal": [
+     "swarm"
+    ],
+    "hidden": [
+     "tinted-lens"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "x-scissor": [
+       "machine"
+      ],
+      "leech-life": [
+       "machine"
+      ],
+      "bug-buzz": [
+       "machine"
+      ],
+      "u-turn": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/919.png"
+  },
   "obstagoon": {
    "key": "obstagoon",
    "id": 862,
@@ -27584,6 +30043,35 @@
    },
    "sprite": "assets/sprites/536.png"
   },
+  "pancham": {
+   "key": "pancham",
+   "id": 674,
+   "species": "pancham",
+   "form": "default",
+   "dex": 674,
+   "name": "Pancham",
+   "types": [
+    "fighting"
+   ],
+   "color": "white",
+   "abilities": {
+    "normal": [
+     "iron-fist",
+     "mold-breaker"
+    ],
+    "hidden": [
+     "scrappy"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": false,
+     "moves": {},
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/674.png"
+  },
   "pangoro": {
    "key": "pangoro",
    "id": 675,
@@ -27840,6 +30328,55 @@
     }
    },
    "sprite": "assets/sprites/504.png"
+  },
+  "pawmi": {
+   "key": "pawmi",
+   "id": 921,
+   "species": "pawmi",
+   "form": "default",
+   "dex": 921,
+   "name": "Pawmi",
+   "types": [
+    "electric"
+   ],
+   "color": "yellow",
+   "abilities": {
+    "normal": [
+     "static",
+     "natural-cure"
+    ],
+    "hidden": [
+     "iron-fist"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "thunder-fang": [
+       "machine"
+      ],
+      "dig": [
+       "level-up",
+       "machine"
+      ],
+      "volt-switch": [
+       "machine"
+      ],
+      "thunderbolt": [
+       "machine"
+      ],
+      "play-rough": [
+       "machine"
+      ],
+      "crunch": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/921.png"
   },
   "pawmo": {
    "key": "pawmo",
@@ -28736,6 +31273,50 @@
    },
    "sprite": "assets/sprites/25.png"
   },
+  "pikipek": {
+   "key": "pikipek",
+   "id": 731,
+   "species": "pikipek",
+   "form": "default",
+   "dex": 731,
+   "name": "Pikipek",
+   "types": [
+    "normal",
+    "flying"
+   ],
+   "color": "black",
+   "abilities": {
+    "normal": [
+     "keen-eye",
+     "skill-link"
+    ],
+    "hidden": [
+     "pickup"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "fly": [
+       "machine"
+      ],
+      "swords-dance": [
+       "machine"
+      ],
+      "bullet-seed": [
+       "level-up",
+       "machine"
+      ],
+      "u-turn": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/731.png"
+  },
   "piloswine": {
    "key": "piloswine",
    "id": 221,
@@ -29222,6 +31803,46 @@
    },
    "sprite": "assets/sprites/62.png"
   },
+  "poltchageist": {
+   "key": "poltchageist",
+   "id": 1012,
+   "species": "poltchageist",
+   "form": "default",
+   "dex": 1012,
+   "name": "Poltchageist",
+   "types": [
+    "grass",
+    "ghost"
+   ],
+   "color": "green",
+   "abilities": {
+    "normal": [
+     "hospitality"
+    ],
+    "hidden": [
+     "heatproof"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "shadow-ball": [
+       "level-up",
+       "machine"
+      ],
+      "trick-room": [
+       "machine"
+      ],
+      "energy-ball": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/1012.png"
+  },
   "polteageist": {
    "key": "polteageist",
    "id": 855,
@@ -29374,6 +31995,54 @@
     }
    },
    "sprite": "assets/sprites/261.png"
+  },
+  "popplio": {
+   "key": "popplio",
+   "id": 728,
+   "species": "popplio",
+   "form": "default",
+   "dex": 728,
+   "name": "Popplio",
+   "types": [
+    "water"
+   ],
+   "color": "blue",
+   "abilities": {
+    "normal": [
+     "torrent"
+    ],
+    "hidden": [
+     "liquid-voice"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "surf": [
+       "machine"
+      ],
+      "ice-beam": [
+       "machine"
+      ],
+      "draining-kiss": [
+       "machine"
+      ],
+      "play-rough": [
+       "machine"
+      ],
+      "hydro-pump": [
+       "level-up",
+       "machine"
+      ],
+      "waterfall": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/728.png"
   },
   "porygon": {
    "key": "porygon",
@@ -30080,6 +32749,44 @@
     }
    },
    "sprite": "assets/sprites/914.png"
+  },
+  "quaxly": {
+   "key": "quaxly",
+   "id": 912,
+   "species": "quaxly",
+   "form": "default",
+   "dex": 912,
+   "name": "Quaxly",
+   "types": [
+    "water"
+   ],
+   "color": null,
+   "abilities": {
+    "normal": [
+     "torrent"
+    ],
+    "hidden": [
+     "moxie"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "surf": [
+       "machine"
+      ],
+      "hydro-pump": [
+       "machine"
+      ],
+      "rapid-spin": [
+       "egg"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/912.png"
   },
   "quilava": {
    "key": "quilava",
@@ -31296,6 +34003,51 @@
    },
    "sprite": "assets/sprites/369.png"
   },
+  "rellor": {
+   "key": "rellor",
+   "id": 953,
+   "species": "rellor",
+   "form": "default",
+   "dex": 953,
+   "name": "Rellor",
+   "types": [
+    "bug"
+   ],
+   "color": "brown",
+   "abilities": {
+    "normal": [
+     "compound-eyes"
+    ],
+    "hidden": [
+     "shed-skin"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "dig": [
+       "level-up",
+       "machine"
+      ],
+      "x-scissor": [
+       "machine"
+      ],
+      "leech-life": [
+       "machine"
+      ],
+      "bug-buzz": [
+       "machine"
+      ],
+      "sludge-bomb": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/953.png"
+  },
   "remoraid": {
    "key": "remoraid",
    "id": 223,
@@ -32021,6 +34773,61 @@
    },
    "sprite": "assets/sprites/1005.png"
   },
+  "rockruff": {
+   "key": "rockruff",
+   "id": 744,
+   "species": "rockruff",
+   "form": "default",
+   "dex": 744,
+   "name": "Rockruff",
+   "types": [
+    "rock"
+   ],
+   "color": "brown",
+   "abilities": null,
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "thunder-fang": [
+       "machine"
+      ],
+      "fire-fang": [
+       "machine"
+      ],
+      "dig": [
+       "machine"
+      ],
+      "rock-slide": [
+       "level-up",
+       "machine"
+      ],
+      "swords-dance": [
+       "machine"
+      ],
+      "stealth-rock": [
+       "level-up",
+       "machine"
+      ],
+      "play-rough": [
+       "machine"
+      ],
+      "zen-headbutt": [
+       "machine"
+      ],
+      "iron-head": [
+       "machine"
+      ],
+      "crunch": [
+       "level-up",
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/744.png"
+  },
   "roggenrola": {
    "key": "roggenrola",
    "id": 524,
@@ -32110,6 +34917,45 @@
    },
    "sprite": "assets/sprites/407.png"
   },
+  "rowlet": {
+   "key": "rowlet",
+   "id": 722,
+   "species": "rowlet",
+   "form": "default",
+   "dex": 722,
+   "name": "Rowlet",
+   "types": [
+    "grass",
+    "flying"
+   ],
+   "color": "brown",
+   "abilities": {
+    "normal": [
+     "overgrow"
+    ],
+    "hidden": [
+     "long-reach"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "swords-dance": [
+       "machine"
+      ],
+      "bullet-seed": [
+       "machine"
+      ],
+      "energy-ball": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/722.png"
+  },
   "rufflet": {
    "key": "rufflet",
    "id": 627,
@@ -32158,6 +35004,33 @@
     }
    },
    "sprite": "assets/sprites/627.png"
+  },
+  "runerigus": {
+   "key": "runerigus",
+   "id": 867,
+   "species": "runerigus",
+   "form": "default",
+   "dex": 867,
+   "name": "Runerigus",
+   "types": [
+    "ground",
+    "ghost"
+   ],
+   "color": "gray",
+   "abilities": {
+    "normal": [
+     "wandering-spirit"
+    ],
+    "hidden": []
+   },
+   "learnsets": {
+    "gen9": {
+     "available": false,
+     "moves": {},
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/867.png"
   },
   "sableye": {
    "key": "sableye",
@@ -32308,6 +35181,58 @@
    },
    "sprite": "assets/sprites/373.png"
   },
+  "salandit": {
+   "key": "salandit",
+   "id": 757,
+   "species": "salandit",
+   "form": "default",
+   "dex": 757,
+   "name": "Salandit",
+   "types": [
+    "poison",
+    "fire"
+   ],
+   "color": "black",
+   "abilities": {
+    "normal": [
+     "corrosion"
+    ],
+    "hidden": [
+     "oblivious"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "fire-fang": [
+       "machine"
+      ],
+      "flamethrower": [
+       "level-up",
+       "machine"
+      ],
+      "dragon-claw": [
+       "machine"
+      ],
+      "poison-jab": [
+       "machine"
+      ],
+      "will-o-wisp": [
+       "machine"
+      ],
+      "leech-life": [
+       "machine"
+      ],
+      "sludge-bomb": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/757.png"
+  },
   "salazzle": {
    "key": "salazzle",
    "id": 758,
@@ -32417,6 +35342,70 @@
     }
    },
    "sprite": "assets/sprites/503.png"
+  },
+  "sandaconda": {
+   "key": "sandaconda",
+   "id": 844,
+   "species": "sandaconda",
+   "form": "default",
+   "dex": 844,
+   "name": "Sandaconda",
+   "types": [
+    "ground"
+   ],
+   "color": "green",
+   "abilities": {
+    "normal": [
+     "sand-spit",
+     "shed-skin"
+    ],
+    "hidden": [
+     "sand-veil"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "thunder-fang": [
+       "machine"
+      ],
+      "fire-fang": [
+       "machine"
+      ],
+      "dig": [
+       "level-up",
+       "machine"
+      ],
+      "rock-slide": [
+       "machine"
+      ],
+      "body-press": [
+       "machine"
+      ],
+      "stealth-rock": [
+       "machine"
+      ],
+      "hurricane": [
+       "machine"
+      ],
+      "outrage": [
+       "machine"
+      ],
+      "zen-headbutt": [
+       "machine"
+      ],
+      "earthquake": [
+       "machine"
+      ],
+      "iron-head": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/844.png"
   },
   "sandile": {
    "key": "sandile",
@@ -32786,6 +35775,58 @@
    },
    "sprite": "assets/sprites/989.png"
   },
+  "sandygast": {
+   "key": "sandygast",
+   "id": 769,
+   "species": "sandygast",
+   "form": "default",
+   "dex": 769,
+   "name": "Sandygast",
+   "types": [
+    "ghost",
+    "ground"
+   ],
+   "color": "brown",
+   "abilities": {
+    "normal": [
+     "water-compaction"
+    ],
+    "hidden": [
+     "sand-veil"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "shadow-ball": [
+       "level-up",
+       "machine"
+      ],
+      "psychic": [
+       "machine"
+      ],
+      "rock-slide": [
+       "machine"
+      ],
+      "stealth-rock": [
+       "machine"
+      ],
+      "earthquake": [
+       "machine"
+      ],
+      "energy-ball": [
+       "machine"
+      ],
+      "sludge-bomb": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/769.png"
+  },
   "sawk": {
    "key": "sawk",
    "id": 539,
@@ -32869,6 +35910,35 @@
     }
    },
    "sprite": "assets/sprites/586.png"
+  },
+  "scatterbug": {
+   "key": "scatterbug",
+   "id": 664,
+   "species": "scatterbug",
+   "form": "default",
+   "dex": 664,
+   "name": "Scatterbug",
+   "types": [
+    "bug"
+   ],
+   "color": "black",
+   "abilities": {
+    "normal": [
+     "shield-dust",
+     "compound-eyes"
+    ],
+    "hidden": [
+     "friend-guard"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {},
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/664.png"
   },
   "sceptile": {
    "key": "sceptile",
@@ -34287,6 +37357,54 @@
    },
    "sprite": "assets/sprites/403.png"
   },
+  "shroodle": {
+   "key": "shroodle",
+   "id": 944,
+   "species": "shroodle",
+   "form": "default",
+   "dex": 944,
+   "name": "Shroodle",
+   "types": [
+    "poison",
+    "normal"
+   ],
+   "color": "gray",
+   "abilities": {
+    "normal": [
+     "unburden",
+     "pickpocket"
+    ],
+    "hidden": [
+     "prankster"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "dig": [
+       "machine"
+      ],
+      "poison-jab": [
+       "level-up",
+       "machine"
+      ],
+      "swords-dance": [
+       "machine"
+      ],
+      "sludge-bomb": [
+       "machine"
+      ],
+      "u-turn": [
+       "level-up",
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/944.png"
+  },
   "shroomish": {
    "key": "shroomish",
    "id": 285,
@@ -34742,6 +37860,56 @@
    },
    "sprite": "assets/sprites/911.png"
   },
+  "skiddo": {
+   "key": "skiddo",
+   "id": 672,
+   "species": "skiddo",
+   "form": "default",
+   "dex": 672,
+   "name": "Skiddo",
+   "types": [
+    "grass"
+   ],
+   "color": "brown",
+   "abilities": {
+    "normal": [
+     "sap-sipper"
+    ],
+    "hidden": [
+     "grass-pelt"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "surf": [
+       "machine"
+      ],
+      "dig": [
+       "machine"
+      ],
+      "rock-slide": [
+       "machine"
+      ],
+      "bullet-seed": [
+       "machine"
+      ],
+      "play-rough": [
+       "machine"
+      ],
+      "zen-headbutt": [
+       "machine"
+      ],
+      "energy-ball": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/672.png"
+  },
   "skiploom": {
    "key": "skiploom",
    "id": 188,
@@ -34848,6 +38016,66 @@
     }
    },
    "sprite": "assets/sprites/451.png"
+  },
+  "skrelp": {
+   "key": "skrelp",
+   "id": 690,
+   "species": "skrelp",
+   "form": "default",
+   "dex": 690,
+   "name": "Skrelp",
+   "types": [
+    "poison",
+    "water"
+   ],
+   "color": "brown",
+   "abilities": {
+    "normal": [
+     "poison-point",
+     "poison-touch"
+    ],
+    "hidden": [
+     "adaptability"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "surf": [
+       "machine"
+      ],
+      "thunderbolt": [
+       "machine"
+      ],
+      "shadow-ball": [
+       "machine"
+      ],
+      "aqua-tail": [
+       "level-up"
+      ],
+      "play-rough": [
+       "machine"
+      ],
+      "hydro-pump": [
+       "level-up",
+       "machine"
+      ],
+      "outrage": [
+       "machine"
+      ],
+      "waterfall": [
+       "machine"
+      ],
+      "sludge-bomb": [
+       "level-up",
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/690.png"
   },
   "skuntank": {
    "key": "skuntank",
@@ -36146,6 +39374,48 @@
    },
    "sprite": "assets/sprites/209.png"
   },
+  "sobble": {
+   "key": "sobble",
+   "id": 816,
+   "species": "sobble",
+   "form": "default",
+   "dex": 816,
+   "name": "Sobble",
+   "types": [
+    "water"
+   ],
+   "color": "blue",
+   "abilities": {
+    "normal": [
+     "torrent"
+    ],
+    "hidden": [
+     "sniper"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "surf": [
+       "machine"
+      ],
+      "hydro-pump": [
+       "machine"
+      ],
+      "waterfall": [
+       "machine"
+      ],
+      "u-turn": [
+       "level-up",
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/816.png"
+  },
   "solgaleo": {
    "key": "solgaleo",
    "id": 791,
@@ -36357,6 +39627,34 @@
     }
    },
    "sprite": "assets/sprites/897.png"
+  },
+  "spewpa": {
+   "key": "spewpa",
+   "id": 665,
+   "species": "spewpa",
+   "form": "default",
+   "dex": 665,
+   "name": "Spewpa",
+   "types": [
+    "bug"
+   ],
+   "color": "black",
+   "abilities": {
+    "normal": [
+     "shed-skin"
+    ],
+    "hidden": [
+     "friend-guard"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {},
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/665.png"
   },
   "spheal": {
    "key": "spheal",
@@ -36610,6 +39908,78 @@
     }
    },
    "sprite": "assets/sprites/325.png"
+  },
+  "sprigatito": {
+   "key": "sprigatito",
+   "id": 906,
+   "species": "sprigatito",
+   "form": "default",
+   "dex": 906,
+   "name": "Sprigatito",
+   "types": [
+    "grass"
+   ],
+   "color": "green",
+   "abilities": {
+    "normal": [
+     "overgrow"
+    ],
+    "hidden": [
+     "protean"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "bullet-seed": [
+       "machine"
+      ],
+      "play-rough": [
+       "level-up",
+       "machine"
+      ],
+      "energy-ball": [
+       "level-up",
+       "machine"
+      ],
+      "u-turn": [
+       "level-up",
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/906.png"
+  },
+  "spritzee": {
+   "key": "spritzee",
+   "id": 682,
+   "species": "spritzee",
+   "form": "default",
+   "dex": 682,
+   "name": "Spritzee",
+   "types": [
+    "fairy"
+   ],
+   "color": "pink",
+   "abilities": {
+    "normal": [
+     "healer"
+    ],
+    "hidden": [
+     "aroma-veil"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": false,
+     "moves": {},
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/682.png"
   },
   "squirtle": {
    "key": "squirtle",
@@ -36956,6 +40326,57 @@
     }
    },
    "sprite": "assets/sprites/208.png"
+  },
+  "steenee": {
+   "key": "steenee",
+   "id": 762,
+   "species": "steenee",
+   "form": "default",
+   "dex": 762,
+   "name": "Steenee",
+   "types": [
+    "grass"
+   ],
+   "color": "purple",
+   "abilities": {
+    "normal": [
+     "leaf-guard",
+     "oblivious"
+    ],
+    "hidden": [
+     "sweet-veil"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "draining-kiss": [
+       "machine"
+      ],
+      "bullet-seed": [
+       "machine"
+      ],
+      "play-rough": [
+       "machine"
+      ],
+      "zen-headbutt": [
+       "machine"
+      ],
+      "dazzling-gleam": [
+       "machine"
+      ],
+      "energy-ball": [
+       "machine"
+      ],
+      "rapid-spin": [
+       "level-up"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/762.png"
   },
   "stonjourner": {
    "key": "stonjourner",
@@ -37870,6 +41291,42 @@
    },
    "sprite": "assets/sprites/700.png"
   },
+  "tadbulb": {
+   "key": "tadbulb",
+   "id": 938,
+   "species": "tadbulb",
+   "form": "default",
+   "dex": 938,
+   "name": "Tadbulb",
+   "types": [
+    "electric"
+   ],
+   "color": "yellow",
+   "abilities": {
+    "normal": [
+     "own-tempo",
+     "static"
+    ],
+    "hidden": [
+     "damp"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "volt-switch": [
+       "machine"
+      ],
+      "thunderbolt": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/938.png"
+  },
   "taillow": {
    "key": "taillow",
    "id": 276,
@@ -37947,6 +41404,53 @@
     }
    },
    "sprite": "assets/sprites/663.png"
+  },
+  "tandemaus": {
+   "key": "tandemaus",
+   "id": 924,
+   "species": "tandemaus",
+   "form": "default",
+   "dex": 924,
+   "name": "Tandemaus",
+   "types": [
+    "normal"
+   ],
+   "color": "white",
+   "abilities": {
+    "normal": [
+     "run-away",
+     "pickup"
+    ],
+    "hidden": [
+     "own-tempo"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "dig": [
+       "machine"
+      ],
+      "bullet-seed": [
+       "level-up",
+       "machine"
+      ],
+      "play-rough": [
+       "level-up",
+       "machine"
+      ],
+      "crunch": [
+       "machine"
+      ],
+      "u-turn": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/924.png"
   },
   "tangela": {
    "key": "tangela",
@@ -38121,6 +41625,53 @@
     }
    },
    "sprite": "assets/sprites/786.png"
+  },
+  "tarountula": {
+   "key": "tarountula",
+   "id": 917,
+   "species": "tarountula",
+   "form": "default",
+   "dex": 917,
+   "name": "Tarountula",
+   "types": [
+    "bug"
+   ],
+   "color": "white",
+   "abilities": {
+    "normal": [
+     "insomnia"
+    ],
+    "hidden": [
+     "stakeout"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "poison-jab": [
+       "machine"
+      ],
+      "x-scissor": [
+       "machine"
+      ],
+      "leech-life": [
+       "machine"
+      ],
+      "bullet-seed": [
+       "machine"
+      ],
+      "spikes": [
+       "machine"
+      ],
+      "bug-buzz": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/917.png"
   },
   "tauros": {
    "key": "tauros",
@@ -38543,6 +42094,35 @@
    },
    "sprite": "assets/sprites/639.png"
   },
+  "thievul": {
+   "key": "thievul",
+   "id": 828,
+   "species": "thievul",
+   "form": "default",
+   "dex": 828,
+   "name": "Thievul",
+   "types": [
+    "dark"
+   ],
+   "color": "brown",
+   "abilities": {
+    "normal": [
+     "run-away",
+     "unburden"
+    ],
+    "hidden": [
+     "stakeout"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": false,
+     "moves": {},
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/828.png"
+  },
   "throh": {
    "key": "throh",
    "id": 538,
@@ -38679,6 +42259,54 @@
    },
    "sprite": "assets/sprites/1003.png"
   },
+  "tinkatink": {
+   "key": "tinkatink",
+   "id": 957,
+   "species": "tinkatink",
+   "form": "default",
+   "dex": 957,
+   "name": "Tinkatink",
+   "types": [
+    "fairy",
+    "steel"
+   ],
+   "color": "pink",
+   "abilities": {
+    "normal": [
+     "mold-breaker",
+     "own-tempo"
+    ],
+    "hidden": [
+     "pickpocket"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "draining-kiss": [
+       "level-up",
+       "machine"
+      ],
+      "rock-slide": [
+       "machine"
+      ],
+      "swords-dance": [
+       "machine"
+      ],
+      "stealth-rock": [
+       "machine"
+      ],
+      "play-rough": [
+       "level-up",
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/957.png"
+  },
   "tinkaton": {
    "key": "tinkaton",
    "id": 959,
@@ -38727,6 +42355,54 @@
    },
    "sprite": "assets/sprites/959.png"
   },
+  "tinkatuff": {
+   "key": "tinkatuff",
+   "id": 958,
+   "species": "tinkatuff",
+   "form": "default",
+   "dex": 958,
+   "name": "Tinkatuff",
+   "types": [
+    "fairy",
+    "steel"
+   ],
+   "color": "pink",
+   "abilities": {
+    "normal": [
+     "mold-breaker",
+     "own-tempo"
+    ],
+    "hidden": [
+     "pickpocket"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "draining-kiss": [
+       "level-up",
+       "machine"
+      ],
+      "rock-slide": [
+       "machine"
+      ],
+      "swords-dance": [
+       "machine"
+      ],
+      "stealth-rock": [
+       "machine"
+      ],
+      "play-rough": [
+       "level-up",
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/958.png"
+  },
   "tirtouga": {
    "key": "tirtouga",
    "id": 564,
@@ -38756,6 +42432,55 @@
     }
    },
    "sprite": "assets/sprites/564.png"
+  },
+  "toedscool": {
+   "key": "toedscool",
+   "id": 948,
+   "species": "toedscool",
+   "form": "default",
+   "dex": 948,
+   "name": "Toedscool",
+   "types": [
+    "ground",
+    "grass"
+   ],
+   "color": "yellow",
+   "abilities": {
+    "normal": [
+     "mycelium-might"
+    ],
+    "hidden": []
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "trick-room": [
+       "machine"
+      ],
+      "bullet-seed": [
+       "machine"
+      ],
+      "spikes": [
+       "machine"
+      ],
+      "dazzling-gleam": [
+       "machine"
+      ],
+      "energy-ball": [
+       "machine"
+      ],
+      "sludge-bomb": [
+       "machine"
+      ],
+      "rapid-spin": [
+       "egg"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/948.png"
   },
   "toedscruel": {
    "key": "toedscruel",
@@ -39024,6 +42749,61 @@
     }
    },
    "sprite": "assets/sprites/324.png"
+  },
+  "torracat": {
+   "key": "torracat",
+   "id": 726,
+   "species": "torracat",
+   "form": "default",
+   "dex": 726,
+   "name": "Torracat",
+   "types": [
+    "fire"
+   ],
+   "color": "red",
+   "abilities": {
+    "normal": [
+     "blaze"
+    ],
+    "hidden": [
+     "intimidate"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "fire-fang": [
+       "level-up",
+       "machine"
+      ],
+      "flamethrower": [
+       "level-up",
+       "machine"
+      ],
+      "will-o-wisp": [
+       "machine"
+      ],
+      "swords-dance": [
+       "machine"
+      ],
+      "leech-life": [
+       "machine"
+      ],
+      "outrage": [
+       "machine"
+      ],
+      "crunch": [
+       "machine"
+      ],
+      "u-turn": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/726.png"
   },
   "torterra": {
    "key": "torterra",
@@ -39324,6 +43104,36 @@
    },
    "sprite": "assets/sprites/454.png"
   },
+  "tranquill": {
+   "key": "tranquill",
+   "id": 520,
+   "species": "tranquill",
+   "form": "default",
+   "dex": 520,
+   "name": "Tranquill",
+   "types": [
+    "normal",
+    "flying"
+   ],
+   "color": "gray",
+   "abilities": {
+    "normal": [
+     "big-pecks",
+     "super-luck"
+    ],
+    "hidden": [
+     "rivalry"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": false,
+     "moves": {},
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/520.png"
+  },
   "trapinch": {
    "key": "trapinch",
    "id": 328,
@@ -39556,6 +43366,79 @@
     }
    },
    "sprite": "assets/sprites/357.png"
+  },
+  "trubbish": {
+   "key": "trubbish",
+   "id": 568,
+   "species": "trubbish",
+   "form": "default",
+   "dex": 568,
+   "name": "Trubbish",
+   "types": [
+    "poison"
+   ],
+   "color": "green",
+   "abilities": {
+    "normal": [
+     "stench",
+     "sticky-hold"
+    ],
+    "hidden": [
+     "aftermath"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": false,
+     "moves": {},
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/568.png"
+  },
+  "trumbeak": {
+   "key": "trumbeak",
+   "id": 732,
+   "species": "trumbeak",
+   "form": "default",
+   "dex": 732,
+   "name": "Trumbeak",
+   "types": [
+    "normal",
+    "flying"
+   ],
+   "color": "black",
+   "abilities": {
+    "normal": [
+     "keen-eye",
+     "skill-link"
+    ],
+    "hidden": [
+     "pickup"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "fly": [
+       "machine"
+      ],
+      "swords-dance": [
+       "machine"
+      ],
+      "bullet-seed": [
+       "level-up",
+       "machine"
+      ],
+      "u-turn": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/732.png"
   },
   "tsareena": {
    "key": "tsareena",
@@ -41721,6 +45604,53 @@
    },
    "sprite": "assets/sprites/505.png"
   },
+  "wattrel": {
+   "key": "wattrel",
+   "id": 940,
+   "species": "wattrel",
+   "form": "default",
+   "dex": 940,
+   "name": "Wattrel",
+   "types": [
+    "electric",
+    "flying"
+   ],
+   "color": "black",
+   "abilities": {
+    "normal": [
+     "wind-power",
+     "volt-absorb"
+    ],
+    "hidden": [
+     "competitive"
+    ]
+   },
+   "learnsets": {
+    "gen9": {
+     "available": true,
+     "moves": {
+      "fly": [
+       "machine"
+      ],
+      "volt-switch": [
+       "level-up",
+       "machine"
+      ],
+      "thunderbolt": [
+       "machine"
+      ],
+      "hurricane": [
+       "machine"
+      ],
+      "u-turn": [
+       "machine"
+      ]
+     },
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/940.png"
+  },
   "weavile": {
    "key": "weavile",
    "id": 461,
@@ -42697,6 +46627,33 @@
     }
    },
    "sprite": "assets/sprites/562.png"
+  },
+  "yamask-galar": {
+   "key": "yamask-galar",
+   "id": 10179,
+   "species": "yamask",
+   "form": "galar",
+   "dex": 562,
+   "name": "Yamask de Galar",
+   "types": [
+    "ground",
+    "ghost"
+   ],
+   "color": "black",
+   "abilities": {
+    "normal": [
+     "wandering-spirit"
+    ],
+    "hidden": []
+   },
+   "learnsets": {
+    "gen9": {
+     "available": false,
+     "moves": {},
+     "disputed": []
+    }
+   },
+   "sprite": "assets/sprites/10179.png"
   },
   "yanma": {
    "key": "yanma",

@@ -40,6 +40,19 @@ test('seed reproducible: misma seed → mismo orden y mismas cartas', () => {
   assert.notDeepEqual(a.order, c.order);
 });
 
+test('seed exclusiva: arma una partida sólo con las 20 rondas de grabación', () => {
+  const batch = 'grabacion-2026-10-02';
+  const a = G.createMatch(DATA, { seed: batch, batch });
+  const b = G.createMatch(DATA, { seed: batch, batch });
+  assert.equal(a.order.length, 20);
+  assert.deepEqual(a.order, b.order);
+  assert.ok(a.order.every(id => G.roundById(DATA, id).batch === batch));
+  assert.equal(new Set(a.order).size, 20);
+  const snapshot = JSON.stringify(a);
+  assert.equal(G.reroll(a, DATA), false, 'el set es cerrado: no introduce rondas externas');
+  assert.equal(JSON.stringify(a), snapshot, 'un reroll bloqueado no modifica la partida');
+});
+
 test('no se repiten rondas y hay totalRounds', () => {
   const s = match('x', { totalRounds: 20 });
   assert.equal(s.order.length, 20);

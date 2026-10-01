@@ -58,7 +58,11 @@
         && s.order.every(id => DATA.rounds.some(r => r.id === id));
     } catch (_) { return false; }
   }
-  const newMatch = seed => G.createMatch(DATA, { seed, config: CFG });
+  const newMatch = seed => {
+    const selected = String(seed || '');
+    const batch = DATA.rounds.some(r => r.batch === selected) ? selected : null;
+    return G.createMatch(DATA, { seed: selected, batch, config: CFG });
+  };
   let S = null;
   try { S = JSON.parse(localStorage.getItem(KEY)); } catch (_) {}
   const urlSeed = params.get('seed');
@@ -385,6 +389,7 @@
     pq('#p-diff').textContent = DIFF_TEXT[def.difficulty];
     updateSync();
     pq('#b-retry').disabled = !S.config.allowRetry;
+    pq('#b-reroll').disabled = !!S.batch;
     [0, 1].forEach(i => {
       const b = pq(`[data-active="${i}"]`);
       b.textContent = (S.active === i ? '▶ ' : '') + S.config.players[i];
