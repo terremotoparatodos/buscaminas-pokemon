@@ -96,6 +96,7 @@ const stripPokemon = p => {
     types: p.types.sort((a, b) => a.slot - b.slot).map(t => t.type.name),
     abilities: p.abilities.sort((a, b) => a.slot - b.slot)
       .map(a => ({ name: a.ability.name, hidden: a.is_hidden, slot: a.slot })),
+    weightHg: p.weight, heightDm: p.height,
     pastTypes: p.past_types || [], pastAbilities: p.past_abilities || [],
     sprite: p.sprites?.front_default || null,
     forms: p.forms.map(f => f.name),
@@ -126,8 +127,13 @@ const stripMove = m => ({
   learnedBy: m.learned_by_pokemon.map(x => x.name),
 });
 
+/* evolutionDetails: cómo se llega a ESTA especie desde la anterior (una entrada por juego/método).
+   Se guardan los campos no vacíos, con los objetos {name,url} reducidos a su nombre. */
+const stripDetail = d => Object.fromEntries(Object.entries(d)
+  .filter(([, v]) => v !== null && v !== false && v !== '')
+  .map(([k, v]) => [k, v && typeof v === 'object' && 'name' in v ? v.name : v]));
 const stripChain = c => {
-  const walk = n => ({ species: n.species.name, evolvesTo: n.evolves_to.map(walk) });
+  const walk = n => ({ species: n.species.name, evolutionDetails: (n.evolution_details || []).map(stripDetail), evolvesTo: n.evolves_to.map(walk) });
   return { id: c.id, chain: walk(c.chain) };
 };
 

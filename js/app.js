@@ -146,7 +146,9 @@
     E.solveRound(def, DATA.facts).forEach(c => { details[c.key] = c; });
     el.grid.innerHTML = S.round.cards.map((k, i) => {
       const p = DATA.facts.pokemon[k], name = up(p.name), d = details[k];
-      const extra = d.multiplier !== undefined ? `×${String(d.multiplier).replace('.', ',')}` : d.detail === 'habilidad oculta' ? 'OCULTA' : '';
+      const measure = def.condition.type === 'weight' || def.condition.type === 'height';
+      const extra = d.multiplier !== undefined ? `×${String(d.multiplier).replace('.', ',')}`
+        : measure ? up(d.detail.replace('.', ',')) : d.detail === 'habilidad oculta' ? 'OCULTA' : '';
       return `<button class="card" data-key="${k}" style="--d:${i * 35}ms" aria-label="${p.name}">
         <span class="tint"></span>
         <span class="art"><img src="${spriteOf(k)}" alt="" width="96" height="96" decoding="async"></span>

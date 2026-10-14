@@ -6,6 +6,8 @@ import fs from 'node:fs';
 import { validateRounds } from '../scripts/lib/validate.mjs';
 import { buildSourceA, buildSourceB, makeShowdownMapper } from '../scripts/lib/sources.mjs';
 import { RULESETS } from '../scripts/catalog.mjs';
+import { createRequire } from 'node:module';
+const E = createRequire(import.meta.url)('../js/engine.js');
 
 const realChart = JSON.parse(fs.readFileSync(new URL('../data/pokemon-facts.json', import.meta.url), 'utf8')).typeChart;
 const clone = x => JSON.parse(JSON.stringify(x));
@@ -183,11 +185,53 @@ test('Fuente A: sólo cuentan los version groups del ruleset Gen 9', () => {
       abilities: [{ name: 'torrent', hidden: false, slot: 1 }, { name: 'rain-dish', hidden: true, slot: 3 }],
       versionGroups: ['sword-shield', 'scarlet-violet'],
       gen9Moves: { surf: ['scarlet-violet:machine:0'], 'ice-beam': ['legends-za:machine:0'] } }],
+    chains: [],
   };
   const SA = buildSourceA(A, RULESETS.gen9);
   assert.deepEqual(SA.pokemon.foo.gen9.moves, { surf: ['machine'] });
   assert.deepEqual(SA.pokemon.foo.abilities, { normal: ['torrent'], hidden: ['rain-dish'], special: [] });
   assert.equal(SA.pokemon.foo.gen9.available, true);
+});
+
+test('Fuentes A y B: peso, altura y método evolutivo por forma', () => {
+  const typeRel = { double_damage_from: [], half_damage_from: [], no_damage_from: [] };
+  const mon = (name, species, extra) => Object.assign({ name, id: 1, species, isDefault: !name.includes('-'), types: ['fire'], sprite: 'x',
+    abilities: [], versionGroups: [], gen9Moves: {}, weightHg: 99, heightDm: 6 }, extra);
+  const A = {
+    types: E.TYPES.map(name => ({ name, damageRelations: typeRel })),
+    species: [{ name: 'vulpix', evolvesFrom: null }, { name: 'ninetales', evolvesFrom: 'vulpix' }],
+    pokemon: [mon('vulpix', 'vulpix'), mon('vulpix-alola', 'vulpix'), mon('ninetales', 'ninetales', { weightHg: 199 })],
+    chains: [{ id: 1, chain: { species: 'vulpix', evolutionDetails: [], evolvesTo: [{ species: 'ninetales', evolvesTo: [], evolutionDetails: [
+      { version_group: 'red-blue', trigger: 'use-item', item: 'fire-stone' },
+      { version_group: 'sun-moon', trigger: 'use-item', item: 'ice-stone', required_pokemon_form: 'vulpix-alola', evolved_pokemon_form: 'ninetales-alola' },
+    ] }] } }],
+  };
+  const SA = buildSourceA(A, RULESETS.gen9);
+  assert.deepEqual(SA.pokemon.vulpix.evolution, { methods: ['item:fire-stone'], evolvedBy: [] });
+  assert.deepEqual(SA.pokemon['vulpix-alola'].evolution, { methods: ['item:ice-stone'], evolvedBy: [] });
+  assert.deepEqual(SA.pokemon.ninetales.evolution, { methods: [], evolvedBy: ['item:fire-stone'] });
+  assert.equal(SA.pokemon.ninetales.weightKg, 19.9);
+  assert.equal(SA.pokemon.vulpix.heightM, 0.6);
+
+  const tc = Object.fromEntries(E.TYPES.map(t => [t.charAt(0).toUpperCase() + t.slice(1), 0]));
+  const B = {
+    pokedex: {
+      vulpix: { num: 37, name: 'Vulpix', types: ['Fire'], abilities: {}, evos: ['Ninetales'], weightkg: 9.9, heightm: 0.6 },
+      ninetales: { num: 38, name: 'Ninetales', types: ['Fire'], abilities: {}, prevo: 'Vulpix', evoType: 'useItem', evoItem: 'Fire Stone', weightkg: 19.9, heightm: 1.1 },
+      scizor: { num: 212, name: 'Scizor', types: ['Bug'], abilities: {}, prevo: 'Scyther', evoType: 'trade', evoItem: 'Metal Coat' },
+      escavalier: { num: 589, name: 'Escavalier', types: ['Bug'], abilities: {}, prevo: 'Karrablast', evoType: 'trade', evoCondition: 'with a Shelmet' },
+      espeon: { num: 196, name: 'Espeon', types: ['Psychic'], abilities: {}, prevo: 'Eevee', evoType: 'levelFriendship', evoCondition: 'during the day' },
+    },
+    learnsets: {}, typechart: Object.fromEntries(E.TYPES.map(t => [t, { damageTaken: tc }])), formatsData: {},
+  };
+  const ids = ['vulpix', 'ninetales', 'scizor', 'escavalier', 'espeon'].map(k => ({ key: k, showdownId: k }));
+  const SB = buildSourceB(B, RULESETS.gen9, ids, []);
+  assert.deepEqual(SB.pokemon.vulpix.evolution, { methods: ['item:fire-stone'], evolvedBy: [] });
+  assert.deepEqual(SB.pokemon.ninetales.evolution, { methods: [], evolvedBy: ['item:fire-stone'] });
+  assert.deepEqual(SB.pokemon.scizor.evolution.evolvedBy, ['trade'], 'intercambio con objeto equipado sigue siendo intercambio');
+  assert.deepEqual(SB.pokemon.escavalier.evolution.evolvedBy, ['other'], 'intercambio con otro Pokémon concreto: método raro');
+  assert.deepEqual(SB.pokemon.espeon.evolution.evolvedBy, ['friendship']);
+  assert.equal(SB.pokemon.ninetales.weightKg, 19.9);
 });
 
 test('Fuente B: interpreta los códigos de learnset de Showdown (9L/9M/9E/9S sí; 8M no)', () => {

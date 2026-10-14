@@ -56,27 +56,53 @@ test('ids de ronda únicos y banco equilibrado por familia', () => {
   assert.equal(new Set(rounds.map(r => r.id)).size, rounds.length);
   const fam = {};
   rounds.forEach(r => { fam[r.family] = (fam[r.family] || 0) + 1; });
-  assert.deepEqual(Object.keys(fam).sort(), ['ability', 'color', 'move', 'resistance', 'weakness']);
+  assert.deepEqual(Object.keys(fam).sort(), ['ability', 'color', 'evolution', 'height', 'move', 'weight']);
 });
 
-test('hay exactamente 50 alternativas nuevas, incluidas las 10 categorías de color Pokédex', () => {
-  assert.equal(rounds.filter(r => /-alt-\d+$/.test(r.id)).length, 50);
-  const colors = rounds.filter(r => r.family === 'color');
+test('sin rondas de resistencia ni debilidad (retiradas del banco)', () => {
+  assert.ok(rounds.every(r => r.condition.type !== 'resistance' && r.condition.type !== 'weakness'));
+});
+
+test('quedan 42 alternativas, incluidas las 10 categorías de color Pokédex', () => {
+  assert.equal(rounds.filter(r => /-alt-\d+$/.test(r.id)).length, 42);
+  const colors = rounds.filter(r => r.family === 'color' && !r.batch);
   assert.equal(colors.length, 10);
   assert.equal(new Set(colors.map(r => r.condition.color)).size, 10);
   for (const r of colors) assert.match(r.rule, /Color oficial/);
 });
 
-test('set de mañana: 20 consignas exclusivas que no repiten ninguna de las 98 anteriores', () => {
-  assert.equal(rounds.length, 118);
+test('set grabacion-2026-10-02: 17 consignas exclusivas que no repiten ninguna de las 66 anteriores', () => {
+  assert.equal(rounds.length, 123);
   const batch = rounds.filter(r => r.batch === 'grabacion-2026-10-02');
   const previous = rounds.filter(r => !r.batch);
-  assert.equal(batch.length, 20);
+  assert.equal(batch.length, 17);
   const key = r => `${r.condition.type}:${r.condition.ability || r.condition.move || r.condition.attackingType || r.condition.color}`;
   const oldConditions = new Set(previous.map(key));
-  assert.equal(new Set(batch.map(key)).size, 20);
+  assert.equal(new Set(batch.map(key)).size, 17);
   assert.ok(batch.every(r => !oldConditions.has(key(r))));
-  assert.equal(new Set(batch.map(r => r.question)).size, 20);
+  assert.equal(new Set(batch.map(r => r.question)).size, 17);
+});
+
+test('sets de video 2026-10-14: 20 rondas cada uno, sin consignas ya grabadas ni repetidas', () => {
+  // Peso/altura: el mismo límite cuenta como la misma consigna aunque cambie más/menos.
+  const c = r => r.condition;
+  const key = r => `${c(r).type}:${c(r).ability || c(r).move || c(r).color || c(r).kg || c(r).m || `${c(r).role}:${c(r).method}`}`;
+  const recorded = new Set([
+    ...rounds.filter(r => r.batch === 'grabacion-2026-10-02').map(key),
+    'move:x-scissor', 'ability:levitate', 'move:energy-ball', 'ability:keen-eye', 'move:waterfall',
+    'ability:sand-veil', 'ability:volt-absorb', 'move:spikes', 'ability:run-away', 'ability:cursed-body',
+  ]);
+  const both = [];
+  for (const name of ['video-1-2026-10-14', 'video-2-2026-10-14']) {
+    const set = rounds.filter(r => r.batch === name);
+    assert.equal(set.length, 20, name);
+    const fam = {};
+    set.forEach(r => { fam[r.family] = (fam[r.family] || 0) + 1; });
+    assert.deepEqual(fam, { ability: 5, move: 4, color: 2, weight: 3, height: 3, evolution: 3 }, name);
+    assert.ok(set.every(r => !recorded.has(key(r))), `${name} repite una consigna ya grabada`);
+    both.push(...set);
+  }
+  assert.equal(new Set(both.map(key)).size, 40, 'ninguna consigna se repite entre los dos videos');
 });
 
 test('formas: cada carta identifica species + form + id; regionales con su propio id', () => {

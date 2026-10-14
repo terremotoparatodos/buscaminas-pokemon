@@ -102,7 +102,8 @@ test('movimientos Gen 9: sólo con ruleset y datos verificados', () => {
 });
 
 test('condiciones mal formadas o desconocidas lanzan error', () => {
-  assert.throws(() => E.evaluateCondition({ types: ['fire'] }, { type: 'weight' }), /desconocida/);
+  assert.throws(() => E.evaluateCondition({ types: ['fire'] }, { type: 'stats' }), /desconocida/);
+  assert.throws(() => E.evaluateCondition({ weightKg: 5 }, { type: 'weight', kg: 10 }), /comparison/);
   assert.throws(() => E.evaluateCondition({ types: ['fire'] }, { type: 'resistance', attackingType: 'water' }, ctx), /includeImmunity/);
   assert.throws(() => E.evaluateCondition({}, { type: 'move', move: 'surf' }, ctx), /generation/);
 });
@@ -114,6 +115,42 @@ test('textos visibles derivados de la condición', () => {
   assert.equal(E.describeCondition({ type: 'resistance', attackingType: 'fire', includeImmunity: true }, names).question, 'POKÉMON RESISTENTES AL TIPO FUEGO');
   assert.equal(E.describeCondition({ type: 'weakness', attackingType: 'ice' }, names).question, 'POKÉMON DÉBILES AL TIPO HIELO');
   assert.throws(() => E.describeCondition({ type: 'ability', ability: 'levitate', abilityMode: 'any' }, names), /español/);
+  assert.equal(E.describeCondition({ type: 'weight', comparison: 'more', kg: 45.5 }, names).question, 'POKÉMON QUE PESAN MÁS DE 45,5 KG');
+  assert.equal(E.describeCondition({ type: 'height', comparison: 'less', m: 1.2 }, names).question, 'POKÉMON QUE MIDEN MENOS DE 1,2 M');
+  assert.equal(E.describeCondition({ type: 'evolution', role: 'evolves', method: 'stone' }, names).question, 'POKÉMON QUE EVOLUCIONAN CON UNA PIEDRA EVOLUTIVA');
+  assert.equal(E.describeCondition({ type: 'evolution', role: 'obtained', method: 'trade' }, names).question, 'POKÉMON QUE SE OBTIENEN AL EVOLUCIONAR POR INTERCAMBIO');
+});
+
+test('peso y altura: más / menos estricto; el valor exacto del límite no se puede evaluar', () => {
+  const w = (kg, comparison, limit) => E.evaluateCondition({ key: 'x', weightKg: kg }, { type: 'weight', comparison, kg: limit }).value;
+  assert.equal(w(105, 'more', 100), true);
+  assert.equal(w(99.9, 'more', 100), false);
+  assert.equal(w(6.5, 'less', 10), true);
+  assert.throws(() => w(100, 'more', 100), /exactamente el límite/);
+  const h = (m, comparison, limit) => E.evaluateCondition({ key: 'x', heightM: m }, { type: 'height', comparison, m: limit }).value;
+  assert.equal(h(1.1, 'less', 1.2), true);
+  assert.equal(h(2.5, 'more', 2), true);
+  assert.throws(() => h(1.2, 'less', 1.2), /exactamente el límite/);
+  assert.throws(() => E.evaluateCondition({ key: 'x', weightKg: null }, { type: 'weight', comparison: 'more', kg: 10 }), /sin verificar/);
+});
+
+test('evolución: cómo evoluciona (evolves) y cómo se obtuvo (obtained)', () => {
+  const pikachu = { key: 'pikachu', evolution: { methods: ['item:thunder-stone'], evolvedBy: ['friendship'] } };
+  const arcanine = { key: 'arcanine', evolution: { methods: [], evolvedBy: ['item:fire-stone'] } };
+  const slowpoke = { key: 'slowpoke', evolution: { methods: ['level', 'item:galarica-cuff'], evolvedBy: [] } };
+  const ev = (p, role, method) => E.evaluateCondition(p, { type: 'evolution', role, method }).value;
+  assert.equal(ev(pikachu, 'evolves', 'stone'), true);
+  assert.equal(ev(pikachu, 'obtained', 'friendship'), true);
+  assert.equal(ev(arcanine, 'evolves', 'stone'), false);
+  assert.equal(ev(arcanine, 'obtained', 'stone'), true);
+  assert.equal(ev(slowpoke, 'evolves', 'stone'), false, 'un objeto que no es piedra no cuenta como piedra');
+  // Bombas indiscutibles
+  assert.equal(E.isCleanEvolutionNegative(arcanine, { role: 'evolves', method: 'stone' }), false, 'se obtiene con piedra: se presta a confusión');
+  assert.equal(E.isCleanEvolutionNegative(slowpoke, { role: 'evolves', method: 'stone' }), false, 'objeto evolutivo raro: discutible');
+  assert.equal(E.isCleanEvolutionNegative({ key: 'x', evolution: { methods: ['level'], evolvedBy: [] } }, { role: 'evolves', method: 'trade' }), true);
+  assert.equal(E.isCleanEvolutionNegative({ key: 'x', evolution: { methods: ['other'], evolvedBy: [] } }, { role: 'evolves', method: 'trade' }), false);
+  assert.throws(() => ev({ key: 'x', evolution: null }, 'evolves', 'trade'), /sin verificar/);
+  assert.throws(() => ev(pikachu, 'evolves', 'stone-fire'), /desconocido/);
 });
 
 test('RNG con semilla: reproducible y distinto entre semillas', () => {

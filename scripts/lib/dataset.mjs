@@ -114,6 +114,23 @@ export function buildConsensus(bundles, ruleset) {
       facts.color = null;
     }
 
+    // Peso / altura (Pokédex): deben coincidir exactamente.
+    for (const field of ['weightKg', 'heightM']) {
+      if (typeof a[field] === 'number' && a[field] === b[field]) facts[field] = a[field];
+      else {
+        discrepancies.push({ pokemon: id.key, field, sourceA: a[field] ?? null, sourceB: b[field] ?? null });
+        facts[field] = null;
+      }
+    }
+
+    // Método evolutivo: el conjunto de métodos (y cómo se obtuvo) debe ser idéntico en ambas fuentes.
+    if (sameSet(a.evolution.methods, b.evolution.methods) && sameSet(a.evolution.evolvedBy, b.evolution.evolvedBy)) {
+      facts.evolution = { methods: a.evolution.methods.slice(), evolvedBy: a.evolution.evolvedBy.slice() };
+    } else {
+      discrepancies.push({ pokemon: id.key, field: 'evolution', sourceA: a.evolution, sourceB: b.evolution });
+      facts.evolution = null;
+    }
+
     // Habilidades
     if (b.abilities.special.length) facts.abilitiesExcluded = `habilidad especial en Showdown: ${b.abilities.special}`;
     else if (id.abilityAmbiguous) facts.abilitiesExcluded = 'otra forma de la especie tiene otras habilidades';

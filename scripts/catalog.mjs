@@ -56,4 +56,8 @@ export const TYPES = ['normal', 'fire', 'water', 'grass', 'electric', 'ice', 'fi
 /* Colores oficiales usados por la Pokédex (recurso pokemon-color de PokéAPI). */
 export const COLORS = ['black', 'blue', 'brown', 'gray', 'green', 'pink', 'purple', 'red', 'white', 'yellow'];
 
+/* Umbrales de peso (kg) y altura (m) que puede usar una ronda "pesan/miden más/menos de…". */
+export const WEIGHT_THRESHOLDS = [5, 8.5, 10, 15.5, 20, 25, 32.5, 40, 50, 60.5, 75, 100, 150, 200];
+export const HEIGHT_THRESHOLDS = [0.3, 0.5, 0.7, 0.9, 1, 1.2, 1.5, 1.8, 2, 2.5, 3];
+
 export const REGIONS = ['alola', 'galar', 'hisui', 'paldea'];

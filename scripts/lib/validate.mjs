@@ -21,7 +21,9 @@ export const engineShape = s => s && ({
   key: s.key, types: s.types, color: s.color,
   abilities: { normal: s.abilities.normal, hidden: s.abilities.hidden },
   learnsets: { gen9: { available: s.gen9.available, moves: s.gen9.moves, disputed: [] } },
+  weightKg: s.weightKg, heightM: s.heightM, evolution: s.evolution,
 });
+const MEASURE_FIELD = { weight: 'weightKg', height: 'heightM' };
 
 function safeEval(p, cond, ctx) {
   try { const r = E.evaluateCondition(p, cond, ctx); return { value: r.value, detail: r.detail }; }
@@ -56,6 +58,8 @@ export function validateRounds({ rounds, facts, SA, SB, identities, names, rules
     if (cond.type === 'move' && !(facts.checkedMoves.gen9 || []).includes(cond.move)) fail(`movimiento fuera del catálogo verificado: ${cond.move}`);
     if (cond.type === 'ability' && !['any', 'normal', 'hidden'].includes(cond.abilityMode)) fail(`abilityMode inválido: ${cond.abilityMode}`);
     if (cond.type === 'resistance' && typeof cond.includeImmunity !== 'boolean') fail('includeImmunity debe ser true/false');
+    if (MEASURE_FIELD[cond.type] && !['more', 'less'].includes(cond.comparison)) fail(`comparison inválido: ${cond.comparison}`);
+    if (cond.type === 'evolution' && (!E.EVOLUTION_ROLES.includes(cond.role) || !E.EVOLUTION_METHODS.includes(cond.method))) fail(`evolución inválida: ${cond.role}/${cond.method}`);
     try {
       const text = E.describeCondition(cond, names);
       if (text.question !== round.question) fail(`texto de la pregunta no coincide con la condición ("${round.question}" ≠ "${text.question}")`);
@@ -96,6 +100,15 @@ export function validateRounds({ rounds, facts, SA, SB, identities, names, rules
         }
       }
       if (cond.type === 'move' && (!a.gen9.available || !b.gen9.available)) fail(`disponibilidad en ${cond.ruleset}: A=${a.gen9.available} B=${b.gen9.available}`, key);
+      const field = MEASURE_FIELD[cond.type];
+      if (field && !(typeof a[field] === 'number' && a[field] === b[field] && b[field] === f[field])) fail(`${field}: A=${a[field]} B=${b[field]} facts=${f[field]}`, key);
+      if (cond.type === 'evolution') {
+        const ev = s => s && s.evolution ? [s.evolution.methods, s.evolution.evolvedBy] : [[null], [null]];
+        const [ma, oa] = ev(a), [mb, ob] = ev(b), [mf, of] = ev(f);
+        if (!(sameSet(ma, mb) && sameSet(mb, mf) && sameSet(oa, ob) && sameSet(ob, of))) {
+          fail(`método evolutivo: A=${JSON.stringify(a.evolution)} B=${JSON.stringify(b.evolution)} facts=${JSON.stringify(f.evolution)}`, key);
+        }
+      }
       // 4-5. Evaluación por separado
       const rA = safeEval(engineShape(a), cond, ctxA), rB = safeEval(engineShape(b), cond, ctxB), rF = safeEval(f, cond, ctxF);
       Object.assign(card, { sourceA: rA, sourceB: rB, facts: rF });
@@ -106,6 +119,12 @@ export function validateRounds({ rounds, facts, SA, SB, identities, names, rules
       }
       card.answer = rF.value ? 'correct' : 'bomb';
       if (cond.type === 'resistance' && !cond.includeImmunity && rF.detail === 'x0') fail('inmune en una ronda sin inmunidades', key);
+      // Bomba de evolución: indiscutible en las DOS fuentes (sin métodos raros ni el método en sentido contrario).
+      if (cond.type === 'evolution' && !rF.value) {
+        for (const [label, s] of [['A', engineShape(a)], ['B', engineShape(b)]]) {
+          if (!E.isCleanEvolutionNegative(s, cond)) fail(`impostor discutible según ${label}: ${JSON.stringify(s.evolution)}`, key);
+        }
+      }
       // Negativo de movimiento: tampoco lo aprende ninguna pre-evolución (en ninguna fuente).
       if (cond.type === 'move' && !rF.value) {
         const other = [...((a.otherGen9Moves || {})[cond.move] || []), ...((b.otherGen9Moves || {})[cond.move] || [])].join(', ');

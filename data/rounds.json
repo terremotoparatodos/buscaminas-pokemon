@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-01T05:41:37.856Z",
+  "generatedAt": "2026-10-14T16:18:59.682Z",
   "seed": "banco-v1",
-  "note": "48 originales + 50 alternativas + 20 exclusivas para grabacion-2026-10-02. Las respuestas se recalculan desde pokemon-facts.json.",
+  "note": "Banco sin resistencia/debilidad + sets de grabación: grabacion-2026-10-02, video-1-2026-10-14, video-2-2026-10-14. Las respuestas se recalculan desde pokemon-facts.json.",
   "rounds": [
     {
       "id": "ability-cursed-body-hard",
@@ -30,7 +30,7 @@
         "snorunt"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-sheer-force-hard",
@@ -59,7 +59,7 @@
         "tauros"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-moxie-hard",
@@ -88,7 +88,7 @@
         "shelgon"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-run-away-hard",
@@ -117,7 +117,7 @@
         "weedle"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-water-absorb-normal",
@@ -146,7 +146,7 @@
         "wailord"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-rock-head-normal",
@@ -175,7 +175,7 @@
         "tyrantrum"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-volt-absorb-normal",
@@ -204,7 +204,7 @@
         "zeraora"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-sand-veil-normal",
@@ -233,7 +233,7 @@
         "tyranitar"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-shed-skin-easy",
@@ -262,7 +262,7 @@
         "victreebel"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-levitate-easy",
@@ -291,7 +291,7 @@
         "weezing"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-chlorophyll-easy",
@@ -320,7 +320,7 @@
         "weepinbell"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-keen-eye-easy",
@@ -349,7 +349,7 @@
         "zapdos"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-drain-punch-hard",
@@ -378,7 +378,7 @@
         "wigglytuff"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-spikes-hard",
@@ -407,7 +407,7 @@
         "whiscash"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-u-turn-hard",
@@ -436,7 +436,7 @@
         "zapdos-galar"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-aqua-tail-hard",
@@ -465,7 +465,7 @@
         "seel"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-aura-sphere-normal",
@@ -494,7 +494,7 @@
         "toxicroak"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-waterfall-normal",
@@ -523,7 +523,7 @@
         "tentacruel"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-dragon-dance-normal",
@@ -552,7 +552,7 @@
         "zekrom"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-hydro-pump-normal",
@@ -581,7 +581,7 @@
         "wartortle"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-x-scissor-easy",
@@ -610,7 +610,7 @@
         "zangoose"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-psychic-easy",
@@ -639,7 +639,7 @@
         "venusaur"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-energy-ball-easy",
@@ -668,7 +668,7 @@
         "vileplume"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-fire-fang-easy",
@@ -697,691 +697,7 @@
         "vulpix"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "resistance-fairy-hard",
-      "family": "resistance",
-      "difficulty": "hard",
-      "question": "POKÉMON RESISTENTES AL TIPO HADA",
-      "rule": "Sólo por tipos · la inmunidad cuenta",
-      "condition": {
-        "type": "resistance",
-        "attackingType": "fairy",
-        "includeImmunity": true,
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "cobalion",
-        "crobat",
-        "drapion",
-        "dustox",
-        "eternatus",
-        "golbat",
-        "magnemite",
-        "mawile",
-        "muk-alola",
-        "nidoran-f",
-        "nidorino",
-        "weezing-galar"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "resistance-grass-hard",
-      "family": "resistance",
-      "difficulty": "hard",
-      "question": "POKÉMON RESISTENTES AL TIPO PLANTA",
-      "rule": "Sólo por tipos · la inmunidad cuenta",
-      "condition": {
-        "type": "resistance",
-        "attackingType": "grass",
-        "includeImmunity": true,
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "archen",
-        "archeops",
-        "celebi",
-        "charmander",
-        "ducklett",
-        "farfetchd",
-        "grimer",
-        "magneton",
-        "pidgeotto",
-        "spearow",
-        "wingull",
-        "xatu"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "resistance-flying-hard",
-      "family": "resistance",
-      "difficulty": "hard",
-      "question": "POKÉMON RESISTENTES AL TIPO VOLADOR",
-      "rule": "Sólo por tipos · la inmunidad cuenta",
-      "condition": {
-        "type": "resistance",
-        "attackingType": "flying",
-        "includeImmunity": true,
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "armaldo",
-        "cradily",
-        "electrode",
-        "kabuto",
-        "kabutops",
-        "larvitar",
-        "lileep",
-        "omastar",
-        "pikachu",
-        "regirock",
-        "shuckle",
-        "solrock"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "resistance-ice-hard",
-      "family": "resistance",
-      "difficulty": "hard",
-      "question": "POKÉMON RESISTENTES AL TIPO HIELO",
-      "rule": "Sólo por tipos · la inmunidad cuenta",
-      "condition": {
-        "type": "resistance",
-        "attackingType": "ice",
-        "includeImmunity": true,
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "celesteela",
-        "dialga",
-        "ferrothorn",
-        "iron-treads",
-        "magnezone",
-        "ninetales-alola",
-        "octillery",
-        "omanyte",
-        "registeel",
-        "sharpedo",
-        "starmie",
-        "staryu"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "resistance-bug-normal",
-      "family": "resistance",
-      "difficulty": "normal",
-      "question": "POKÉMON RESISTENTES AL TIPO BICHO",
-      "rule": "Sólo por tipos · la inmunidad cuenta",
-      "condition": {
-        "type": "resistance",
-        "attackingType": "bug",
-        "includeImmunity": true,
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "clefable",
-        "hoppip",
-        "ledian",
-        "machamp",
-        "machoke",
-        "natu",
-        "pidgey",
-        "ponyta",
-        "skiploom",
-        "swoobat",
-        "zapdos",
-        "zubat"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "resistance-dark-normal",
-      "family": "resistance",
-      "difficulty": "normal",
-      "question": "POKÉMON RESISTENTES AL TIPO SINIESTRO",
-      "rule": "Sólo por tipos · la inmunidad cuenta",
-      "condition": {
-        "type": "resistance",
-        "attackingType": "dark",
-        "includeImmunity": true,
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "absol",
-        "darkrai",
-        "gallade",
-        "hitmontop",
-        "jigglypuff",
-        "machop",
-        "marshadow",
-        "mr-mime",
-        "poliwrath",
-        "rapidash-galar",
-        "snubbull",
-        "wigglytuff"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "resistance-fighting-normal",
-      "family": "resistance",
-      "difficulty": "normal",
-      "question": "POKÉMON RESISTENTES AL TIPO LUCHA",
-      "rule": "Sólo por tipos · la inmunidad cuenta",
-      "condition": {
-        "type": "resistance",
-        "attackingType": "fighting",
-        "includeImmunity": true,
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "bronzong",
-        "doduo",
-        "gengar",
-        "kadabra",
-        "mandibuzz",
-        "moltres",
-        "ninjask",
-        "starmie",
-        "swalot",
-        "swellow",
-        "victreebel",
-        "wobbuffet"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "resistance-fire-normal",
-      "family": "resistance",
-      "difficulty": "normal",
-      "question": "POKÉMON RESISTENTES AL TIPO FUEGO",
-      "rule": "Sólo por tipos · la inmunidad cuenta",
-      "condition": {
-        "type": "resistance",
-        "attackingType": "fire",
-        "includeImmunity": true,
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "aerodactyl",
-        "empoleon",
-        "flareon",
-        "golem-alola",
-        "houndour",
-        "huntail",
-        "kabutops",
-        "lairon",
-        "omastar",
-        "rapidash",
-        "sealeo",
-        "walrein"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "resistance-electric-easy",
-      "family": "resistance",
-      "difficulty": "easy",
-      "question": "POKÉMON RESISTENTES AL TIPO ELÉCTRICO",
-      "rule": "Sólo por tipos · la inmunidad cuenta",
-      "condition": {
-        "type": "resistance",
-        "attackingType": "electric",
-        "includeImmunity": true,
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "ampharos",
-        "bayleef",
-        "chikorita",
-        "electabuzz",
-        "flygon",
-        "kingdra",
-        "marowak",
-        "palkia",
-        "rayquaza",
-        "salamence",
-        "sandslash",
-        "torterra"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "resistance-poison-easy",
-      "family": "resistance",
-      "difficulty": "easy",
-      "question": "POKÉMON RESISTENTES AL TIPO VENENO",
-      "rule": "Sólo por tipos · la inmunidad cuenta",
-      "condition": {
-        "type": "resistance",
-        "attackingType": "poison",
-        "includeImmunity": true,
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "abra",
-        "alakazam",
-        "dugtrio",
-        "graveler",
-        "jynx",
-        "lugia",
-        "marowak",
-        "muk",
-        "nidoking",
-        "nidoqueen",
-        "rhyhorn",
-        "weezing"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "resistance-rock-easy",
-      "family": "resistance",
-      "difficulty": "easy",
-      "question": "POKÉMON RESISTENTES AL TIPO ROCA",
-      "rule": "Sólo por tipos · la inmunidad cuenta",
-      "condition": {
-        "type": "resistance",
-        "attackingType": "rock",
-        "includeImmunity": true,
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "dewgong",
-        "dugtrio-alola",
-        "gorebyss",
-        "hitmonlee",
-        "lucario",
-        "machamp",
-        "manaphy",
-        "parasect",
-        "phanpy",
-        "registeel",
-        "sandshrew",
-        "steelix"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "resistance-steel-easy",
-      "family": "resistance",
-      "difficulty": "easy",
-      "question": "POKÉMON RESISTENTES AL TIPO ACERO",
-      "rule": "Sólo por tipos · la inmunidad cuenta",
-      "condition": {
-        "type": "resistance",
-        "attackingType": "steel",
-        "includeImmunity": true,
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "arcanine",
-        "cubone",
-        "diglett",
-        "golduck",
-        "kingler",
-        "magnemite",
-        "magneton",
-        "ninetales",
-        "onix",
-        "raichu",
-        "rhydon",
-        "voltorb"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "weakness-electric-hard",
-      "family": "weakness",
-      "difficulty": "hard",
-      "question": "POKÉMON DÉBILES AL TIPO ELÉCTRICO",
-      "rule": "Sólo por tipos (x2 o x4)",
-      "condition": {
-        "type": "weakness",
-        "attackingType": "electric",
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "beautifly",
-        "chatot",
-        "corsola",
-        "drifblim",
-        "kilowattrel",
-        "lombre",
-        "noivern",
-        "qwilfish",
-        "togekiss",
-        "togetic",
-        "walking-wake",
-        "yanma"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "weakness-flying-hard",
-      "family": "weakness",
-      "difficulty": "hard",
-      "question": "POKÉMON DÉBILES AL TIPO VOLADOR",
-      "rule": "Sólo por tipos (x2 o x4)",
-      "condition": {
-        "type": "weakness",
-        "attackingType": "flying",
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "abomasnow",
-        "anorith",
-        "dwebble",
-        "escavalier",
-        "genesect",
-        "infernape",
-        "ledyba",
-        "mothim",
-        "roserade",
-        "scolipede",
-        "shedinja",
-        "sunkern"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "weakness-water-hard",
-      "family": "weakness",
-      "difficulty": "hard",
-      "question": "POKÉMON DÉBILES AL TIPO AGUA",
-      "rule": "Sólo por tipos (x2 o x4)",
-      "condition": {
-        "type": "weakness",
-        "attackingType": "water",
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "bastiodon",
-        "claydol",
-        "gastrodon",
-        "golurk",
-        "gouging-fire",
-        "magmortar",
-        "mamoswine",
-        "reshiram",
-        "seismitoad",
-        "slugma",
-        "swinub",
-        "volcarona"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "weakness-ice-hard",
-      "family": "weakness",
-      "difficulty": "hard",
-      "question": "POKÉMON DÉBILES AL TIPO HIELO",
-      "rule": "Sólo por tipos (x2 o x4)",
-      "condition": {
-        "type": "weakness",
-        "attackingType": "ice",
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "baltoy",
-        "emolga",
-        "hydreigon",
-        "leafeon",
-        "nincada",
-        "nuzleaf",
-        "piloswine",
-        "scovillain",
-        "snover",
-        "talonflame",
-        "tangrowth",
-        "unfezant"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "weakness-dark-normal",
-      "family": "weakness",
-      "difficulty": "normal",
-      "question": "POKÉMON DÉBILES AL TIPO SINIESTRO",
-      "rule": "Sólo por tipos (x2 o x4)",
-      "condition": {
-        "type": "weakness",
-        "attackingType": "dark",
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "chimecho",
-        "dusknoir",
-        "gardevoir",
-        "girafarig",
-        "hypno",
-        "lunala",
-        "malamar",
-        "misdreavus",
-        "ralts",
-        "sigilyph",
-        "spiritomb",
-        "victini"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "weakness-bug-normal",
-      "family": "weakness",
-      "difficulty": "normal",
-      "question": "POKÉMON DÉBILES AL TIPO BICHO",
-      "rule": "Sólo por tipos (x2 o x4)",
-      "condition": {
-        "type": "weakness",
-        "attackingType": "bug",
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "azelf",
-        "carnivine",
-        "celebi",
-        "cherrim",
-        "cresselia",
-        "grimer-alola",
-        "metang",
-        "raticate-alola",
-        "slowking-galar",
-        "sneasel",
-        "weavile",
-        "whimsicott"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "weakness-fairy-normal",
-      "family": "weakness",
-      "difficulty": "normal",
-      "question": "POKÉMON DÉBILES AL TIPO HADA",
-      "rule": "Sólo por tipos (x2 o x4)",
-      "condition": {
-        "type": "weakness",
-        "attackingType": "fairy",
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "conkeldurr",
-        "croagunk",
-        "druddigon",
-        "emboar",
-        "kyurem",
-        "machoke",
-        "meowth-alola",
-        "skuntank",
-        "stunky",
-        "terrakion",
-        "virizion",
-        "zoroark"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "weakness-fighting-normal",
-      "family": "weakness",
-      "difficulty": "normal",
-      "question": "POKÉMON DÉBILES AL TIPO LUCHA",
-      "rule": "Sólo por tipos (x2 o x4)",
-      "condition": {
-        "type": "weakness",
-        "attackingType": "fighting",
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "articuno",
-        "bibarel",
-        "chansey",
-        "cloyster",
-        "ditto",
-        "glaceon",
-        "hoothoot",
-        "lapras",
-        "rampardos",
-        "regice",
-        "smoochum",
-        "staraptor"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "weakness-grass-easy",
-      "family": "weakness",
-      "difficulty": "easy",
-      "question": "POKÉMON DÉBILES AL TIPO PLANTA",
-      "rule": "Sólo por tipos (x2 o x4)",
-      "condition": {
-        "type": "weakness",
-        "attackingType": "grass",
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "donphan",
-        "electrode",
-        "geodude",
-        "kabuto",
-        "miltank",
-        "omanyte",
-        "quagsire",
-        "raikou",
-        "rattata",
-        "seaking",
-        "sudowoodo",
-        "suicune"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "weakness-fire-easy",
-      "family": "weakness",
-      "difficulty": "easy",
-      "question": "POKÉMON DÉBILES AL TIPO FUEGO",
-      "rule": "Sólo por tipos (x2 o x4)",
-      "condition": {
-        "type": "weakness",
-        "attackingType": "fire",
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "dodrio",
-        "fearow",
-        "forretress",
-        "meganium",
-        "metapod",
-        "paras",
-        "parasect",
-        "pinsir",
-        "porygon",
-        "scizor",
-        "smeargle",
-        "tangela"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "weakness-ground-easy",
-      "family": "weakness",
-      "difficulty": "easy",
-      "question": "POKÉMON DÉBILES AL TIPO TIERRA",
-      "rule": "Sólo por tipos (x2 o x4)",
-      "condition": {
-        "type": "weakness",
-        "attackingType": "ground",
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "charmander",
-        "ekans",
-        "entei",
-        "feraligatr",
-        "hitmontop",
-        "lickitung",
-        "magcargo",
-        "magneton",
-        "nidorina",
-        "pikachu",
-        "snorlax",
-        "voltorb"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "weakness-rock-easy",
-      "family": "weakness",
-      "difficulty": "easy",
-      "question": "POKÉMON DÉBILES AL TIPO ROCA",
-      "rule": "Sólo por tipos (x2 o x4)",
-      "condition": {
-        "type": "weakness",
-        "attackingType": "rock",
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "abra",
-        "articuno",
-        "butterfree",
-        "caterpie",
-        "delibird",
-        "ho-oh",
-        "kangaskhan",
-        "ledian",
-        "ponyta",
-        "raticate",
-        "venusaur",
-        "vulpix"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "color-gray-alt-01",
@@ -1409,7 +725,7 @@
         "stoutland"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "color-green-alt-02",
@@ -1437,7 +753,7 @@
         "vibrava"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "color-blue-alt-03",
@@ -1465,7 +781,7 @@
         "wynaut"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "color-red-alt-04",
@@ -1493,7 +809,7 @@
         "wurmple"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "color-brown-alt-05",
@@ -1521,7 +837,7 @@
         "ursaring"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "color-black-alt-06",
@@ -1549,7 +865,7 @@
         "zebstrika"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "color-pink-alt-07",
@@ -1577,7 +893,7 @@
         "whismur"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "color-purple-alt-08",
@@ -1605,7 +921,7 @@
         "skorupi"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "color-yellow-alt-09",
@@ -1633,7 +949,7 @@
         "wailmer"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "color-white-alt-10",
@@ -1661,7 +977,7 @@
         "zigzagoon"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-overgrow-alt-11",
@@ -1690,7 +1006,7 @@
         "vulpix-alola"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-blaze-alt-12",
@@ -1719,7 +1035,7 @@
         "tepig"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-swift-swim-alt-13",
@@ -1748,7 +1064,7 @@
         "throh"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-flash-fire-alt-14",
@@ -1777,7 +1093,7 @@
         "typhlosion"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-lightning-rod-alt-15",
@@ -1806,7 +1122,7 @@
         "togedemaru"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-synchronize-alt-16",
@@ -1835,7 +1151,7 @@
         "xatu"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-sand-rush-alt-17",
@@ -1864,7 +1180,7 @@
         "trapinch"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-regenerator-alt-18",
@@ -1893,7 +1209,7 @@
         "toxapex"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-magic-guard-alt-19",
@@ -1922,7 +1238,7 @@
         "solosis"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-natural-cure-alt-20",
@@ -1951,7 +1267,7 @@
         "trevenant"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-prankster-alt-21",
@@ -1980,7 +1296,7 @@
         "volbeat"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-poison-point-alt-22",
@@ -2009,7 +1325,7 @@
         "whirlipede"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-pressure-alt-23",
@@ -2038,7 +1354,7 @@
         "wailord"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-guts-alt-24",
@@ -2067,7 +1383,7 @@
         "watchog"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-cute-charm-alt-25",
@@ -2096,7 +1412,7 @@
         "yveltal"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-intimidate-alt-26",
@@ -2125,7 +1441,7 @@
         "xerneas"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-shadow-ball-alt-27",
@@ -2154,7 +1470,7 @@
         "weezing-galar"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-play-rough-alt-28",
@@ -2183,7 +1499,7 @@
         "ursaluna"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-rapid-spin-alt-29",
@@ -2212,7 +1528,7 @@
         "zapdos-galar"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-volt-switch-alt-30",
@@ -2241,7 +1557,7 @@
         "zweilous"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-bug-buzz-alt-31",
@@ -2270,7 +1586,7 @@
         "vivillon"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-bullet-seed-alt-32",
@@ -2299,7 +1615,7 @@
         "zarude"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-trick-room-alt-33",
@@ -2328,7 +1644,7 @@
         "tentacool"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-body-press-alt-34",
@@ -2357,7 +1673,7 @@
         "tinkaton"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-close-combat-alt-35",
@@ -2386,7 +1702,7 @@
         "slither-wing"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-surf-alt-36",
@@ -2415,7 +1731,7 @@
         "wugtrio"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-swords-dance-alt-37",
@@ -2444,7 +1760,7 @@
         "zorua"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-will-o-wisp-alt-38",
@@ -2473,7 +1789,7 @@
         "toedscruel"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-rock-slide-alt-39",
@@ -2502,7 +1818,7 @@
         "wo-chien"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-ice-fang-alt-40",
@@ -2531,7 +1847,7 @@
         "swinub"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-dragon-claw-alt-41",
@@ -2560,7 +1876,7 @@
         "sceptile"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-flamethrower-alt-42",
@@ -2589,235 +1905,7 @@
         "torkoal"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "resistance-water-alt-43",
-      "family": "resistance",
-      "difficulty": "easy",
-      "question": "POKÉMON RESISTENTES AL TIPO AGUA",
-      "rule": "Sólo por tipos · la inmunidad cuenta",
-      "condition": {
-        "type": "resistance",
-        "attackingType": "water",
-        "includeImmunity": true,
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "drampa",
-        "furfrou",
-        "golisopod",
-        "guzzlord",
-        "inteleon",
-        "krabby",
-        "poliwhirl",
-        "raticate-alola",
-        "stunfisk-galar",
-        "tapu-fini",
-        "tapu-koko",
-        "tympole"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "resistance-ground-alt-44",
-      "family": "resistance",
-      "difficulty": "normal",
-      "question": "POKÉMON RESISTENTES AL TIPO TIERRA",
-      "rule": "Sólo por tipos · la inmunidad cuenta",
-      "condition": {
-        "type": "resistance",
-        "attackingType": "ground",
-        "includeImmunity": true,
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "blacephalon",
-        "buneary",
-        "buzzwole",
-        "dhelmise",
-        "diggersby",
-        "flapple",
-        "glameow",
-        "mantine",
-        "pansage",
-        "pheromosa",
-        "shelmet",
-        "tapu-bulu"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "resistance-ghost-alt-45",
-      "family": "resistance",
-      "difficulty": "hard",
-      "question": "POKÉMON RESISTENTES AL TIPO FANTASMA",
-      "rule": "Sólo por tipos · la inmunidad cuenta",
-      "condition": {
-        "type": "resistance",
-        "attackingType": "ghost",
-        "includeImmunity": true,
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "bewear",
-        "bunnelby",
-        "miltank",
-        "nihilego",
-        "patrat",
-        "pidgeotto",
-        "pidgey",
-        "rapidash-galar",
-        "shiinotic",
-        "spearow",
-        "tapu-lele",
-        "zigzagoon-galar"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "resistance-dragon-alt-46",
-      "family": "resistance",
-      "difficulty": "easy",
-      "question": "POKÉMON RESISTENTES AL TIPO DRAGÓN",
-      "rule": "Sólo por tipos · la inmunidad cuenta",
-      "condition": {
-        "type": "resistance",
-        "attackingType": "dragon",
-        "includeImmunity": true,
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "aggron",
-        "barbaracle",
-        "ferroseed",
-        "flabebe",
-        "flutter-mane",
-        "klang",
-        "melmetal",
-        "metagross",
-        "mr-mime",
-        "palpitoad",
-        "panpour",
-        "shuckle"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "weakness-psychic-alt-47",
-      "family": "weakness",
-      "difficulty": "normal",
-      "question": "POKÉMON DÉBILES AL TIPO PSÍQUICO",
-      "rule": "Sólo por tipos (x2 o x4)",
-      "condition": {
-        "type": "weakness",
-        "attackingType": "psychic",
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "breloom",
-        "crobat",
-        "dustox",
-        "flamigo",
-        "golbat",
-        "lickitung",
-        "sirfetchd",
-        "swalot",
-        "turtonator",
-        "vanillite",
-        "weedle",
-        "yamask"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "weakness-dragon-alt-48",
-      "family": "weakness",
-      "difficulty": "hard",
-      "question": "POKÉMON DÉBILES AL TIPO DRAGÓN",
-      "rule": "Sólo por tipos (x2 o x4)",
-      "condition": {
-        "type": "weakness",
-        "attackingType": "dragon",
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "dipplin",
-        "frigibax",
-        "goomy",
-        "haxorus",
-        "jangmo-o",
-        "karrablast",
-        "octillery",
-        "palkia",
-        "sliggoo",
-        "tyrunt",
-        "vanillish",
-        "xurkitree"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "weakness-ghost-alt-49",
-      "family": "weakness",
-      "difficulty": "easy",
-      "question": "POKÉMON DÉBILES AL TIPO FANTASMA",
-      "rule": "Sólo por tipos (x2 o x4)",
-      "condition": {
-        "type": "weakness",
-        "attackingType": "ghost",
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "claydol",
-        "dubwool",
-        "electabuzz",
-        "lunatone",
-        "mr-rime",
-        "orbeetle",
-        "pidove",
-        "ponyta-galar",
-        "roggenrola",
-        "shedinja",
-        "slowking-galar",
-        "woobat"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "weakness-steel-alt-50",
-      "family": "weakness",
-      "difficulty": "normal",
-      "question": "POKÉMON DÉBILES AL TIPO ACERO",
-      "rule": "Sólo por tipos (x2 o x4)",
-      "condition": {
-        "type": "weakness",
-        "attackingType": "steel",
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "amaura",
-        "arctozolt",
-        "armaldo",
-        "boldore",
-        "boltund",
-        "cradily",
-        "darumaka-galar",
-        "farfetchd",
-        "grapploct",
-        "mr-mime-galar",
-        "swirlix",
-        "vulpix-alola"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-thick-fat-manana-01",
@@ -2847,7 +1935,7 @@
         "walrein"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-clear-body-manana-02",
@@ -2877,7 +1965,7 @@
         "wobbuffet"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-static-manana-03",
@@ -2907,7 +1995,7 @@
         "zubat"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-swarm-manana-04",
@@ -2937,7 +2025,7 @@
         "tranquill"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-torrent-manana-05",
@@ -2967,7 +2055,7 @@
         "unown"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-own-tempo-manana-06",
@@ -2997,7 +2085,7 @@
         "tinkatuff"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-unaware-manana-07",
@@ -3027,7 +2115,7 @@
         "yamask-galar"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-snow-cloak-manana-08",
@@ -3057,7 +2145,7 @@
         "vulpix-alola"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "ability-inner-focus-manana-09",
@@ -3087,7 +2175,7 @@
         "throh"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-sludge-bomb-manana-10",
@@ -3117,7 +2205,7 @@
         "zangoose"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-fire-punch-manana-11",
@@ -3147,7 +2235,7 @@
         "steenee"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-dazzling-gleam-manana-12",
@@ -3177,7 +2265,7 @@
         "yanmega"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-crunch-manana-13",
@@ -3207,7 +2295,7 @@
         "trumbeak"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-thunderbolt-manana-14",
@@ -3237,7 +2325,7 @@
         "wattrel"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-outrage-manana-15",
@@ -3267,7 +2355,7 @@
         "shelgon"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-earthquake-manana-16",
@@ -3297,7 +2385,7 @@
         "ursaring"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
       "id": "move-leech-life-manana-17",
@@ -3327,96 +2415,1203 @@
         "victreebel"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
-      "id": "resistance-psychic-manana-18",
-      "family": "resistance",
-      "difficulty": "hard",
-      "batch": "grabacion-2026-10-02",
-      "question": "POKÉMON RESISTENTES AL TIPO PSÍQUICO",
-      "rule": "Sólo por tipos · la inmunidad cuenta",
-      "condition": {
-        "type": "resistance",
-        "attackingType": "psychic",
-        "includeImmunity": true,
-        "ruleset": "gen9"
-      },
-      "pokemon": [
-        "doublade",
-        "drapion",
-        "honedge",
-        "kecleon",
-        "maschiff",
-        "mawile",
-        "natu",
-        "ninjask",
-        "relicanth",
-        "sharpedo",
-        "solrock",
-        "spritzee"
-      ],
-      "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
-    },
-    {
-      "id": "resistance-normal-manana-19",
-      "family": "resistance",
+      "id": "ability-sturdy-v1-1014-01",
+      "family": "ability",
       "difficulty": "easy",
-      "batch": "grabacion-2026-10-02",
-      "question": "POKÉMON RESISTENTES AL TIPO NORMAL",
-      "rule": "Sólo por tipos · la inmunidad cuenta",
+      "batch": "video-1-2026-10-14",
+      "question": "POKÉMON QUE PUEDEN TENER ROBUSTEZ",
+      "rule": "Habilidad normal u oculta",
       "condition": {
-        "type": "resistance",
-        "attackingType": "normal",
-        "includeImmunity": true,
+        "type": "ability",
+        "ability": "sturdy",
+        "abilityMode": "any",
         "ruleset": "gen9"
       },
       "pokemon": [
-        "arctibax",
-        "carkol",
-        "corsola",
-        "duraludon",
-        "golem",
+        "donphan",
+        "dwebble",
+        "golem-alola",
+        "kabutops",
+        "lairon",
+        "machamp",
+        "magnemite",
+        "magneton",
         "magnezone",
-        "meltan",
-        "murkrow",
-        "pachirisu",
-        "poltchageist",
-        "tinkatink",
-        "toedscool"
+        "marowak",
+        "rapidash-galar",
+        "shuckle"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     },
     {
-      "id": "weakness-poison-manana-20",
-      "family": "weakness",
+      "id": "ability-technician-v1-1014-02",
+      "family": "ability",
       "difficulty": "normal",
-      "batch": "grabacion-2026-10-02",
-      "question": "POKÉMON DÉBILES AL TIPO VENENO",
-      "rule": "Sólo por tipos (x2 o x4)",
+      "batch": "video-1-2026-10-14",
+      "question": "POKÉMON QUE PUEDEN TENER EXPERTO",
+      "rule": "Habilidad normal u oculta",
       "condition": {
-        "type": "weakness",
-        "attackingType": "poison",
+        "type": "ability",
+        "ability": "technician",
+        "abilityMode": "any",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "breloom",
+        "grapploct",
+        "hitmontop",
+        "machoke",
+        "marshadow",
+        "mr-mime",
+        "omastar",
+        "pidgeotto",
+        "roserade",
+        "scizor",
+        "smeargle",
+        "starmie"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "ability-serene-grace-v1-1014-03",
+      "family": "ability",
+      "difficulty": "hard",
+      "batch": "video-1-2026-10-14",
+      "question": "POKÉMON QUE PUEDEN TENER DICHA",
+      "rule": "Habilidad normal u oculta",
+      "condition": {
+        "type": "ability",
+        "ability": "serene-grace",
+        "abilityMode": "any",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "blissey",
+        "chansey",
+        "crobat",
+        "deerling",
+        "electabuzz",
+        "happiny",
+        "miltank",
+        "raticate-alola",
+        "sawsbuck",
+        "togekiss",
+        "togepi",
+        "togetic"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "ability-justified-v1-1014-04",
+      "family": "ability",
+      "difficulty": "easy",
+      "batch": "video-1-2026-10-14",
+      "question": "POKÉMON QUE PUEDEN TENER JUSTICIERO",
+      "rule": "Habilidad normal u oculta",
+      "condition": {
+        "type": "ability",
+        "ability": "justified",
+        "abilityMode": "any",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "absol",
+        "arcanine",
+        "cobalion",
+        "gallade",
+        "golbat",
+        "growlithe",
+        "ledian",
+        "lickitung",
+        "lucario",
+        "spearow",
+        "terrakion",
+        "virizion"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "ability-iron-fist-v1-1014-05",
+      "family": "ability",
+      "difficulty": "normal",
+      "batch": "video-1-2026-10-14",
+      "question": "POKÉMON QUE PUEDEN TENER PUÑO FÉRREO",
+      "rule": "Habilidad normal u oculta",
+      "condition": {
+        "type": "ability",
+        "ability": "iron-fist",
+        "abilityMode": "any",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "abra",
+        "charmander",
+        "chimchar",
+        "conkeldurr",
+        "golurk",
+        "infernape",
+        "ledian",
+        "melmetal",
+        "monferno",
+        "omanyte",
+        "pangoro",
+        "voltorb"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "move-fly-v1-1014-06",
+      "family": "move",
+      "difficulty": "hard",
+      "batch": "video-1-2026-10-14",
+      "question": "POKÉMON QUE PUEDEN APRENDER VUELO",
+      "rule": "Gen 9 · Escarlata/Púrpura + DLC · cualquier método",
+      "condition": {
+        "type": "move",
+        "move": "fly",
+        "generation": 9,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "dodrio",
+        "dusknoir",
+        "hoothoot",
+        "hydreigon",
+        "mandibuzz",
+        "misdreavus",
+        "moltres",
+        "phanpy",
+        "registeel",
+        "reshiram",
+        "volcarona",
+        "wingull"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "move-iron-head-v1-1014-07",
+      "family": "move",
+      "difficulty": "easy",
+      "batch": "video-1-2026-10-14",
+      "question": "POKÉMON QUE PUEDEN APRENDER CABEZA DE HIERRO",
+      "rule": "Gen 9 · Escarlata/Púrpura + DLC · cualquier método",
+      "condition": {
+        "type": "move",
+        "move": "iron-head",
+        "generation": 9,
         "ruleset": "gen9"
       },
       "pokemon": [
         "bayleef",
-        "carnivine",
-        "dusknoir",
-        "farfetchd-galar",
-        "floragato",
-        "impidimp",
-        "milcery",
-        "misdreavus",
-        "smoochum",
-        "sprigatito",
-        "togekiss",
-        "togetic"
+        "dugtrio-alola",
+        "emboar",
+        "forretress",
+        "lapras",
+        "lugia",
+        "magneton",
+        "metang",
+        "pikachu",
+        "slowking-galar",
+        "suicune",
+        "swalot"
       ],
       "verified": true,
-      "verifiedAt": "2026-10-01T05:42:33.256Z"
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "move-stealth-rock-v1-1014-08",
+      "family": "move",
+      "difficulty": "normal",
+      "batch": "video-1-2026-10-14",
+      "question": "POKÉMON QUE PUEDEN APRENDER TRAMPA ROCAS",
+      "rule": "Gen 9 · Escarlata/Púrpura + DLC · cualquier método",
+      "condition": {
+        "type": "move",
+        "move": "stealth-rock",
+        "generation": 9,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "diglett",
+        "dugtrio",
+        "gengar",
+        "geodude",
+        "graveler",
+        "iron-treads",
+        "jigglypuff",
+        "magcargo",
+        "weavile",
+        "weezing",
+        "wigglytuff",
+        "yanma"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "move-ice-beam-v1-1014-09",
+      "family": "move",
+      "difficulty": "hard",
+      "batch": "video-1-2026-10-14",
+      "question": "POKÉMON QUE PUEDEN APRENDER RAYO HIELO",
+      "rule": "Gen 9 · Escarlata/Púrpura + DLC · cualquier método",
+      "condition": {
+        "type": "move",
+        "move": "ice-beam",
+        "generation": 9,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "articuno",
+        "cloyster",
+        "cresselia",
+        "dewgong",
+        "ditto",
+        "golduck",
+        "leafeon",
+        "lombre",
+        "muk",
+        "nuzleaf",
+        "palkia",
+        "snover"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "color-brown-v1-1014-10",
+      "family": "color",
+      "difficulty": "easy",
+      "batch": "video-1-2026-10-14",
+      "question": "POKÉMON DE COLOR MARRÓN EN LA POKÉDEX",
+      "rule": "Color oficial de la especie en la Pokédex",
+      "condition": {
+        "type": "color",
+        "color": "brown",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "armaldo",
+        "claydol",
+        "farfetchd",
+        "fearow",
+        "hitmonlee",
+        "kabuto",
+        "kabutops",
+        "pidgey",
+        "pinsir",
+        "ponyta",
+        "shedinja",
+        "solrock"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "color-white-v1-1014-11",
+      "family": "color",
+      "difficulty": "normal",
+      "batch": "video-1-2026-10-14",
+      "question": "POKÉMON DE COLOR BLANCO EN LA POKÉDEX",
+      "rule": "Color oficial de la especie en la Pokédex",
+      "condition": {
+        "type": "color",
+        "color": "white",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "blacephalon",
+        "butterfree",
+        "celebi",
+        "drampa",
+        "dubwool",
+        "furfrou",
+        "nihilego",
+        "ninjask",
+        "octillery",
+        "pheromosa",
+        "ralts",
+        "sharpedo"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "weight-less-10kg-v1-1014-12",
+      "family": "weight",
+      "difficulty": "hard",
+      "batch": "video-1-2026-10-14",
+      "question": "POKÉMON QUE PESAN MENOS DE 10 KG",
+      "rule": "Peso oficial de la Pokédex",
+      "condition": {
+        "type": "weight",
+        "comparison": "less",
+        "kg": 10,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "anorith",
+        "archen",
+        "charmander",
+        "cherrim",
+        "houndour",
+        "ledyba",
+        "mawile",
+        "metapod",
+        "shelmet",
+        "smoochum",
+        "vulpix",
+        "whimsicott"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "weight-more-150kg-v1-1014-13",
+      "family": "weight",
+      "difficulty": "easy",
+      "batch": "video-1-2026-10-14",
+      "question": "POKÉMON QUE PESAN MÁS DE 150 KG",
+      "rule": "Peso oficial de la Pokédex",
+      "condition": {
+        "type": "weight",
+        "comparison": "more",
+        "kg": 150,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "dhelmise",
+        "druddigon",
+        "ferrothorn",
+        "ho-oh",
+        "kingdra",
+        "machamp",
+        "raikou",
+        "scolipede",
+        "solrock",
+        "tangrowth",
+        "turtonator",
+        "walrein"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "weight-less-25kg-v1-1014-14",
+      "family": "weight",
+      "difficulty": "normal",
+      "batch": "video-1-2026-10-14",
+      "question": "POKÉMON QUE PESAN MENOS DE 25 KG",
+      "rule": "Peso oficial de la Pokédex",
+      "condition": {
+        "type": "weight",
+        "comparison": "less",
+        "kg": 25,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "baltoy",
+        "carnivine",
+        "croagunk",
+        "dustox",
+        "huntail",
+        "lileep",
+        "mothim",
+        "ninetales",
+        "parasect",
+        "raticate",
+        "stunky",
+        "talonflame"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "height-less-2_5m-v1-1014-15",
+      "family": "height",
+      "difficulty": "hard",
+      "batch": "video-1-2026-10-14",
+      "question": "POKÉMON QUE MIDEN MENOS DE 2,5 M",
+      "rule": "Altura oficial de la Pokédex",
+      "condition": {
+        "type": "height",
+        "comparison": "less",
+        "m": 2.5,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "aerodactyl",
+        "arctozolt",
+        "buzzwole",
+        "cradily",
+        "feraligatr",
+        "golisopod",
+        "gouging-fire",
+        "mantine",
+        "venusaur",
+        "walking-wake",
+        "weezing-galar",
+        "xurkitree"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "height-less-1_5m-v1-1014-16",
+      "family": "height",
+      "difficulty": "easy",
+      "batch": "video-1-2026-10-14",
+      "question": "POKÉMON QUE MIDEN MENOS DE 1,5 M",
+      "rule": "Altura oficial de la Pokédex",
+      "condition": {
+        "type": "height",
+        "comparison": "less",
+        "m": 1.5,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "archeops",
+        "barbaracle",
+        "drapion",
+        "hypno",
+        "jynx",
+        "kingler",
+        "nidoking",
+        "nidoqueen",
+        "poliwrath",
+        "rapidash",
+        "zapdos",
+        "zoroark"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "height-less-0_7m-v1-1014-17",
+      "family": "height",
+      "difficulty": "normal",
+      "batch": "video-1-2026-10-14",
+      "question": "POKÉMON QUE MIDEN MENOS DE 0,7 M",
+      "rule": "Altura oficial de la Pokédex",
+      "condition": {
+        "type": "height",
+        "comparison": "less",
+        "m": 0.7,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "celebi",
+        "chatot",
+        "corsola",
+        "farfetchd",
+        "flareon",
+        "klang",
+        "mawile",
+        "nincada",
+        "palpitoad",
+        "panpour",
+        "shuckle",
+        "sirfetchd"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "evolution-obtained-trade-v1-1014-18",
+      "family": "evolution",
+      "difficulty": "hard",
+      "batch": "video-1-2026-10-14",
+      "question": "POKÉMON QUE SE OBTIENEN AL EVOLUCIONAR POR INTERCAMBIO",
+      "rule": "Así evolucionó su pre-evolución · Intercambio, con o sin objeto equipado",
+      "condition": {
+        "type": "evolution",
+        "role": "obtained",
+        "method": "trade",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "alakazam",
+        "conkeldurr",
+        "dusknoir",
+        "electrode",
+        "genesect",
+        "gorebyss",
+        "huntail",
+        "machamp",
+        "magmortar",
+        "marowak",
+        "natu",
+        "steelix"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "evolution-obtained-stone-v1-1014-19",
+      "family": "evolution",
+      "difficulty": "easy",
+      "batch": "video-1-2026-10-14",
+      "question": "POKÉMON QUE SE OBTIENEN AL EVOLUCIONAR CON UNA PIEDRA EVOLUTIVA",
+      "rule": "Así evolucionó su pre-evolución · Cualquier piedra (Fuego, Agua, Trueno, Hoja, Lunar…)",
+      "condition": {
+        "type": "evolution",
+        "role": "obtained",
+        "method": "stone",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "buneary",
+        "exeggutor",
+        "jolteon",
+        "nidoking",
+        "nidoqueen",
+        "omastar",
+        "roserade",
+        "scovillain",
+        "seismitoad",
+        "starmie",
+        "unfezant",
+        "vaporeon"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "evolution-obtained-friendship-v1-1014-20",
+      "family": "evolution",
+      "difficulty": "normal",
+      "batch": "video-1-2026-10-14",
+      "question": "POKÉMON QUE SE OBTIENEN AL EVOLUCIONAR POR AMISTAD",
+      "rule": "Así evolucionó su pre-evolución · Subir de nivel con mucha amistad",
+      "condition": {
+        "type": "evolution",
+        "role": "obtained",
+        "method": "friendship",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "chimecho",
+        "crobat",
+        "diggersby",
+        "marill",
+        "pikachu",
+        "roselia",
+        "seaking",
+        "sealeo",
+        "snorlax",
+        "swoobat",
+        "togetic",
+        "victini"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "ability-swift-swim-v2-1014-01",
+      "family": "ability",
+      "difficulty": "easy",
+      "batch": "video-2-2026-10-14",
+      "question": "POKÉMON QUE PUEDEN TENER NADO RÁPIDO",
+      "rule": "Habilidad normal u oculta",
+      "condition": {
+        "type": "ability",
+        "ability": "swift-swim",
+        "abilityMode": "any",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "armaldo",
+        "chewtle",
+        "escavalier",
+        "floatzel",
+        "glameow",
+        "kabuto",
+        "omanyte",
+        "poliwhirl",
+        "relicanth",
+        "stunfisk-galar",
+        "tympole",
+        "zigzagoon-galar"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "ability-rock-head-v2-1014-02",
+      "family": "ability",
+      "difficulty": "normal",
+      "batch": "video-2-2026-10-14",
+      "question": "POKÉMON QUE PUEDEN TENER CABEZA ROCA",
+      "rule": "Habilidad normal u oculta",
+      "condition": {
+        "type": "ability",
+        "ability": "rock-head",
+        "abilityMode": "any",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "aggron",
+        "aron",
+        "cubone",
+        "kilowattrel",
+        "machoke",
+        "marowak",
+        "noivern",
+        "onix",
+        "rapidash-galar",
+        "rhydon",
+        "rhyhorn",
+        "sudowoodo"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "ability-natural-cure-v2-1014-03",
+      "family": "ability",
+      "difficulty": "hard",
+      "batch": "video-2-2026-10-14",
+      "question": "POKÉMON QUE PUEDEN TENER CURA NATURAL",
+      "rule": "Habilidad normal u oculta",
+      "condition": {
+        "type": "ability",
+        "ability": "natural-cure",
+        "abilityMode": "any",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "budew",
+        "chansey",
+        "comfey",
+        "corsola",
+        "guzzlord",
+        "muk-alola",
+        "starmie",
+        "staryu",
+        "swablu",
+        "tapu-bulu",
+        "tapu-koko",
+        "trevenant"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "ability-cute-charm-v2-1014-04",
+      "family": "ability",
+      "difficulty": "easy",
+      "batch": "video-2-2026-10-14",
+      "question": "POKÉMON QUE PUEDEN TENER GRAN ENCANTO",
+      "rule": "Habilidad normal u oculta",
+      "condition": {
+        "type": "ability",
+        "ability": "cute-charm",
+        "abilityMode": "any",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "ampharos",
+        "bewear",
+        "cinccino",
+        "clefable",
+        "clefairy",
+        "jigglypuff",
+        "minccino",
+        "stufful",
+        "sylveon",
+        "tapu-fini",
+        "weedle",
+        "wigglytuff"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "ability-intimidate-v2-1014-05",
+      "family": "ability",
+      "difficulty": "normal",
+      "batch": "video-2-2026-10-14",
+      "question": "POKÉMON QUE PUEDEN TENER INTIMIDACIÓN",
+      "rule": "Habilidad normal u oculta",
+      "condition": {
+        "type": "ability",
+        "ability": "intimidate",
+        "abilityMode": "any",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "celesteela",
+        "ekans",
+        "hitmontop",
+        "malamar",
+        "maschiff",
+        "qwilfish",
+        "salamence",
+        "snubbull",
+        "staraptor",
+        "tauros",
+        "wobbuffet",
+        "zubat"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "move-hurricane-v2-1014-06",
+      "family": "move",
+      "difficulty": "hard",
+      "batch": "video-2-2026-10-14",
+      "question": "POKÉMON QUE PUEDEN APRENDER VENDAVAL",
+      "rule": "Gen 9 · Escarlata/Púrpura + DLC · cualquier método",
+      "condition": {
+        "type": "move",
+        "move": "hurricane",
+        "generation": 9,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "corvisquire",
+        "ducklett",
+        "eternatus",
+        "flamigo",
+        "flutter-mane",
+        "grimer",
+        "gyarados",
+        "hoothoot",
+        "murkrow",
+        "porygon",
+        "rayquaza",
+        "whimsicott"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "move-dig-v2-1014-07",
+      "family": "move",
+      "difficulty": "easy",
+      "batch": "video-2-2026-10-14",
+      "question": "POKÉMON QUE PUEDEN APRENDER EXCAVAR",
+      "rule": "Gen 9 · Escarlata/Púrpura + DLC · cualquier método",
+      "condition": {
+        "type": "move",
+        "move": "dig",
+        "generation": 9,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "bastiodon",
+        "delibird",
+        "doduo",
+        "electabuzz",
+        "entei",
+        "flapple",
+        "flygon",
+        "glaceon",
+        "meowth-alola",
+        "piloswine",
+        "sneasel",
+        "weavile"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "move-thunder-fang-v2-1014-08",
+      "family": "move",
+      "difficulty": "normal",
+      "batch": "video-2-2026-10-14",
+      "question": "POKÉMON QUE PUEDEN APRENDER COLMILLO RAYO",
+      "rule": "Gen 9 · Escarlata/Púrpura + DLC · cualquier método",
+      "condition": {
+        "type": "move",
+        "move": "thunder-fang",
+        "generation": 9,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "bagon",
+        "eelektross",
+        "houndour",
+        "hydreigon",
+        "lunala",
+        "magnemite",
+        "meganium",
+        "mew",
+        "pachirisu",
+        "poochyena",
+        "registeel",
+        "yungoos"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "move-zen-headbutt-v2-1014-09",
+      "family": "move",
+      "difficulty": "hard",
+      "batch": "video-2-2026-10-14",
+      "question": "POKÉMON QUE PUEDEN APRENDER CABEZAZO ZEN",
+      "rule": "Gen 9 · Escarlata/Púrpura + DLC · cualquier método",
+      "condition": {
+        "type": "move",
+        "move": "zen-headbutt",
+        "generation": 9,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "cufant",
+        "flabebe",
+        "gardevoir",
+        "girafarig",
+        "goomy",
+        "grimer-alola",
+        "inteleon",
+        "manaphy",
+        "metagross",
+        "slowking-galar",
+        "swalot",
+        "voltorb"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "color-pink-v2-1014-10",
+      "family": "color",
+      "difficulty": "easy",
+      "batch": "video-2-2026-10-14",
+      "question": "POKÉMON DE COLOR ROSA EN LA POKÉDEX",
+      "rule": "Color oficial de la especie en la Pokédex",
+      "condition": {
+        "type": "color",
+        "color": "pink",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "alomomola",
+        "golbat",
+        "karrablast",
+        "lickitung",
+        "miltank",
+        "mr-mime",
+        "shiinotic",
+        "smoochum",
+        "spritzee",
+        "tapu-lele",
+        "tinkatink",
+        "yamask"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "color-black-v2-1014-11",
+      "family": "color",
+      "difficulty": "normal",
+      "batch": "video-2-2026-10-14",
+      "question": "POKÉMON DE COLOR NEGRO EN LA POKÉDEX",
+      "rule": "Color oficial de la especie en la Pokédex",
+      "condition": {
+        "type": "color",
+        "color": "black",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "carkol",
+        "chandelure",
+        "chatot",
+        "claydol",
+        "darkrai",
+        "dusclops",
+        "machop",
+        "patrat",
+        "roggenrola",
+        "rolycoly",
+        "spoink",
+        "woobat"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "weight-more-32_5kg-v2-1014-12",
+      "family": "weight",
+      "difficulty": "hard",
+      "batch": "video-2-2026-10-14",
+      "question": "POKÉMON QUE PESAN MÁS DE 32,5 KG",
+      "rule": "Peso oficial de la Pokédex",
+      "condition": {
+        "type": "weight",
+        "comparison": "more",
+        "kg": 32.5,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "boltund",
+        "darumaka-galar",
+        "dustox",
+        "octillery",
+        "orbeetle",
+        "phanpy",
+        "pidgeotto",
+        "ponyta",
+        "slugma",
+        "tangela",
+        "toedscool",
+        "varoom"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "weight-less-40kg-v2-1014-13",
+      "family": "weight",
+      "difficulty": "easy",
+      "batch": "video-2-2026-10-14",
+      "question": "POKÉMON QUE PESAN MENOS DE 40 KG",
+      "rule": "Peso oficial de la Pokédex",
+      "condition": {
+        "type": "weight",
+        "comparison": "less",
+        "kg": 40,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "farfetchd-galar",
+        "jynx",
+        "kabutops",
+        "liepard",
+        "pidgeot",
+        "raticate-alola",
+        "seaking",
+        "skuntank",
+        "spheal",
+        "togekiss",
+        "vanillish",
+        "yanma"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "weight-more-60_5kg-v2-1014-14",
+      "family": "weight",
+      "difficulty": "normal",
+      "batch": "video-2-2026-10-14",
+      "question": "POKÉMON QUE PESAN MÁS DE 60,5 KG",
+      "rule": "Peso oficial de la Pokédex",
+      "condition": {
+        "type": "weight",
+        "comparison": "more",
+        "kg": 60.5,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "cradily",
+        "cresselia",
+        "drapion",
+        "golduck",
+        "larvitar",
+        "moltres",
+        "mr-mime-galar",
+        "mr-rime",
+        "quaquaval",
+        "seismitoad",
+        "serperior",
+        "sharpedo"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "height-more-1m-v2-1014-15",
+      "family": "height",
+      "difficulty": "hard",
+      "batch": "video-2-2026-10-14",
+      "question": "POKÉMON QUE MIDEN MÁS DE 1 M",
+      "rule": "Altura oficial de la Pokédex",
+      "condition": {
+        "type": "height",
+        "comparison": "more",
+        "m": 1,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "abra",
+        "audino",
+        "bayleef",
+        "boldore",
+        "cryogonal",
+        "lilligant",
+        "nidorina",
+        "nidorino",
+        "sealeo",
+        "simisage",
+        "wiglett",
+        "xatu"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "height-more-2m-v2-1014-16",
+      "family": "height",
+      "difficulty": "easy",
+      "batch": "video-2-2026-10-14",
+      "question": "POKÉMON QUE MIDEN MÁS DE 2 M",
+      "rule": "Altura oficial de la Pokédex",
+      "condition": {
+        "type": "height",
+        "comparison": "more",
+        "m": 2,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "abomasnow",
+        "bewear",
+        "cobalion",
+        "duraludon",
+        "kangaskhan",
+        "lapras",
+        "mamoswine",
+        "regice",
+        "silicobra",
+        "terrakion",
+        "torterra",
+        "type-null"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "height-less-1_2m-v2-1014-17",
+      "family": "height",
+      "difficulty": "normal",
+      "batch": "video-2-2026-10-14",
+      "question": "POKÉMON QUE MIDEN MENOS DE 1,2 M",
+      "rule": "Altura oficial de la Pokédex",
+      "condition": {
+        "type": "height",
+        "comparison": "less",
+        "m": 1.2,
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "amaura",
+        "beautifly",
+        "bronzong",
+        "butterfree",
+        "carnivine",
+        "chikorita",
+        "kecleon",
+        "kingler",
+        "lunatone",
+        "musharna",
+        "ninetales",
+        "spiritomb"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "evolution-evolves-trade-v2-1014-18",
+      "family": "evolution",
+      "difficulty": "hard",
+      "batch": "video-2-2026-10-14",
+      "question": "POKÉMON QUE EVOLUCIONAN POR INTERCAMBIO",
+      "rule": "El Pokémon de la carta evoluciona · Intercambio, con o sin objeto equipado",
+      "condition": {
+        "type": "evolution",
+        "role": "evolves",
+        "method": "trade",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "caterpie",
+        "clamperl",
+        "electabuzz",
+        "ferroseed",
+        "gurdurr",
+        "krabby",
+        "machoke",
+        "magmar",
+        "onix",
+        "rhydon",
+        "spearow",
+        "swirlix"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "evolution-evolves-friendship-v2-1014-19",
+      "family": "evolution",
+      "difficulty": "easy",
+      "batch": "video-2-2026-10-14",
+      "question": "POKÉMON QUE EVOLUCIONAN POR AMISTAD",
+      "rule": "El Pokémon de la carta evoluciona · Subir de nivel con mucha amistad",
+      "condition": {
+        "type": "evolution",
+        "role": "evolves",
+        "method": "friendship",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "azurill",
+        "buneary",
+        "chingling",
+        "eevee",
+        "honedge",
+        "munchlax",
+        "paras",
+        "pidove",
+        "rattata",
+        "riolu",
+        "snom",
+        "swadloon"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
+    },
+    {
+      "id": "evolution-evolves-level-v2-1014-20",
+      "family": "evolution",
+      "difficulty": "normal",
+      "batch": "video-2-2026-10-14",
+      "question": "POKÉMON QUE EVOLUCIONAN AL SUBIR DE NIVEL",
+      "rule": "El Pokémon de la carta evoluciona · Sólo por nivel, sin otra condición",
+      "condition": {
+        "type": "evolution",
+        "role": "evolves",
+        "method": "level",
+        "ruleset": "gen9"
+      },
+      "pokemon": [
+        "arctibax",
+        "bunnelby",
+        "nidoran-f",
+        "palkia",
+        "pansage",
+        "pidgey",
+        "ponyta-galar",
+        "quaxwell",
+        "regirock",
+        "swinub",
+        "tangrowth",
+        "vanillite"
+      ],
+      "verified": true,
+      "verifiedAt": "2026-10-14T16:19:03.962Z"
     }
   ]
 }

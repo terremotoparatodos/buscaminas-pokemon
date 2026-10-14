@@ -25,6 +25,39 @@
     }, 1);
   }
 
+  const EVOLUTION_METHODS = ['stone', 'trade', 'friendship', 'level'];
+  const EVOLUTION_ROLES = ['evolves', 'obtained'];
+  const EVOLUTION_STONES = ['fire-stone', 'water-stone', 'thunder-stone', 'leaf-stone', 'moon-stone',
+    'sun-stone', 'shiny-stone', 'dusk-stone', 'dawn-stone', 'ice-stone'];
+  /* Métodos en los hechos: 'level' | 'friendship' | 'trade' | 'item:<objeto>' | 'other'. */
+  const matchesMethod = (m, method) => (method === 'stone' ? m.startsWith('item:') && EVOLUTION_STONES.includes(m.slice(5)) : m === method);
+  function evolutionList(p, c) {
+    if (!EVOLUTION_METHODS.includes(c.method)) throw new Error(`Método evolutivo desconocido: ${c.method}`);
+    if (!EVOLUTION_ROLES.includes(c.role)) throw new Error(`role inválido: ${c.role}`);
+    if (!p.evolution || !Array.isArray(p.evolution.methods) || !Array.isArray(p.evolution.evolvedBy)) throw new Error(`${p.key}: método evolutivo sin verificar`);
+    return c.role === 'evolves' ? p.evolution.methods : p.evolution.evolvedBy;
+  }
+  /* Bomba indiscutible: no cumple, no tiene métodos raros ('other', objetos que no son piedras)
+     que alguien pueda discutir, y tampoco cumple en el sentido contrario (Arcanine no puede ser
+     bomba de "evolucionan con piedra": se obtiene con una). */
+  function isCleanEvolutionNegative(p, c) {
+    const own = evolutionList(p, c);
+    const other = c.role === 'evolves' ? p.evolution.evolvedBy : p.evolution.methods;
+    if (own.some(x => matchesMethod(x, c.method)) || other.some(x => matchesMethod(x, c.method))) return false;
+    const odd = x => x === 'other' || (x.startsWith('item:') && !EVOLUTION_STONES.includes(x.slice(5)));
+    return !own.some(odd);
+  }
+
+  function compareMeasure(p, c, field, limit, unit) {
+    if (!['more', 'less'].includes(c.comparison)) throw new Error(`comparison inválido: ${c.comparison}`);
+    if (typeof limit !== 'number' || !(limit > 0)) throw new Error(`Límite inválido: ${limit}`);
+    const v = p[field];
+    if (typeof v !== 'number') throw new Error(`${p.key}: ${field} sin verificar`);
+    if (v === limit) throw new Error(`${p.key}: ${v} ${unit} es exactamente el límite`);
+    return { value: c.comparison === 'more' ? v > limit : v < limit, detail: `${v} ${unit}` };
+  }
+  const decimal = x => String(x).replace('.', ',');
+
   /* Cada familia de condición: evaluate() devuelve {value, detail}.
      detail explica el porqué (se muestra en debug y se guarda en verification.json). */
   const CONDITIONS = {
@@ -75,6 +108,26 @@
         return { value: p.color === c.color, detail: `color Pokédex: ${p.color}` };
       },
     },
+    /* Peso / altura oficiales de la Pokédex (de la forma de la carta). Un Pokémon que mide o pesa
+       EXACTAMENTE el límite no puede aparecer (no es ni "más" ni "menos"). */
+    weight: {
+      requires: ['comparison', 'kg'],
+      evaluate: (p, c) => compareMeasure(p, c, 'weightKg', c.kg, 'kg'),
+    },
+    height: {
+      requires: ['comparison', 'm'],
+      evaluate: (p, c) => compareMeasure(p, c, 'heightM', c.m, 'm'),
+    },
+    /* Método evolutivo. role 'evolves': cómo evoluciona el Pokémon DE LA CARTA;
+       role 'obtained': cómo se obtuvo (cómo evolucionó su pre-evolución en él).
+       method: 'stone' (cualquier piedra evolutiva) | 'trade' (con o sin objeto) | 'friendship' | 'level' (sólo nivel). */
+    evolution: {
+      requires: ['role', 'method'],
+      evaluate(p, c) {
+        const m = evolutionList(p, c);
+        return { value: m.some(x => matchesMethod(x, c.method)), detail: m.length ? m.join(' + ') : c.role === 'evolves' ? 'no evoluciona' : 'no es una evolución' };
+      },
+    },
     /* Ejemplo de familia futura: basta con agregar una entrada acá.
        type: { requires:['pokemonType'], evaluate:(p,c)=>({value:p.types.includes(c.pokemonType)}) } */
   };
@@ -115,6 +168,26 @@
         question: up(`Pokémon de color ${n('colors', c.color)} en la Pokédex`),
         rule: 'Color oficial de la especie en la Pokédex',
       };
+      case 'weight': return {
+        question: up(`Pokémon que pesan ${c.comparison === 'more' ? 'más' : 'menos'} de ${decimal(c.kg)} kg`),
+        rule: 'Peso oficial de la Pokédex',
+      };
+      case 'height': return {
+        question: up(`Pokémon que miden ${c.comparison === 'more' ? 'más' : 'menos'} de ${decimal(c.m)} m`),
+        rule: 'Altura oficial de la Pokédex',
+      };
+      case 'evolution': {
+        const how = {
+          stone: ['con una piedra evolutiva', 'Cualquier piedra (Fuego, Agua, Trueno, Hoja, Lunar…)'],
+          trade: ['por intercambio', 'Intercambio, con o sin objeto equipado'],
+          friendship: ['por amistad', 'Subir de nivel con mucha amistad'],
+          level: ['al subir de nivel', 'Sólo por nivel, sin otra condición'],
+        }[c.method];
+        if (!how) throw new Error(`Método evolutivo desconocido: ${c.method}`);
+        if (c.role === 'evolves') return { question: up(`Pokémon que evolucionan ${how[0]}`), rule: `El Pokémon de la carta evoluciona · ${how[1]}` };
+        if (c.role === 'obtained') return { question: up(`Pokémon que se obtienen al evolucionar ${how[0]}`), rule: `Así evolucionó su pre-evolución · ${how[1]}` };
+        throw new Error(`role inválido: ${c.role}`);
+      }
       default: throw new Error(`Condición desconocida: ${c.type}`);
     }
   }
@@ -160,5 +233,5 @@
     return a;
   }
 
-  return { TYPES, CONDITIONS, typeMultiplier, evaluateCondition, describeCondition, solveRound, hashSeed, rng, shuffle };
+  return { TYPES, CONDITIONS, EVOLUTION_METHODS, EVOLUTION_ROLES, EVOLUTION_STONES, isCleanEvolutionNegative, typeMultiplier, evaluateCondition, describeCondition, solveRound, hashSeed, rng, shuffle };
 });

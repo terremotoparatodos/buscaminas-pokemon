@@ -35,6 +35,7 @@ export function buildSourceA(A, ruleset) {
     }
   }
   const species = Object.fromEntries(A.species.map(s => [s.name, s]));
+  const evo = pokeapiEvolutions(A);
   const pokemon = {};
   for (const p of A.pokemon) {
     if (p.missing) continue;
@@ -55,9 +56,41 @@ export function buildSourceA(A, ruleset) {
       // Otros juegos Gen 9 (Z-A, Champions…): sólo para descartar impostores discutibles.
       otherGen9Moves: Object.fromEntries(Object.entries(p.otherGen9Moves || {}).map(([m, e]) => [m, [...new Set(e.map(x => x.split(':')[0]))]])),
       prevoSpecies: prevoChain(species, p.species),
+      weightKg: p.weightHg / 10, heightM: p.heightDm / 10,
+      evolution: { methods: [...(evo.methods[p.name] || [])].sort(), evolvedBy: [...(evo.evolvedBy[p.name] || [])].sort() },
     };
   }
   return { name: 'A', label: A.source, typeChart, pokemon, species };
+}
+
+/* Método evolutivo según PokéAPI. Cada evolution_detail dice a qué forma se aplica
+   (required_pokemon_form / evolved_pokemon_form; si falta, la forma por defecto de la especie).
+   Se juntan TODOS los juegos: si un método cambió entre juegos, las fuentes no coincidirán
+   y el Pokémon queda fuera de esas rondas. */
+const BASE_DETAIL = ['version_group', 'is_default', 'trigger', 'required_pokemon_form', 'evolved_pokemon_form', 'region'];
+function pokeapiMethod(d) {
+  const extra = Object.keys(d).filter(k => !BASE_DETAIL.includes(k));
+  if (d.trigger === 'use-item' && d.item && extra.every(k => k === 'item')) return `item:${d.item}`;
+  if (d.trigger === 'trade') return extra.every(k => k === 'held_item') ? 'trade' : 'other';
+  if (d.trigger === 'level-up' && d.min_happiness && extra.every(k => ['min_happiness', 'time_of_day'].includes(k))) return 'friendship';
+  if (d.trigger === 'level-up' && d.min_level && extra.every(k => k === 'min_level')) return 'level';
+  return 'other';
+}
+function pokeapiEvolutions(A) {
+  const methods = {}, evolvedBy = {};
+  const add = (map, key, m) => (map[key] ||= new Set()).add(m);
+  const walk = n => {
+    for (const child of n.evolvesTo) {
+      for (const d of child.evolutionDetails || []) {
+        const m = pokeapiMethod(d);
+        add(methods, d.required_pokemon_form || n.species, m);
+        add(evolvedBy, d.evolved_pokemon_form || child.species, m);
+      }
+      walk(child);
+    }
+  };
+  A.chains.forEach(c => walk(c.chain));
+  return { methods, evolvedBy };
 }
 
 function prevoChain(species, name) {
@@ -140,9 +173,24 @@ export function buildSourceB(B, ruleset, identities, pokeapiAbilitySlugs) {
       otherGen9Moves: otherGen9(B, showdownId),
       prevoSpecies: showdownPrevos(B.pokedex, e),
       prevoIds: showdownPrevoIds(B.pokedex, e),
+      weightKg: e.weightkg, heightM: e.heightm,
+      evolution: {
+        methods: [...new Set((e.evos || []).map(n => showdownMethod(B.pokedex[norm(n)])))].sort(),
+        evolvedBy: e.prevo ? [showdownMethod(e)] : [],
+      },
     };
   }
   return { name: 'B', label: B.source, typeChart, pokemon, idToKey };
+}
+
+/* Método evolutivo según Showdown: cada entrada dice cómo se llega a ella desde su prevo. */
+function showdownMethod(e) {
+  if (!e) return 'other';
+  if (e.evoType === 'useItem' && e.evoItem && !e.evoCondition) return `item:${e.evoItem.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
+  if (e.evoType === 'trade') return e.evoCondition ? 'other' : 'trade';
+  if (e.evoType === 'levelFriendship') return /^(during the day|at night)$/.test(e.evoCondition || 'during the day') ? 'friendship' : 'other';
+  if (!e.evoType && e.evoLevel && !e.evoCondition) return 'level';
+  return 'other';
 }
 
 function otherGen9(B, id) {

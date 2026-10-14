@@ -11,7 +11,7 @@ fondo, panel de control y teclas).
 |---|---|
 | ![Horizontal](docs/screenshots/horizontal-3-bomba-reveal.png) | ![Vertical](docs/screenshots/vertical-3-bomba-reveal.png) |
 
-En cada ronda aparece una condición ("Pokémon resistentes al tipo Fuego") y 12 Pokémon: **8 la cumplen y 4 son bombas**.
+En cada ronda aparece una condición ("Pokémon que pueden tener Cuerpo Maldito") y 12 Pokémon: **8 la cumplen y 4 son bombas**.
 
 **Modo por defecto: un clic cada uno** (`turnMode: 'click'`). SKY y GUTI juegan el mismo tablero alternándose:
 cada acierto suma 1 punto a quien hizo clic y el turno pasa al otro. Quien toca una bomba termina la ronda (se
@@ -35,6 +35,19 @@ Parámetros de URL:
 - `?sync=0` desactiva la sincronización P2P y deja la partida sólo en ese navegador
 - `?debug=1` panel de debug (id de ronda, condición, correctos/bombas, multiplicadores, fuentes A/B)
 - `?nopanel=1` arranca sin panel · `?clean=1` sin guías de zonas · `#panel` sólo el panel (para otra pestaña)
+
+### Sets de grabación
+
+Si la `seed` es el nombre de un set, la partida usa SÓLO las rondas de ese set (cerrado: el reroll no mete otras).
+
+| Código (`?seed=`) | Rondas | Contenido |
+|---|---|---|
+| `grabacion-2026-10-02` | 17 | habilidad y movimiento (eran 20; se quitaron las 3 de tipos) |
+| `video-1-2026-10-14` | 20 | 5 habilidad · 4 movimiento · 2 color · 3 peso · 3 altura · 3 evolución |
+| `video-2-2026-10-14` | 20 | 5 habilidad · 4 movimiento · 2 color · 3 peso · 3 altura · 3 evolución |
+
+Los sets nuevos se definen en `scripts/expand-rounds.mjs` (`SETS`, `PLAN`, `EXCLUDED_CONDITIONS`): ninguna
+consigna se repite entre sets ni con las ya grabadas.
 
 ## Layouts
 
@@ -104,7 +117,16 @@ Reglas (ruleset `gen9`):
   pre-evolución lo aprende, y **no lo aprende en otro juego de Gen 9** (Legends: Z-A, Champions; mods de Showdown y
   PokéAPI) para que nadie pueda discutir la bomba.
 - **Resistencia / Debilidad**: sólo por tipos (sin habilidades, objetos, Tera, clima). Se multiplican los dos tipos.
-  Resistencia `< 1` (`includeImmunity: true` cuenta ×0), debilidad `> 1`.
+  Resistencia `< 1` (`includeImmunity: true` cuenta ×0), debilidad `> 1`. **Retiradas del banco de rondas**: el
+  motor las sigue sabiendo evaluar, pero ninguna ronda las usa.
+- **Peso / Altura**: valor oficial de la Pokédex de la forma de la carta (PokéAPI `weight`/`height` ÷ 10 y Showdown
+  `weightkg`/`heightm` deben ser idénticos). "Más/menos de X" es estricto y ninguna carta puede valer exactamente X.
+  Al revelar, cada carta muestra su peso o altura.
+- **Método evolutivo**: `role: evolves` (cómo evoluciona el Pokémon de la carta) u `obtained` (cómo se obtuvo) ×
+  `method: stone | trade | friendship | level`. Un Pokémon entra sólo si el conjunto de métodos coincide en ambas
+  fuentes juntando todos los juegos (si cambió entre juegos, queda fuera: Feebas, Magneton, Leafeon…). Las bombas
+  no tienen métodos raros discutibles ni cumplen en el sentido contrario (Arcanine no es bomba de "evolucionan con
+  una piedra"). No hay rondas por piedra concreta: ninguna piedra llega a 8 Pokémon.
 
 Formas: cada carta es `species + form + id` (id de `/pokemon` de PokéAPI). Se usan sólo formas por defecto y
 regionales con nombre en español en PokéAPI. Se excluyen megas, gmax, totem, primigenias y especies con formas de

@@ -176,7 +176,7 @@ const condId = c => c.type + '-' + (c.ability || c.move || c.attackingType);
 
 const rounds = [];
 const discarded = [];
-for (const family of ['ability', 'move', 'resistance', 'weakness']) {
+for (const family of ['ability', 'move']) { // resistencia/debilidad retiradas del juego
   const remaining = conditionsFor(family);
   for (const difficulty of ['hard', 'normal', 'easy']) {
     for (let k = 0; k < PER_FAMILY[difficulty]; k++) {
