@@ -7,7 +7,7 @@ window.BUSCAMINAS_CONFIG = {
   turnMode: 'click',          // 'click' = un clic cada uno sobre el mismo tablero · 'round' = una ronda cada uno
   allowRetry: true,           // botón REINTENTAR RONDA (false para competitivo)
   perfectBonus: 0,            // puntos extra por ronda perfecta (en modo 'click': para quien encuentra el último)
-  bombPenalty: 0,             // puntos que pierde quien toca una bomba
+  bombPenalty: 1,             // puntos que pierde quien toca una bomba
   keepPointsOnBomb: true,     // al tocar una bomba se conservan los aciertos de esa ronda
   difficultyCurve: true,      // fácil → normal → difícil a lo largo de la partida
   audio: {                    // si el archivo no existe, se ignora en silencio
