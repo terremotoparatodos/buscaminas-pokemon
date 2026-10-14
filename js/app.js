@@ -381,6 +381,7 @@
     node.className = `sync ${syncInfo.phase === 'error' ? 'error' : syncInfo.peers ? 'online' : ''}`;
     node.textContent = syncInfo.phase === 'error' ? '● Modo local · sin conexión P2P'
       : syncInfo.phase === 'connecting' ? '● Conectando la sala…'
+      : syncInfo.peers && !syncInfo.received ? '● PC conectada · esperando recibir la partida…'
       : syncInfo.peers ? `● ${syncInfo.peers + 1} PCs sincronizadas · sala ${ROOM}`
       : `● Esperando la segunda PC · sala ${ROOM}`;
   }
