@@ -1,9 +1,8 @@
-/* Encuentro P2P por Nostr y MQTT; la partida viaja por WebRTC. */
+/* Encuentro P2P por MQTT; la partida viaja por WebRTC. */
 window.BMSync = (function () {
   'use strict';
   const APP_ID = 'ar.terremotoparatodos.buscaminas-pokemon.v1';
   const STRATEGIES = [
-    'https://esm.run/trystero@0.25.4',
     'https://esm.run/@trystero-p2p/mqtt@0.25.4',
   ];
   function connect(options) {
@@ -53,7 +52,7 @@ window.BMSync = (function () {
       });
     }
     // Recupera el estado tras suspender una pestaña o perder el primer envío.
-    const timer = setInterval(() => publish(options.getState()), 5000);
+    const timer = setInterval(() => publish(options.getState()), 1000);
     addEventListener('beforeunload', () => {
       stopped = true;
       clearInterval(timer);
